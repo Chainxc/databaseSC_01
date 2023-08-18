@@ -164,8 +164,14 @@ export default function Navbar({
           auth: null,
         },*/
         {
-          name: 'School Tour',
-          href: '/tour',
+          name: 'Virtual School Tour',
+          href: '/virtualschtour',
+          icon: faSchoolFlag,
+          auth: null,
+        },
+        {
+          name: 'Onsite School Tour',
+          href: '/schtour',
           icon: faSchoolFlag,
           auth: null,
         },
