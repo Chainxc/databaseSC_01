@@ -16,7 +16,8 @@ const mainMenu = [
   {
     name: 'Follow Us',
     fa: true,
-    icon: faFacebook    href: 'https://facebook.com/MWITOpenHouse',
+    icon: faFacebook,
+    href: 'https://facebook.com/MWITOpenHouse',
     disabled: false,
   },
   /*{
