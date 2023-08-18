@@ -35,6 +35,13 @@ const mainMenu = [
     href: 'https://square.mwit.ac.th',
     disabled: false,
   },
+  {
+    name: 'Spelling Bee',
+    fa: false,
+    icon: 'img/2023/SpellingBee_Alt.png',
+    href: 'https://forms.gle/pbQWEdGUUAN5L3JP9',
+    disabled: false,
+  },
 ]
 
 export default function LandingPage({ homeRef, children, ...props }) {
