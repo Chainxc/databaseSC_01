@@ -87,7 +87,7 @@ export default function Customerjourney() {
         </Head>
         <div className='w-screen h-screen'>
           <div className='grid justify-items-center font-CS font-bold text-3xl md:text-4xl lg:text-5xl py-12 '>
-            Customer's Journey
+            Customers Journey
           </div>
           <div className='grid justify-items-center'>          
             <div className='grid justify-items-center justify-center gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl w-5/6'>
