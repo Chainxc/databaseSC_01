@@ -25,7 +25,7 @@ const meta = {
       'Customers Journey ที่จะพาทุกคนไปรู้จักับ MWIT OPENHOUSE 2023 มากขึ้น',
     img: 'ogimage.png',
   }
-const events = [
+/*const events = [
   {
     name: '',
     description: '',
@@ -52,7 +52,7 @@ const eventsat = [
     time: '',
     img: ''
   },
-]
+]*/
 export default function Customerjourney() {
     return (
       <>
