@@ -133,12 +133,12 @@ export default function Navbar({
       icon: faFlag,
       auth: null,
       sub: [
-        /*{
+        {
           name: 'Science Project',
           href: '/sciproject',
           icon: faMicroscope,
           auth: null,
-        },*/
+        },
         {
           name: 'Competition',
           href: '/Competition',
