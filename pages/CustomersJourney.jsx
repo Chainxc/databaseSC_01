@@ -96,10 +96,10 @@ export default function Customerjourney() {
               </div>
               <div className='grid grid-cols-2'>
                 <div className='col-span-1'>
-                  <Image
-                    src = ''
-                    
-                  />
+                <img
+                  className='w-full'
+                  src={'/img/tour/bg.webp'}
+                />
                 </div>
               </div>
             </div>
