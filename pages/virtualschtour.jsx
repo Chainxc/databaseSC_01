@@ -196,7 +196,7 @@ const meta = {
 
       <main className='w-full bg-white/20'>
         <div className='flex flex-col text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
-          <Link scroll={false} href={'/tour'}>
+          <Link scroll={false} href={'/virtualschtour'}>
             <a className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
               Virtual School Tour
             </a>
@@ -230,7 +230,7 @@ const meta = {
                 <Link
                   scroll={false}
                   href={{
-                    pathname: '/tour',
+                    pathname: '/virtualschtour',
                     query: {
                       ...router.query,
                       place: place[
@@ -302,7 +302,7 @@ const meta = {
                             <Link
                               scroll={false}
                               href={{
-                                pathname: '/tour',
+                                pathname: '/virtualschtour',
                                 query: {
                                   ...router.query,
                                   place: p.name.replaceAll(' ', '_'),
@@ -334,7 +334,7 @@ const meta = {
                 <Link
                   scroll={false}
                   href={{
-                    pathname: '/tour',
+                    pathname: '/virtualschtour',
                     query: {
                       ...router.query,
                       place: place[
