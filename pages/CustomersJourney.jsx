@@ -108,10 +108,18 @@ export default function Customerjourney() {
                   src={'img/2023/journey/base.png'}
                 />
                   <div>
-                    <img
-                      className='absolute w-[3.5vw] top-[40%] left-[37.3%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/tour.png'
-                    />
+                    <a
+                    className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
+                    href='download/รายละเอียดการแข่งขัน MWIT Square 15th.pdf'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    >                      
+                      <img
+                          className='absolute w-[3.5vw] top-[40%] left-[37.3%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/tour.png'
+                        />
+                    </a>
+                    
                     <img
                       className='absolute w-[4.5vw] top-[21%] left-[15.5%] translate-y-[-50%] translate-x-[-50]'
                       src='img/2023/journey/1Building.png'
