@@ -102,13 +102,13 @@ export default function SciProject(){
               MWIT Science Project
         </span>
         <div className='flex flex-wrap relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-2 pb-10'>
-          <div className='max-w-[720px] max-h-[420px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-5 px-4 relative group relative w-full '>
+          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-5 px-4 relative group relative w-full '>
             <img
               src={images[currentImageIndex].src}
               alt={`Image ${currentImageIndex + 1}`}
               className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
             />
-            <div  className="absolute bottom-5 left-0 mx-4 w-[12rem] md:w-[35.6rem] bg-black bg-opacity-50 text-white  transition-opacity duration-300  rounded-b-2xl overflow-hidden">
+            <div  className="absolute bottom-5 left-0  mx-4 w-full md:w-[95.4%] bg-black bg-opacity-50 text-white  transition-opacity duration-300  rounded-b-2xl overflow-hidden">
               <p className={`text-left pt-3 px-5 font-CS font-bold text-xl `}>
               {showFullDescription
               ? images[currentImageIndex].description
