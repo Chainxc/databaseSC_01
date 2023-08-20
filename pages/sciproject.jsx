@@ -117,7 +117,7 @@ export default function SciProject(){
           content='https://openhouse.mwit.ac.th/img/ogimage.png'
         />   
     </Head>
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full -z-10'>
       <div className='w-full bg-cover bg-[url(/img/2023/bg_starlight.webp)] bg-repeat sm:bg-fixed text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4 '>
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
@@ -203,7 +203,7 @@ export default function SciProject(){
                   </motion.div>
                   
                   </AnimateSharedLayout>
-            </div>
+          </div>
         
 {/*
         <div className='font-CS font-bold text-bmw text-xl md:text-2xl lg:text-3xl pt-8 place-content-center'>
@@ -218,7 +218,8 @@ export default function SciProject(){
             </center>
           </div>
                   */}
-      <div className="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
+
+        <div className="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
         <div className="font-CS font-bold text-bmw text-xl md:text-3xl lg:text-4xl text-2xl font-semibold ">กำหนดการ</div>
         {scheduleData.map((dayData, index) => (
           <div key={index} className="mb-6">
@@ -235,9 +236,9 @@ export default function SciProject(){
               </div>
             ))}
           </div>
-        ))}
-      </div>
-      </div>
+          ))}
+          </div>
+        </div>
       </div>
     </div>
   </>
