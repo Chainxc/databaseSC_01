@@ -260,7 +260,7 @@ export default function SciProject(){
                   <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='lg' />
             </div>
         </div>
-        <div className="my-5 max-w-xl p-8 bg-white rounded-lg shadow-lg">
+        <div className="my-5 max-w-3xl p-10 px-15 bg-white rounded-lg shadow-lg">
         <div className="font-CS font-bold text-bmw text-xl md:text-3xl lg:text-4xl text-2xl font-semibold ">กำหนดการ</div>
         {scheduleData.map((dayData, index) => (
           <div key={index} className="mb-6">
@@ -268,12 +268,12 @@ export default function SciProject(){
             {dayData.events.map((event, eventIndex) => (
               <div
                 key={eventIndex}
-                className={`flex flex-wrap justify-between items-center p-3 mb-2 ${
+                className={`flex flex-wrap  max-w-lg justify-between items-center p-4 mb-4 ${
                   eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
                 }`}
               >
-                <div className="font-CS  text-bmw text-xl md:text-2xl  pt-8 text-lg font-semibold">{event.time}</div>
-                <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-8 text-lg">{event.title}</div>
+                <div className="font-CS  text-bmw text-xl md:text-2xl  pt-4 text-lg font-semibold">{event.time}</div>
+                <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-4 text-lg">{event.title}</div>
                 <div className="font-CS font-semibold text-bmw text-xl md:text-2xl  pt-4 text-lg">{event.place}</div>
               </div>
             ))}
