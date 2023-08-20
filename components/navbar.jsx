@@ -159,7 +159,7 @@ export default function Navbar({
         },*/
         {
           name: 'Curriculum',
-          href: '/curriculumm',
+          href: '/curriculum',
           icon: faFileInvoice,
           auth: null,
         },
