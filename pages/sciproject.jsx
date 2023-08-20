@@ -65,7 +65,24 @@ export default function SciProject(){
   const toggleDescription = () => {
     setShowFullDescription(!showFullDescription);
   };
-
+  const scheduleData = [
+    {
+      day: 'วันที่ 25 สิงหาคม 2566',
+      events: [
+        { time: '09:00-12:00 น.', title: 'Oral presentation' },
+        { time: '13:00-14:30 น.', title: 'Poster presentation' },
+      ],
+    },
+    {
+      day: 'วันที่ 26 สิงหาคม 2566',
+      events: [
+        { time: '09:00-12:00 น.', title: 'Oral presentation' },
+        { time: '13:00-14:30 น.', title: 'Poster presentation' },
+        // Add more events for Tuesday and other days
+      ],
+    },
+    // Add more days and events
+  ];
   return (
     <>
     <Head>
@@ -97,18 +114,17 @@ export default function SciProject(){
         />   
     </Head>
     <div className='flex flex-col w-full'>
-      <div className='w-full bg-cover bg-[url(/img/2023/bg_starlight.webp)] bg-repeat sm:bg-fixed min-h-[180vh] space-y-2 '>
+      <div className='w-full bg-cover bg-[url(/img/2023/bg_starlight.webp)] bg-repeat sm:bg-fixed text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4 '>
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
         </span>
-        <div className='flex flex-wrap relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-2 pb-10' >
-          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group'>
+          <div className='w-full max-w-7xl grid items-center justify-items-center mx-auto px-6'>
+          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group '>
             <div className="relative w-full h-full ">
-            <img
-              src={images[currentImageIndex].src}
-              alt={`Image ${currentImageIndex + 1}`}
+             <div
               className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
-            />
+              style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}
+              ></div>
             <div  className="absolute bottom-4 right-0 bg-black bg-opacity-50 text-white  rounded-b-2xl opacity-0 transition-opacity duration-300 hover:opacity-100 rounded-b-2xl ${showFullDescription ? 'h-auto' : 'h-16'}`}">
               <p className={`text-left pt-3 px-5 font-CS font-bold text-xl `}>
               {showFullDescription
@@ -153,12 +169,13 @@ export default function SciProject(){
                 
             ></button>
                 ))}
-            </div>
+        
+          </div>
           </div>
           <div className='flex flex-col gap-3'>
                 <AnimateSharedLayout type='crossfade'>
                   <motion.div
-                    className='flex flex-col gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl bg-yellow-200'
+                    className='flex flex-col my-5 gap-10 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl bg-yellow-200'
                     layoutId='welcome-canvas'
                   >
                     <motion.span
@@ -177,8 +194,41 @@ export default function SciProject(){
                   </motion.div>
                   
                   </AnimateSharedLayout>
-                  </div>
-        </div>
+            </div>
+        
+{/*
+        <div className='font-CS font-bold text-bmw text-xl md:text-2xl lg:text-3xl pt-8 place-content-center'>
+            <center>
+              <span className='my-5'>กำหนดการ</span>
+              <br />
+              <span>วันที่ 25 และ 26 สิงหาคม </span>
+              <br />
+              <span> Oral presentation เวลา 09:00-12:00 น. </span>
+              <br />
+              <span>Poster presentation เวลา 13:00-14:30 น. </span>
+            </center>
+          </div>
+                  */}
+      <div className="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
+        <div className="font-CS font-bold text-bmw text-xl md:text-3xl lg:text-4xl text-2xl font-semibold ">กำหนดการ</div>
+        {scheduleData.map((dayData, index) => (
+          <div key={index} className="mb-6">
+            <h2 className="font-CS font-bold text-bmw text-xl md:text-2xl lg:text-3xl pt-8 text-2xl font-semibold mb-3">{dayData.day}</h2>
+            {dayData.events.map((event, eventIndex) => (
+              <div
+                key={eventIndex}
+                className={`flex justify-between items-center p-3 mb-2 ${
+                  eventIndex % 2 === 0 ? 'bg-yellow-200' : 'bg-blue-200'
+                }`}
+              >
+                <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-8 text-lg font-semibold">{event.time}</div>
+                <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-8 text-lg">{event.title}</div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      </div>
       </div>
     </div>
   </>
