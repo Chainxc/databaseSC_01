@@ -163,14 +163,14 @@ export default function Navbar({
           icon: faFileInvoice,
           auth: null,
         },*/
+        // {
+        //   name: 'Virtual School Tour',
+        //   href: '/virtualschtour',
+        //   icon: faSchoolFlag,
+        //   auth: null,
+        // },
         {
-          name: 'Virtual School Tour',
-          href: '/virtualschtour',
-          icon: faSchoolFlag,
-          auth: null,
-        },
-        {
-          name: 'Onsite School Tour',
+          name: 'School Tour',
           href: '/schtour',
           icon: faSchoolFlag,
           auth: null,
