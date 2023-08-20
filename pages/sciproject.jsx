@@ -99,15 +99,15 @@ export default function SciProject(){
     {
       day: 'วันที่ 25 สิงหาคม 2566',
       events: [
-        { time: '09:00-12:00 น.', title: 'Oral presentation' },
-        { time: '13:00-14:30 น.', title: 'Poster presentation' },
+        { time: '09:00-12:00 น.', title: 'Oral presentation', place:'@ อาคาร 1 ชั้น 1'},
+        { time: '13:00-14:30 น.', title: 'Poster presentation', place:'@........'},
       ],
     },
     {
       day: 'วันที่ 26 สิงหาคม 2566',
       events: [
-        { time: '09:00-12:00 น.', title: 'Oral presentation' },
-        { time: '13:00-14:30 น.', title: 'Poster presentation' },
+        { time: '09:00-12:00 น.', title: 'Oral presentation',place:'@ อาคาร 1 ชั้น 1' },
+        { time: '13:00-14:30 น.', title: 'Poster presentation', place:'@........' },
         // Add more events for Tuesday and other days
       ],
     },
@@ -144,7 +144,7 @@ export default function SciProject(){
         />   
     </Head>
     <div className='flex flex-col w-full '>
-      <div className='w-full bg-cover bg-[url(/img/2023/bg_starlight.webp)] bg-repeat sm:bg-fixed text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4 '>
+      <div className='w-full bg-cover bg-[url(/img/2023/bg_starlight.webp)] bg-repeat sm:bg-fixed text-black items-center mx-auto justify-self-center w-full '>
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
         </span>
@@ -247,22 +247,20 @@ export default function SciProject(){
 
         
         </div>
-
-        <div className="w-full max-w-7xl grid md:grid-cols-2  mx-auto  "> 
-        <div className='md:cols-span-1'>
+        <div className="w-full max-w-[1707px] grid md:grid-cols-2 divide-x mx-auto justify-items-start"> 
         <div className="max-w-[1707px] max-h-[960px] min-w-max w-[16rem] md:w-[48rem] h-[31rem] m-auto py-8 px-2 relative group">
             <div
-              className="object-cover w-full h-full rounded-2xl bg-center bg-cover duration-100"
+              className=" w-full h-full rounded-2xl bg-center bg-cover duration-100 group1"
               style={{ backgroundImage: `url(${scimages[currentImageIndex2].src})` }}
               ></div>
-             <div className='group-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer '>
+             <div className='group1-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
                   <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage2} size='lg' />
                 </div>
-              <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
+              <div className='group1-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
                   <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='lg' />
             </div>
         </div>
-        <div className="flex-1 w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
+        <div className="my-5 max-w-xl p-8 bg-white rounded-lg shadow-lg">
         <div className="font-CS font-bold text-bmw text-xl md:text-3xl lg:text-4xl text-2xl font-semibold ">กำหนดการ</div>
         {scheduleData.map((dayData, index) => (
           <div key={index} className="mb-6">
@@ -270,19 +268,20 @@ export default function SciProject(){
             {dayData.events.map((event, eventIndex) => (
               <div
                 key={eventIndex}
-                className={`flex justify-between items-center p-3 mb-2 ${
+                className={`flex flex-wrap justify-between items-center p-3 mb-2 ${
                   eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
                 }`}
               >
-                <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-8 text-lg font-semibold">{event.time}</div>
+                <div className="font-CS  text-bmw text-xl md:text-2xl  pt-8 text-lg font-semibold">{event.time}</div>
                 <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-8 text-lg">{event.title}</div>
+                <div className="font-CS font-semibold text-bmw text-xl md:text-2xl  pt-4 text-lg">{event.place}</div>
               </div>
             ))}
           </div>
           ))}
           </div>
           </div>
-          </div>
+          
       </div>
     </div>
   </>
