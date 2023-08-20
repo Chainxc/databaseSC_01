@@ -54,6 +54,13 @@ const eventsat = [
   },
 ]*/
 export default function Customerjourney() {
+  const [event, seteventVisible] = useState({});
+  const toggleevent = (dateIndex, slotIndex, actIndex) => {
+    setDescriptionVisible(prevState => ({
+      ...prevState,
+      [`${dateIndex}-${slotIndex}-${actIndex}`]: !prevState[`${dateIndex}-${slotIndex}-${actIndex}`]
+    }));
+  };
     return (
       <>
         <Head>
@@ -94,13 +101,20 @@ export default function Customerjourney() {
               <div className='font-CS text-3xl md:text-4xl font-bold text-bmw'>
                 {"แผนที่แนะนำการเข้าชม MWIT OPENHOUSE"}
               </div>
-              <div className='grid grid-cols-2'>
-                <div className='col-span-1'>
+              <div className='grid relative grid-cols-1'>
+                <div className='col-span-1 relative max-w-max '>
                 <img
-                  className='w-full'
-                  src={'/img/tour/bg.webp'}
+                  className='w-full max-h-[60vh]'
+                  src={'img/2023/journey/base.png'}
                 />
-                </div>
+                  <div>
+                    <img
+                      className='absolute w-[2vw] top-[40%] left-[33.5%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/tour.png'
+                    />
+                  </div>
+                
+                </div> 
               </div>
             </div>
           </div>
