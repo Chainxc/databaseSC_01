@@ -150,13 +150,13 @@ export default function Navbar({
           href: '/club',
           icon: faCubes,
           auth: null,
-        },
+        },*/
         {
-          name: 'Virtual Lab',
+          name: 'Activities',
           href: '/lab',
           icon: faFlaskVial,
           auth: null,
-        },*/
+        },
         {
           name: 'Curriculum',
           href: '/curriculum',
