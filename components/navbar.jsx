@@ -157,18 +157,12 @@ export default function Navbar({
           icon: faFlaskVial,
           auth: null,
         },*/
-        /*{
+        {
           name: 'Curriculum',
-          href: '/curriculum',
+          href: '/curriculumm',
           icon: faFileInvoice,
           auth: null,
-        },*/
-        // {
-        //   name: 'Virtual School Tour',
-        //   href: '/virtualschtour',
-        //   icon: faSchoolFlag,
-        //   auth: null,
-        // },
+        },
         {
           name: 'School Tour',
           href: '/schtour',
