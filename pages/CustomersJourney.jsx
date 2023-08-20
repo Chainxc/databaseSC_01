@@ -92,7 +92,7 @@ export default function Customerjourney() {
             content={'https://openhouse.mwit.ac.th/img/2023/thumb2023.png'}
           />
         </Head>
-        <div className='w-screen h-screen'>
+        <div className='w-screen h-[200vh]'>
           <div className='grid justify-items-center font-CS font-bold text-3xl md:text-4xl lg:text-5xl py-12 '>
             Customers Journey
           </div>
@@ -104,14 +104,79 @@ export default function Customerjourney() {
               <div className='grid relative grid-cols-1'>
                 <div className='col-span-1 relative max-w-max '>
                 <img
-                  className='w-full max-h-[60vh]'
+                  className='w-full max-h-fit'
                   src={'img/2023/journey/base.png'}
                 />
                   <div>
                     <img
-                      className='absolute w-[2vw] top-[40%] left-[33.5%] translate-y-[-50%] translate-x-[-50]'
+                      className='absolute w-[3.5vw] top-[40%] left-[37.3%] translate-y-[-50%] translate-x-[-50]'
                       src='img/2023/journey/tour.png'
                     />
+                    <img
+                      className='absolute w-[4.5vw] top-[21%] left-[15.5%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/1Building.png'
+                    />
+                    <img
+                      className='absolute  w-[4.5vw] top-[12.7%] left-[22%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/2Building.png'
+                    />
+                    <img
+                      className='absolute w-[4.5vw] top-[15%] left-[37%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/3Building.png'
+                    />
+                    <img
+                      className='absolute w-[4.5vw] top-[8%] left-[56%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/5Building.png'
+                    />
+                    <img
+                      className='absolute w-[4.5vw] top-[12%] left-[77%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/6Building.png'
+                    />
+                    <img
+                      className='absolute w-[4.5vw] top-[58%] left-[37.5%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/9Building.png'
+                    />
+                    <img
+                      className='absolute w-[3.3vw] top-[70%] left-[41%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/9regis.png'
+                    />
+                    <img
+                      className='absolute w-[2.5vw] top-[40%] left-[63%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/coverway.png'
+                    />
+                    <img
+                      className='absolute w-[4.5vw] top-[81%] left-[42.36%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/entrance_rear.png'
+                    />
+                    <img
+                      className='absolute w-[8vw] top-[35.6%] left-[78%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/front_entrance.png'
+                    />
+                    <img
+                      className='absolute w-[3vw] top-[14.5%] left-[28%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/library.png'
+                    />
+                    <img
+                      className='absolute w-[3vw] top-[40%] left-[85%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/frontregis.png'
+                    />
+                    <img
+                      className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/movie_3d.png'
+                    />
+                    <img
+                      className='absolute w-[3.5vw] top-[64%] left-[65%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/soccer_field.png'
+                    />
+                    <img
+                      className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/movie_3d.png'
+                    />
+                    <img
+                      className='absolute w-[2.5vw] top-[25%] left-[27%] translate-y-[-50%] translate-x-[-50]'
+                      src='img/2023/journey/flag.png'
+                    />
+                    
                   </div>
                 
                 </div> 
