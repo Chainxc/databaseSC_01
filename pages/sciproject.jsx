@@ -46,7 +46,16 @@ export default function SciProject(){
 
     // Add more image paths and alt text here
   ];
+  const scimages=[
+    {src:'/img/2023/slide/slidesp/sp10.jpg'},
+  {src:'/img/2023/slide/slidesp/sp11.jpg'},
+  {src:'/img/2023/slide/slidesp/sp12.jpg'},
+  {src:'/img/2023/slide/slidesp/sp13.jpg'},
+  {src:'/img/2023/slide/slidesp/sp14.jpg'},
+  {src:'/img/2023/slide/slidesp/sp15.jpg'},];
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex2, setCurrentImageIndex2] = useState(0);
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [selectedDateIndex, setSelectedDateIndex] = useState(0);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -64,6 +73,17 @@ export default function SciProject(){
   const showPrevImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+    setShowFullDescription(false);
+  };
+   const showNextImage2 = () => {
+    setCurrentImageIndex2((prevIndex2) => (prevIndex2 + 1) % scimages.length);
+    setShowFullDescription(false);
+  };
+
+  const showPrevImage2 = () => {
+    setCurrentImageIndex2((prevIndex2) =>
+      prevIndex2 === 0 ? scimages.length - 1 : prevIndex2 - 1
     );
     setShowFullDescription(false);
   };
@@ -228,17 +248,17 @@ export default function SciProject(){
         
         </div>
 
-        <div className="w-full max-w-7xl grid grid grid-cols-2 justify-items-center mx-auto px-6"> 
-        <div className="max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group ">
+        <div className="w-full max-w-7xl grid  grid-cols-2  mx-auto "> 
+        <div className="max-w-[1707px] max-h-[960px] min-w-max w-[16rem] md:w-[48rem] h-[31rem] m-auto py-8 px-2 relative group">
             <div
-              className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
-              style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}
+              className="object-cover w-full h-full rounded-2xl bg-center bg-cover duration-100"
+              style={{ backgroundImage: `url(${scimages[currentImageIndex2].src})` }}
               ></div>
              <div className='group-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer '>
-                  <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage} size='lg' />
+                  <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage2} size='lg' />
                 </div>
               <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
-                  <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage} size='lg' />
+                  <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='lg' />
             </div>
         </div>
         <div className="flex-1 w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
