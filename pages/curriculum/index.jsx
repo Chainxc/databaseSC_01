@@ -3,10 +3,10 @@ import MetaHeader from '../../components/metaHeader'
 import { currData } from '../../data/curr'
 
 const meta = {
-  title: 'MWIT Curriculum | MWIT Open House 2022',
+  title: 'MWIT Curriculum | MWIT Open House 2023',
   url: 'curriculum/',
   description:
-    'หลักสูตร คำอธิบายรายวิชา และลักษณะการเรียนการสอนแต่ละสาขาของโรงเรียนมหิดลวิทยานุสรณ์ | MWIT Open House 2022',
+    'หลักสูตร คำอธิบายรายวิชา และลักษณะการเรียนการสอนแต่ละสาขาของโรงเรียนมหิดลวิทยานุสรณ์ | MWIT Open House 2023',
   img: 'ogimage.png',
 }
 
@@ -15,7 +15,7 @@ export default function Curriculum() {
     <>
       <MetaHeader meta={meta} />
 
-      <main className='w-full bg-gray-300/30'>
+      <main className='w-full bg-gray-300/30 -z-10'>
         <div className='flex flex-col text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-2'>
           <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
             MWIT Curriculum

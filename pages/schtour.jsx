@@ -334,7 +334,7 @@ const meta = {
         />
       </Head>
 
-      <main className='w-full bg-white/20'>
+      <main className='w-full bg-white/20 -z-10'>
         <div className='flex flex-col text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
           <Link scroll={false} href={'/schtour'}>
             <a className='font-CS font-bold text-bmw text-5xl md:text-4xl lg:text-5xl'>

@@ -95,8 +95,8 @@ function MyApp({ Component, pageProps }) {
     };
   return (
     <div className=''>
-      <div>
-      <VideoModal isOpen={isModalOpen} onClose={closeModal} />
+      <div className='z-20'>
+        <VideoModal isOpen={isModalOpen} onClose={closeModal} />
       </div>
       <div className='fixed -z-10 bg-[url(/img/2023/Artboard-1.webp)] bg-repeat w-full h-screen' />
       {isHome && <LandingPage homeRef={homeRef} />}

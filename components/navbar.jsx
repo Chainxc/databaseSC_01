@@ -221,7 +221,7 @@ export default function Navbar({
       className={'flex flex-col w-full min-h-screen ' + (addClass || '')}
       ref={homeRef}
     >
-      <div className='w-full sticky z-50 top-0 px-4 bg-gradient-to-r from-bmw to-phd text-ymw text-lg lg:text-xl font-CS font-bold'>
+      <div className='w-full sticky top-0 px-4 bg-gradient-to-r from-bmw to-phd text-ymw text-lg lg:text-xl font-CS font-bold'>
         <div className='flex relative gap-3 md:gap-4 max-w-6xl mx-auto items-center'>
           <Link href={'/'}>
             <a className='flex gap-3 md:gap-4 items-center py-[0.35rem]'>

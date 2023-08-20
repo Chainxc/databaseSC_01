@@ -113,7 +113,7 @@ export default function SciProject(){
           content='https://openhouse.mwit.ac.th/img/ogimage.png'
         />   
     </Head>
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full -z-10'>
       <div className='w-full bg-cover bg-[url(/img/2023/bg_starlight.webp)] bg-repeat sm:bg-fixed text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4 '>
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
