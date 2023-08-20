@@ -248,7 +248,8 @@ export default function SciProject(){
         
         </div>
 
-        <div className="w-full max-w-7xl grid  grid-cols-2  mx-auto "> 
+        <div className="w-full max-w-7xl grid md:grid-cols-2  mx-auto  "> 
+        <div className='md:cols-span-1'>
         <div className="max-w-[1707px] max-h-[960px] min-w-max w-[16rem] md:w-[48rem] h-[31rem] m-auto py-8 px-2 relative group">
             <div
               className="object-cover w-full h-full rounded-2xl bg-center bg-cover duration-100"
@@ -279,6 +280,7 @@ export default function SciProject(){
             ))}
           </div>
           ))}
+          </div>
           </div>
           </div>
       </div>
