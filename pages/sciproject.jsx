@@ -101,14 +101,15 @@ export default function SciProject(){
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
         </span>
-        <div className='flex flex-wrap relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-2 pb-10'>
-          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-5 px-4 relative group relative w-full '>
+        <div className='flex flex-wrap relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-2 pb-10' >
+          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group'>
+            <div className="relative w-full h-full ">
             <img
               src={images[currentImageIndex].src}
               alt={`Image ${currentImageIndex + 1}`}
               className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
             />
-            <div  className="absolute bottom-5 left-0  mx-4 w-full md:w-[95.4%] bg-black bg-opacity-50 text-white  transition-opacity duration-300  rounded-b-2xl overflow-hidden">
+            <div  className="absolute bottom-4 right-0 bg-black bg-opacity-50 text-white  rounded-b-2xl opacity-0 transition-opacity duration-300 hover:opacity-100 rounded-b-2xl ${showFullDescription ? 'h-auto' : 'h-16'}`}">
               <p className={`text-left pt-3 px-5 font-CS font-bold text-xl `}>
               {showFullDescription
               ? images[currentImageIndex].description
@@ -132,6 +133,7 @@ export default function SciProject(){
                 Read less
               </button>
             )}
+            </div>
             </div>
             <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer '>
                   <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage} size='lg' />
