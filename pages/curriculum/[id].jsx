@@ -10,7 +10,7 @@ export default function currBlog({ curr }) {
     title: curr.name + ' - Curriculum | MWIT Open House 2022',
     url: 'curriculum/' + curr.id + '/',
     description:
-      'หลักสูตร คำอธิบายรายวิชา และลักษณะการเรียนการสอนแต่ละสาขาของโรงเรียนมหิดลวิทยานุสรณ์ | MWIT Open House 2022',
+      'หลักสูตร คำอธิบายรายวิชา และลักษณะการเรียนการสอนแต่ละสาขาของโรงเรียนมหิดลวิทยานุสรณ์ | MWIT Open House 2023',
     img: 'ogimage.png',
   }
 

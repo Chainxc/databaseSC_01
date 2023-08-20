@@ -1,4 +1,4 @@
-# MWIT Open House 2022 Website
+# MWIT Open House 2023 Website
 
 The website includes online exhibitions and live sessions' booking system.
 
