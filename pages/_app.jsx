@@ -2,7 +2,7 @@ import Navbar from '../components/navbar'
 import LandingPage from '../components/landing'
 import { useRouter } from 'next/router'
 import { useEffect, useRef, useState } from 'react'
-
+import VideoModal from '../components/VideoModal';
 import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -83,9 +83,21 @@ function MyApp({ Component, pageProps }) {
   // useEffect(() => {
   //   router.push('https://openhouse.mwit.ac.th')
   // }, [])
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    useEffect(() => {
+      // Set the modal to open when the component mounts
+      setIsModalOpen(true);
+    }, []);
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
   return (
     <div className=''>
+      <div>
+      <VideoModal isOpen={isModalOpen} onClose={closeModal} />
+      </div>
       <div className='fixed -z-10 bg-[url(/img/2023/Artboard-1.webp)] bg-repeat w-full h-screen' />
       {isHome && <LandingPage homeRef={homeRef} />}
       <Navbar

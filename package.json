@@ -36,6 +36,8 @@
         "react-dom": "^18.2.0",
         "react-hook-form": "^7.34.0",
         "react-latex": "^2.0.0",
+        "react-modal": "^3.16.1",
+        "react-player": "^2.12.0",
         "reactstrap": "^9.2.0",
         "uuid": "^8.3.2",
         "yup": "^0.32.11"
