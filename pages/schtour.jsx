@@ -531,7 +531,7 @@ const meta = {
           </div>
           <center>
             <a href="https://maps.app.goo.gl/mvvLokNNoRPNq7G27?g_st=ic">
-              <button class="border border-1 border-blue-500 hover:border-yellow-800 hover:bg-yellow-200 text-gray-800 font-bold py-2 px-5 rounded inline-flex items-center">
+              <button className="border border-1 border-blue-500 hover:border-yellow-800 hover:bg-yellow-200 text-gray-800 font-bold py-2 px-5 rounded inline-flex items-center">
                 <img
                   className='w-5'
                   src={

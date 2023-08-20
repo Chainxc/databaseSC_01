@@ -110,7 +110,6 @@ export default function Customerjourney() {
                   <div>
                     <a
                     className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
-                    href='download/รายละเอียดการแข่งขัน MWIT Square 15th.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
                     >                      
