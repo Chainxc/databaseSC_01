@@ -101,14 +101,13 @@ export default function SciProject(){
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
         </span>
-        <div className='flex flex-wrap relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-2 pb-10' >
-          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group'>
+          <div className='w-full max-w-7xl grid items-center justify-items-center mx-auto px-6'>
+          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group '>
             <div className="relative w-full h-full ">
-            <img
-              src={images[currentImageIndex].src}
-              alt={`Image ${currentImageIndex + 1}`}
+             <div
               className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
-            />
+              style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}
+              ></div>
             <div  className="absolute bottom-4 right-0 bg-black bg-opacity-50 text-white  rounded-b-2xl opacity-0 transition-opacity duration-300 hover:opacity-100 rounded-b-2xl ${showFullDescription ? 'h-auto' : 'h-16'}`}">
               <p className={`text-left pt-3 px-5 font-CS font-bold text-xl `}>
               {showFullDescription
@@ -153,12 +152,13 @@ export default function SciProject(){
                 
             ></button>
                 ))}
-            </div>
+        
+          </div>
           </div>
           <div className='flex flex-col gap-3'>
                 <AnimateSharedLayout type='crossfade'>
                   <motion.div
-                    className='flex flex-col gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl bg-yellow-200'
+                    className='flex flex-col my-5 gap-10 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl bg-yellow-200'
                     layoutId='welcome-canvas'
                   >
                     <motion.span
