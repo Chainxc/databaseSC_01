@@ -127,7 +127,7 @@ export default function Navbar({
       icon: faFile,
       auth: null,
     },
-    /*{
+    {
       name: 'Exhibitions',
       href: '',
       icon: faFlag,
@@ -150,7 +150,7 @@ export default function Navbar({
           href: '/club',
           icon: faCubes,
           auth: null,
-        },
+        },*/
         {
           name: 'Activities',
           href: '/lab',
@@ -169,12 +169,13 @@ export default function Navbar({
           icon: faSchoolFlag,
           auth: null,
         },
-        {
+        
+        /*{
           name: 'MWITagram',
           href: '/mwitagram',
           icon: faCameraRetro,
           auth: null,
-        },
+        },*/
       ],
     },
     /*{
