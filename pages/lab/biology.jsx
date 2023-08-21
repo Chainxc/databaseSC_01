@@ -125,25 +125,8 @@ import { faFlaskVial,
                       <li key={bi}>{b.name}</li>
                     ))}
                   </ol>
-                  <span className='font-IBMPlexLoop text-red-500 text-center text-sm md:text-base font-semibold'>
-                    หลังชมวิดีโอแล้วสามารถร่วมตอบคำถามลุ้นรับรางวัล
-                  </span>
                 </div>
               </div>
-              <Link
-                href={
-                  'https://docs.google.com/forms/d/e/1FAIpQLSfEwCsL0_sxIsb4pAt_JSO-nj-A9_v5L51y1OTAIalSRhVoqw/viewform'
-                }
-              >
-                <a
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
-                >
-                  <FontAwesomeIcon icon={faFileImport} />
-                  <span>ร่วมตอบคำถามลุ้นรางวัล</span>
-                </a>
-              </Link>
             </div>
             
             {peData.map((l, li) => (
