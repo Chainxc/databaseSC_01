@@ -22,7 +22,7 @@ export default function VirtualLab() {
     {
       name: 'กิจกรรมที่ 1 ใครอยากเป็นเศรษฐี      ',
       desc: ' เป็นรูปแบบการเล่นบอร์ดเกมคล้ายเกมเศรษฐี โดยผู้เล่นจะทำการทอยลูกเต๋า และใช้หมากเดินไปที่ช่องต่างๆบนกระดาน และตอบคำถามที่สอดแทรกความรู้วิชาเคมี หากตอบถูกจะได้รับคะแนน รวมคะแนนเพื่อหาผู้ชนะ',
-      place : 'สถานที่ : 3503\nรูปแบบการจัด : จัดเป็นรอบๆ รอบละ 20นาที\nวัสดุอุปกรณ์ : บอร์ด และการ์ด (ทำจากกระดาษและฟิวเจอร์บอร์ด)\nจำนวนผู้เข้าร่วม : 20 คน\nของรางวัล : ลูกอม',
+      place : 'สถานที่ : 3503\nรูปแบบการจัด : จัดเป็นรอบๆ รอบละ 20นาที <br> /n\nวัสดุอุปกรณ์ : บอร์ด และการ์ด (ทำจากกระดาษและฟิวเจอร์บอร์ด)\nจำนวนผู้เข้าร่วม : 20 คน\nของรางวัล : ลูกอม',
       img: 'chema1p1.webp',
       button: [
         {
@@ -181,9 +181,9 @@ export default function VirtualLab() {
                   <span className='font-IBMPlexLoop text-sm md:text-base'>
                     {l.desc}
                   </span>
-                  <span className='font-IBMPlexLoop text-sm md:text-base'>
-                    {l.place}
-                  </span>
+                  <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    <li key={li}>{l.place}</li>
+                </ol>
                   {/* <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
                   พบกับ 6 กิจกรรม
                 </span>
