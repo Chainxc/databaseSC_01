@@ -72,54 +72,24 @@ import { faFlaskVial,
         
                   </div>
                 </div>
-                <Link href={'/lab'}>
-                  <a className='absolute text-sm md:text-base left-3 font-IBMPlex font-semibold text-gray-600 hover:text-black transition-colors duration-300 -top-4 bg-purple-300/60 hover:bg-purple-300/80 rounded-full py-1 px-3'>
-                    {'< Back'}
-                  </a>
-                </Link>
                 </div>
               <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
                 <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
-                  กลุ่มสาระสุขศึกษาและพลศึกษา
+                ห้องที่ 2 - ผีอังกฤษ (ผีแฟรงเกนสไตน์)
                 </span>
                 <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
                   <div className='flex flex-col justify-center gap-2'>
                     <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                      หมวดพลศึกษาจะมีการเรียนรู้เกี่ยวกับการเล่นกีฬาประเภททีม
-                      และกิจกรรมนอกห้องเรียน
+                    •วิธีเล่นเกม
+            ไกด์จะเดินตามมาเเล้วบรีฟว่าต้องทำเพื่อคืนชีพแฟงค์กินสไลล์ โดยเริ่มเเรกต้องไปเล่มเกมสั้นๆ เช่นเกม tongue twister กับคนเเรกเพื่อคืนชีพเเขน เเขนผีเเฟงค์ก็จะกระตุกเเล้วชี้ไปยังคนที่สองเพื่อไปเล่นเกมเเล้วฟื้นคืนชีพหัว ผีเเฟงค์ก็จะพูดได้เเล้ว โดยบอกผู้เล่นให้ไปเเปล riddle เเล้วหาคำตอบไฟฟื้นชีพขา เมื่อฟื้นครบทุกส่วน ผีเเฟงค์จะตื่นขึ้นเเล้วช่วยให้ไปห้องต่อไปได้
+
+
                     </span>
     
-                    <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                      {peData.map((b, bi) => (
-                        <li key={bi}>{b.name}</li>
-                      ))}
-                    </ol>
                   </div>
                 </div>
               </div>
-              
-              {peData.map((l, li) => (
-                <div
-                  key={li}
-                  className='flex relative flex-col gap-2 items-start shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
-                >
-                  <div className='grid grid-flow-row md:grid-flow-col gap-4'>
-                    <div className='flex flex-col justify-center gap-2 '>
-                      <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
-                        {l.name}
-                      </span>
-                      <span className='font-IBMPlexLoop text-sm md:text-base'>
-                        {l.desc}
-                      </span>
-                      <span className='font-IBMPlexLoop text-sm md:text-base'>
-                        {l.type}
-                      </span>
-                      <li key={li}>{l.place}</li>
-                    </div>
-                  </div>
-                </div>
-              ))}
               </div>
             </div>
           </main>
