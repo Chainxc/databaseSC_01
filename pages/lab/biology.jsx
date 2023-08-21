@@ -16,8 +16,10 @@ import { faFlaskVial,
     }
   const peData = [
       {
-        name: 'กิจกรรม: เรียนรู้การตีลูกหน้ามือ ในกีฬาแบดมินตัน',
-        desc: 'โดย อ.นริศรา หาหอม และ อ.ธิษณะ ชอบธรรม',
+        name: 'กิจกรรม Amazing bicep',
+        desc: 'กิจกรรม แนะนํา อุปกรณ์เน้นอธิบายการทํางานและใช้งานของเครื่องอธิบายการเข้าใช้งานสถานที่ และกิจกรรม hands-on เน้นการลงมือทําและได้ค้นพบเครื่องมือการออกกําลังกายใหมๆ่',
+        type : 'รูปแบบกิจกรรม ได้แก่ (1) กิจกรรมแนะนําอุปกรณ์ต่างในห้องฟิตเนสและวิธีการใช้คร่าวๆ (2)กิจกรรม hands-on ให้ผู็เข้าร่วมได้ลองใช้และทําใบกิจกรรมเพื่อแลกของรางวัล',
+        place : 'ห้องจัดกิจกรรม ห้องฟิตเนส ชั้น 3',
         vid: 'https://www.youtube.com/embed/LP4QcGFob8s?modestbranding=1&color=white&iv_load_policy=3',
         button: [
           {
@@ -28,25 +30,15 @@ import { faFlaskVial,
         ],
       },
       {
-        name: 'กิจกรรม: เรียนรู้การตีลูกหลังมือ ในกีฬาแบดมินตัน',
-        desc: 'โดย อ.นริศรา หาหอม และ อ.ธิษณะ ชอบธรรม',
+        name: 'กิจกรรม bang the ball',
+        desc: '**กิจกรรมจัดชวงบ่ายเท่านั้น**',
+        type : 'รูปแบบกิจกรรม ได้แก (1) ่ กิจกรรมแนะนําสถานที่ทั้งหมดในศูนย์กีฬาและแนะนํากิจกรรมต่างๆ เกี่ยวกับกีฬาในโรงเรียน(2)กิจกรรม hands-on ใหผ้เขู้ ้าร่วมไดลองใช ้ ้สนามบาสศูนย์กีฬาซึ่งจะมีมนิิเกมต่างๆให้เล่น',
+        place : 'สถานที่จัดกิจกรรม สนามบาสศูนย์กีฬา ชั้น 4',
         vid: 'https://www.youtube.com/embed/ugHg0oWE5Ps?modestbranding=1&color=white&iv_load_policy=3',
         button: [
           {
             name: 'ชมวิดีโอ',
             href: 'https://youtu.be/ugHg0oWE5Ps',
-            icon: faVideo,
-          },
-        ],
-      },
-      {
-        name: 'กิจกรรม: นอกห้องเรียนของ P.E.',
-        desc: 'โดย อ.อาริตา ปลื้มถนอม และ อ.สุชาวดี บูรณสมภพ',
-        vid: 'https://drive.google.com/file/d/141M6Ov2axR9U15yxhel0H2T4j_BHoP2S/preview',
-        button: [
-          {
-            name: 'ชมวิดีโอ',
-            href: 'https://drive.google.com/file/d/141M6Ov2axR9U15yxhel0H2T4j_BHoP2S/view',
             icon: faVideo,
           },
         ],
@@ -174,6 +166,12 @@ import { faFlaskVial,
                     </span>
                     <span className='font-IBMPlexLoop text-sm md:text-base'>
                       {l.desc}
+                    </span>
+                    <span className='font-IBMPlexLoop text-sm md:text-base'>
+                      {l.type}
+                    </span>
+                    <span className='font-IBMPlexLoop text-sm md:text-base'>
+                      {l.place}
                     </span>
                     <div className='flex flex-wrap gap-1'>
                       {l.button.map((b, bi) => (
