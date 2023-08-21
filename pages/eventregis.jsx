@@ -71,7 +71,7 @@ export default function eventregis() {
           content='https://openhouse.mwit.ac.th/img/2023/thumb2023.png'
         />
     </Head>
-        <main className='-z-10 flex flex-col items-center w-full max-w-7xl px-8 py-6 gap-4 mx-auto bg-cover bg-bottom sm:bg-fixed min-h-screen space-y-2'>
+        <main className='z-0 flex flex-col items-center w-full max-w-7xl px-8 py-6 gap-4 mx-auto bg-cover bg-bottom sm:bg-fixed min-h-screen space-y-2'>
             <span
               className='font-CS font-bold text-2xl md:text-3xl lg:text-4xl pt-16'
             >
