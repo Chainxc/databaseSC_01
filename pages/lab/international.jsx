@@ -64,8 +64,6 @@ import { faFlaskVial,
                     <bc></bc>
                   </div>
                 </div>
-                </div>
-              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
                 ห้องที่ 2 - ผีอังกฤษ (ผีแฟรงเกนสไตน์)
                 </span>
@@ -77,8 +75,7 @@ import { faFlaskVial,
                     ไกด์จะเดินตามมาเเล้วบรีฟว่าต้องทำเพื่อคืนชีพแฟงค์กินสไลล์ โดยเริ่มเเรกต้องไปเล่มเกมสั้นๆ เช่นเกม tongue twister กับคนเเรกเพื่อคืนชีพเเขน เเขนผีเเฟงค์ก็จะกระตุกเเล้วชี้ไปยังคนที่สองเพื่อไปเล่นเกมเเล้วฟื้นคืนชีพหัว ผีเเฟงค์ก็จะพูดได้เเล้ว โดยบอกผู้เล่นให้ไปเเปล riddle เเล้วหาคำตอบไฟฟื้นชีพขา เมื่อฟื้นครบทุกส่วน ผีเเฟงค์จะตื่นขึ้นเเล้วช่วยให้ไปห้องต่อไปได้
                     </span >
                   </div>
-              </div>
-              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
+              
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
                 ห้องที่ 3 - ผียุโรป (ผีตุ๊กตา)
                 </span>
@@ -90,7 +87,7 @@ import { faFlaskVial,
                     ไกลด์จะเดินตามมาเเล้วบรีฟว่าในการจะผ่านต้องทำการหาเเละเรียงลำดับตุ๊กตาให้ถูก โดยจะมีกระดาษเเปะคำศัพท์เเละความหมายของมัน มีทั้งหมด 3 ใบ ผู้เล่นต้องเเปลคำใบ้เเละหาตุ๊กตาที่มีลักษณะตามนั้นมาใส่ให้ถูกเพื่อให้สามารถเปิดห้องได้
                     </span >
                   </div>
-              </div>
+              </div>  
             </div>
           </main>
         </>
