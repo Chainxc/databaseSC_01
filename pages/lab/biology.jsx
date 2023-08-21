@@ -12,7 +12,44 @@ export default function VirtualLab() {
       'นิทรรศการออนไลน์เกี่ยวกับเรื่องราวที่น่าสนใจทางคณิตศาสตร์และวิทยาการคำนวณ โดยจะมีเกม walk rally ให้ผู้เข้าชมตามหาคำถามที่ซ่อนไว้ในบริเวณต่าง ๆ แล้วจึงตอบให้ถูกต้องใน Google Form เพื่อชิงเงินรางวัล | MWIT Open House 2022',
     img: 'ogimage.png',
   }
-
+  const peData = [
+    {
+      name: 'กิจกรรม: เรียนรู้การตีลูกหน้ามือ ในกีฬาแบดมินตัน',
+      desc: 'โดย อ.นริศรา หาหอม และ อ.ธิษณะ ชอบธรรม',
+      vid: 'https://www.youtube.com/embed/LP4QcGFob8s?modestbranding=1&color=white&iv_load_policy=3',
+      button: [
+        {
+          name: 'ชมวิดีโอ',
+          href: 'https://youtu.be/LP4QcGFob8s',
+          icon: faVideo,
+        },
+      ],
+    },
+    {
+      name: 'กิจกรรม: เรียนรู้การตีลูกหลังมือ ในกีฬาแบดมินตัน',
+      desc: 'โดย อ.นริศรา หาหอม และ อ.ธิษณะ ชอบธรรม',
+      vid: 'https://www.youtube.com/embed/ugHg0oWE5Ps?modestbranding=1&color=white&iv_load_policy=3',
+      button: [
+        {
+          name: 'ชมวิดีโอ',
+          href: 'https://youtu.be/ugHg0oWE5Ps',
+          icon: faVideo,
+        },
+      ],
+    },
+    {
+      name: 'กิจกรรม: นอกห้องเรียนของ P.E.',
+      desc: 'โดย อ.อาริตา ปลื้มถนอม และ อ.สุชาวดี บูรณสมภพ',
+      vid: 'https://drive.google.com/file/d/141M6Ov2axR9U15yxhel0H2T4j_BHoP2S/preview',
+      button: [
+        {
+          name: 'ชมวิดีโอ',
+          href: 'https://drive.google.com/file/d/141M6Ov2axR9U15yxhel0H2T4j_BHoP2S/view',
+          icon: faVideo,
+        },
+      ],
+    },
+  ]
   return (
     <>
       <MetaHeader meta={meta} />
