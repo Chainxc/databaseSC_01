@@ -57,17 +57,15 @@ import { faFlaskVial,
                 />
                 <div className='flex flex-col justify-center gap-2'>
                   <span className='font-IBMPlexLoop text-sm md:text-base'>
-                  มาช่วยกันร่วมตามหาฆาตกร ใคร!เป็น!คน!ทำ!ไปด้วยกัน เพราะ
+                  \t มาช่วยกันร่วมตามหาฆาตกร ใคร!เป็น!คน!ทำ!ไปด้วยกัน เพราะ
                   หลักฐานที่อยู่ รหัสลับ กลอุบาย การต่อรองผู้มองเห็นความจริง มีเพียงหนึ่งเดียวถึงตัวจะเป็นเด็ก แต่สมองเป็น
                   ผู้ใหญ่ชื่อของเขาคือยอดนักสืบ CSI
                   </span>
                   <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                  • รูปแบบของกิจกรรม ได้แก่(1) กิจกรรมสาธิตปรากฏการณ์ทางฟิสิกส์ที่น่าประหลาดใจ
-(2) กิจกรรม Hands-on ที่น่าสงสัย ให้ผู้เข้าร่วมกิจกรรมได้ลงมือทํา
+                  • รูปแบบของกิจกรรม ได้แก่(1) กิจกรรมสาธิตปรากฏการณ์ทางฟิสิกส์ที่น่าประหลาดใจ \n (2) กิจกรรม Hands-on ที่น่าสงสัย ให้ผู้เข้าร่วมกิจกรรมได้ลงมือทํา
                   </span>
                   <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                    <li>กิจกรรมสาธิต เน้นการสาธิตปรากฏการณ์โดยมีคําถามให้ผู้เข้าร่วมกิจกรรมได้หาคําตอบจากการ
-สังเกตปรากฏการณ์ที่เกิดขึ้น และลองอธิบายปรากฏการณ์ที่เกิดขึ้น</li>
+                    <li>กิจกรรมสาธิต เน้นการสาธิตปรากฏการณ์โดยมีคําถามให้ผู้เข้าร่วมกิจกรรมได้หาคําตอบจากการสังเกตปรากฏการณ์ที่เกิดขึ้น และลองอธิบายปรากฏการณ์ที่เกิดขึ้น</li>
                     <li>
                     ห้องจัดกิจกรรม 3701 3703 และ 3705
                     </li>
@@ -77,19 +75,33 @@ import { faFlaskVial,
               </div>
               <Link
               href={
-                'https://docs.google.com/forms/d/e/1FAIpQLSfEwCsL0_sxIsb4pAt_JSO-nj-A9_v5L51y1OTAIalSRhVoqw/viewform'
+                'https://www.youtube.com/watch?v=2YD_WyT-n5s&ab_channel=GoExperimental'
               }
-            >
+              >
               <a
                 target='_blank'
                 rel='noopener noreferrer'
                 className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
               >
                 <FontAwesomeIcon icon={faFileImport} />
-                <span>ร่วมตอบคำถามลุ้นรางวัล</span>
+                <span>ตัวอย่างกิจกรรมที่น่าประหลาดใจ/น่าตื่นเต้น/น่าสนใจ</span>
               </a>
-            </Link>
-            
+              </Link>
+              <Link
+              href={
+                'https://www.youtube.com/watch?v=H8uhyuGPQJM&ab_channel=VisioNil'
+              }
+              >
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
+              >
+                <FontAwesomeIcon icon={faFileImport} />
+                <span>ตัวอย่างกิจกรรมที่น่าประหลาดใจ/น่าตื่นเต้น/น่าสนใจ</span>
+              </a>
+              </Link>
+
               <Link href={'/lab'}>
                 <a className='absolute text-sm md:text-base left-3 font-IBMPlex font-semibold text-gray-600 hover:text-black transition-colors duration-300 -top-4 bg-purple-300/60 hover:bg-purple-300/80 rounded-full py-1 px-3'>
                   {'< Back'}
