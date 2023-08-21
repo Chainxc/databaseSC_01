@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import MetaHeader from '../../components/metaHeader'
 
-export default function Biology() {
+export default function VirtualLab() {
   const meta = {
     title:
-      'สาขาวิชาชีววิทยาและวิทยาศาสตร์สุขภาพ | Virtual Lab & Activity | MWIT Open House 2022',
-    url: 'lab/biology',
+      'Math&Com Rally in Gather.town - สาขาวิชาคณิตศาสตร์และวิทยาการคำนวณ | Virtual Lab & Activity | MWIT Open House 2022',
+    url: 'lab/mathcom',
     description:
-      'เรียนรู้เกี่ยวกับสิ่งมีชีวิต ดีเอ็นเอ ส่วนของสมองมนุษย์ และการเล่นกีฬาผ่านกิจกรรมและคลิปวิดีโอต่าง ๆ เพื่อตอบคำถามลุ้นรับของรางวัลอีกมากมาย | MWIT Open House 2022',
+      'นิทรรศการออนไลน์เกี่ยวกับเรื่องราวที่น่าสนใจทางคณิตศาสตร์และวิทยาการคำนวณ โดยจะมีเกม walk rally ให้ผู้เข้าชมตามหาคำถามที่ซ่อนไว้ในบริเวณต่าง ๆ แล้วจึงตอบให้ถูกต้องใน Google Form เพื่อชิงเงินรางวัล | MWIT Open House 2022',
     img: 'ogimage.png',
   }
 const peData = [
@@ -113,9 +113,7 @@ const peData = [
                 {'< Back'}
               </a>
             </Link>
-          </div>
-        </div>
-        
+          
         <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'>
             <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
               กลุ่มสาระสุขศึกษาและพลศึกษา
@@ -190,6 +188,8 @@ const peData = [
               </div>
             </div>
           ))}
+          </div>
+        </div>
       </main>
     </>
   )
