@@ -249,19 +249,19 @@ export default function SciProject(){
         </div>
 
         <div className="w-full  grid md:grid-cols-2 mx-auto justify-items-center "> 
-        <div className="max-w-[600px] max-h-[390px] min-w-max w-[16rem] md:w-[600px] md:h-[390px] h-[12.5rem] m-auto py-8 px-2 relative group">
+        <div className="max-w-[600px] max-h-[390px] min-w-max w-[20rem] md:w-[600px] md:h-[390px] h-[14.6rem] m-auto py-8 px-2 relative group">
             <div
               className=" w-full h-full rounded-2xl bg-center bg-cover duration-100 group1"
               style={{ backgroundImage: `url(${scimages[currentImageIndex2].src})` }}
               ></div>
-             <div className='group1-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
+             <div className=' group-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
                   <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage2} size='md' />
                 </div>
-              <div className='group1-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
+              <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
                   <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='md' />
             </div>
         </div>
-        <div className="my-5 mx-5 max-w-xl py-8 px-8 bg-white rounded-lg shadow-lg">
+        <div className="my-5 mx-5 max-w-lg md:w-sm py-8 px-8 bg-white rounded-lg shadow-lg">
         <div className="font-CS font-bold text-bmw  md:text-3xl lg:text-4xl text-2xl font-semibold mb-3">กำหนดการ</div>
         {scheduleData.map((dayData, index) => (
           <div key={index} className="mb-6">
@@ -269,11 +269,11 @@ export default function SciProject(){
             {dayData.events.map((event, eventIndex) => (
               <div
                 key={eventIndex}
-                className={`flex flex-wrap  max-w-lg justify-between items-center p-4 mb-4 ${
+                className={`flex flex-wrap max-w-md justify-between items-center p-4 mb-4 ${
                   eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
                 }`}
               >
-                <div className="font-CS  text-bmw text-lg md:text-xl  pt-4 text-lg font-semibold mr-15">{event.time}</div>
+                <div className="font-CS  text-bmw text-lg md:text-xl  pt-4 text-lg font-semibold mr-16">{event.time}</div>
                 <div className="font-CS font-bold text-bmw  md:text-xl  pt-4 text-lg ">{event.title}</div>
                 <div className="font-CS font-semibold text-bmw md:text-xl  pt-4 text-lg ">{event.place}</div>
               </div>
