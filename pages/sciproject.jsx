@@ -52,7 +52,11 @@ export default function SciProject(){
   {src:'/img/2023/slide/slidesp/sp12.jpg'},
   {src:'/img/2023/slide/slidesp/sp13.jpg'},
   {src:'/img/2023/slide/slidesp/sp14.jpg'},
-  {src:'/img/2023/slide/slidesp/sp15.jpg'},];
+  {src:'/img/2023/slide/slidesp/sp15.jpg'},
+  {src:'/img/2023/slide/slidesp/sp16.jpg'},
+  {src:'/img/2023/slide/slidesp/sp17.jpg'},
+  {src:'/img/2023/slide/slidesp/sp18.jpg'},
+  {src:'/img/2023/slide/slidesp/sp19.jpg'},];
   const images3=[
     {src:'/img/2023/slide/slidesp/sp7.jpg'},
   {src:'/img/2023/slide/slidesp/sp8.jpg'},
