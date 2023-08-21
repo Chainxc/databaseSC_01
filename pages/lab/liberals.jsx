@@ -46,14 +46,15 @@ import { faFlaskVial,
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
               กิจกรรม “Discover Wood Cut”
                 </span>
-                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
+                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-start mt-2'>
                 รายละเอียดกิจกรรม: ร่วมค้นหาเทคนิควิธีการของศิลปะภาพพิมพ์ เช่น การทำแม่พิมพ์ กระบวนการพิมพ์ ตลอดจนทดลองสร้างสรรค์ผลงานศิลปะภาพพิมพ์เทคนิคแกะไม้ (wood cut) 
                 </span>
                   <img
                   /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
-                    className='w-full max-w-sm rounded-xl' */
+                    
+                  className='w-full max-w-sm rounded-xl' */
                   />
-                  <div className='flex flex-col justify-center gap-2'>
+                  <div className='flex flex-col justify-start gap-2'>
                     <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
                     รูปแบบกิจกรรม
                     </span>
@@ -70,7 +71,7 @@ import { faFlaskVial,
                     สถานที่จัดกิจกรรม: ห้องปฏิบัติการศิลปะ 1109
                     </span>  
                   </div>
-                
+                  </div>
                 </div>
               <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
@@ -98,7 +99,6 @@ import { faFlaskVial,
                     </span >
                   </div>
               </div>
-            </div>
           </main>
         </>
       )
