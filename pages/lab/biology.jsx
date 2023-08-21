@@ -76,6 +76,80 @@ export default function VirtualLab() {
             </Link>
           </div>
         </div>
+        <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'>
+            <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
+              กลุ่มสาระสุขศึกษาและพลศึกษา
+            </span>
+            <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
+              <div className='flex flex-col justify-center gap-2'>
+                <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                  หมวดพลศึกษาจะมีการเรียนรู้เกี่ยวกับการเล่นกีฬาแบดมินตัน
+                  และกิจกรรมนอกห้องเรียน
+                </span>
+
+                <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                  {peData.map((b, bi) => (
+                    <li key={bi}>{b.name}</li>
+                  ))}
+                </ol>
+                <span className='font-IBMPlexLoop text-red-500 text-center text-sm md:text-base font-semibold'>
+                  หลังชมวิดีโอแล้วสามารถร่วมตอบคำถามลุ้นรับรางวัล
+                </span>
+              </div>
+            </div>
+            <Link
+              href={
+                'https://docs.google.com/forms/d/e/1FAIpQLSfEwCsL0_sxIsb4pAt_JSO-nj-A9_v5L51y1OTAIalSRhVoqw/viewform'
+              }
+            >
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
+              >
+                <FontAwesomeIcon icon={faFileImport} />
+                <span>ร่วมตอบคำถามลุ้นรางวัล</span>
+              </a>
+            </Link>
+          </div>
+          {peData.map((l, li) => (
+            <div
+              key={li}
+              className='flex relative flex-col gap-2 items-start shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
+            >
+              <div className='grid grid-flow-row md:grid-flow-col gap-4'>
+                <iframe
+                  type='text/html'
+                  className='w-full sm:w-[30rem] aspect-video rounded-xl'
+                  src={l.vid}
+                  frameBorder='0'
+                  allowFullScreen
+                />
+                <div className='flex flex-col justify-center gap-2 '>
+                  <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
+                    {l.name}
+                  </span>
+                  <span className='font-IBMPlexLoop text-sm md:text-base'>
+                    {l.desc}
+                  </span>
+                  <div className='flex flex-wrap gap-1'>
+                    {l.button.map((b, bi) => (
+                      <Link key={bi} href={b.href}>
+                        <a
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
+                        >
+                          <FontAwesomeIcon icon={b.icon} />
+                          <span>{b.name}</span>
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
       </main>
     </>
   )
