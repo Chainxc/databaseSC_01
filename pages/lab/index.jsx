@@ -38,7 +38,7 @@ export default function VirtualLab() {
       title: 'สาขาวิชาชีววิทยาและวิทยาศาสตร์สุขภาพ',
       subtt:
         'กิจกรรมจากกลุ่มสาระชีววิทยา และกลุ่มสาระสุขศึกษาและพลศึกษา ที่ลุ้นรับของรางวัลมากมาย',
-      img: 'bio',
+      img: '/img/lab/bio.webp',
       desc: 'เรียนรู้เกี่ยวกับสิ่งมีชีวิต ดีเอ็นเอ ส่วนของสมองมนุษย์ และการเล่นกีฬาผ่านกิจกรรมและคลิปวิดีโอต่าง ๆ เพื่อตอบคำถามลุ้นรับของรางวัลอีกมากมาย',
       href: 'biology',
     },
@@ -83,11 +83,7 @@ export default function VirtualLab() {
                 }
               >
                 <div
-                  style={{
-                    backgroundImage: 
-                      '/img/' + 'lab/' + l.img + '.webp'
-                    ,
-                  }}
+                  style={{ backgroundImage: `url(${l.url})` }}
                   className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
                 />
                 <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-white/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
