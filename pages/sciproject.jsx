@@ -53,9 +53,15 @@ export default function SciProject(){
   {src:'/img/2023/slide/slidesp/sp13.jpg'},
   {src:'/img/2023/slide/slidesp/sp14.jpg'},
   {src:'/img/2023/slide/slidesp/sp15.jpg'},];
+  const images3=[
+    {src:'/img/2023/slide/slidesp/sp7.jpg'},
+  {src:'/img/2023/slide/slidesp/sp8.jpg'},
+  {src:'/img/2023/slide/slidesp/sp9.jpg'},
+  ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentImageIndex2, setCurrentImageIndex2] = useState(0);
+  const [currentImageIndex3, setCurrentImageIndex3] = useState(0);
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [selectedDateIndex, setSelectedDateIndex] = useState(0);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -87,9 +93,27 @@ export default function SciProject(){
     );
     setShowFullDescription(false);
   };
+
+  const showNextImage3 = () => {
+    setCurrentImageIndex3((prevIndex3) => (prevIndex3 + 1) % images3.length);
+    setShowFullDescription(false);
+  };
+
+  const showPrevImage3 = () => {
+    setCurrentImageIndex2((prevIndex3) =>
+      prevIndex2 === 0 ? images3.length - 1 : prevIndex3 - 1
+    );
+    setShowFullDescription(false);
+  };
   
   const goToImage = (index) => {
     setCurrentImageIndex(index);
+  };
+  const goToImage2 = (index) => {
+    setCurrentImageIndex2(index);
+  };
+  const goToImage3 = (index) => {
+    setCurrentImageIndex3(index);
   };
 
   const toggleDescription = () => {
@@ -148,15 +172,47 @@ export default function SciProject(){
         <span className='flex justify-center font-CS font-bold text-3xl xmd:text-4xl lg:text-5xl pt-16 text-bmw'>
               MWIT Science Project
         </span>
-        <div className='font-CS font-bold text-black text-xl md:text-2xl lg:text-3xl pt-8 place-content-center'>
-            <center>
-              <span className='my-5'>โครงงานวิทยาศาสตร์ที่ได้รับรางวัล</span>
-              </center>
-              </div>
           <div className='w-full max-w-7xl grid items-center justify-items-center mx-auto px-6'>
+            <div className='w-full h-full grid md:w-full  md:grid-cols-2 mx-auto justify-items-center '>    
+          <div className='w-full h-full grid md:w-full  md:grid-rols-2 mx-auto justify-items-center '>
+            <div className='font-CS font-bold text-black text-2xl md:text-2xl lg:text-3xl pt-8 place-content-center'>
+              <span className='my-5'>กิจกรรมในปีที่ผ่านมา</span>
+              </div>
           <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-[25rem] m-auto py-8 px-4 relative group '>
             <div className="relative w-full h-full ">
-             <div
+             <div 
+              className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
+              style={{ backgroundImage: `url(${images3[currentImageIndex3].src})` }}
+              ></div>
+            </div>
+            <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer '>
+                  <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage3} size='lg' />
+                </div>
+                <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
+                  <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage3} size='lg' />
+            </div>
+            <div className="absolute -mt-10 bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {images3.map((_, index) => (
+               <button
+                key={index}
+                className={`w-4 h-4 rounded-full ${
+                index === currentImageIndex3 ? 'bg-blue-700' : 'bg-gray-400'
+                }`}
+                onClick={() => {goToImage3(index);
+                setShowFullDescription(false);}}
+                
+            ></button>
+                ))}
+            </div>
+          </div>
+          </div>
+          <div className='w-full h-full grid md:w-full  md:grid-rols-2 mx-auto justify-items-center '>
+            <div className='font-CS font-bold text-black text-2xl md:text-2xl lg:text-3xl pt-8 place-content-center'>
+              <span className='my-5'>โครงงานวิทยาศาสตร์ที่ได้รับรางวัล</span>
+              </div>
+          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-[25rem] m-auto py-8 px-4 relative group '>
+            <div className="relative w-full h-full ">
+             <div 
               className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
               style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}
               ></div>
@@ -204,9 +260,12 @@ export default function SciProject(){
                 
             ></button>
                 ))}
-        
+            </div>
           </div>
           </div>
+          </div>
+          
+          
           <div className='flex flex-col gap-3'>
                 <AnimateSharedLayout type='crossfade'>
                   <motion.div
@@ -215,9 +274,9 @@ export default function SciProject(){
                   >
                     <motion.span
                       layoutId={'welcome-desc'}
-                      className='font-CS text-base md:text-lg lg:text-xl text-black font-bold'
+                      className='font-CS text-base text-lg md:text-lg lg:text-xl text-black font-bold'
                     >
-                      กิจกรรมการนำเสนอโครงงานของนักเรียน MWIT กว่า 91 โครงงาน ที่กลับมาให้รับชมในรูปแบบ on-site 
+                      กิจกรรมการนำเสนอโครงงานของนักเรียน MWIT กว่า 91 โครงงาน จาก 6 สาขาวิชา ที่กลับมาให้รับชมในรูปแบบ on-site 
                     </motion.span>
                     
                     {/*<button
@@ -245,8 +304,9 @@ export default function SciProject(){
           </div>
                   */}
 
+      
         
-        </div>
+            </div>
 
         <div className="w-full  grid md:grid-cols-2 mx-auto justify-items-center "> 
         <div className="max-w-[600px] max-h-[390px] min-w-max w-[20rem] md:w-[600px] md:h-[390px] h-[14.6rem] m-auto py-8 px-2 relative group">
@@ -261,13 +321,13 @@ export default function SciProject(){
                   <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='md' />
             </div>
             <div className="absolute -mt-10 bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              {images.map((_, index) => (
+              {scimages.map((_, index) => (
                <button
                 key={index}
                 className={`w-4 h-4 rounded-full ${
                 index === currentImageIndex2 ? 'bg-blue-700' : 'bg-gray-400'
                 }`}
-                onClick={() => {goToImage(index);
+                onClick={() => {goToImage2(index);
                 setShowFullDescription(false);}}
                 
             ></button>
