@@ -64,12 +64,7 @@ import { faFlaskVial,
                   </div>
                 </div>
                 </div>
-                </div>
               <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
-                <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
-                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
-                กิจกรรมจกรรม “discovery of the spooky tales”
-                </span>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
                 ห้องที่ 2 - ผีอังกฤษ (ผีแฟรงเกนสไตน์)
                 </span>
@@ -83,7 +78,7 @@ import { faFlaskVial,
                   </div>
               </div>
 
-              </div>
+            </div>
           </main>
         </>
       )
