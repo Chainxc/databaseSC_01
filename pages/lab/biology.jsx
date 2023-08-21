@@ -116,7 +116,8 @@ const peData = [
                 {'< Back'}
               </a>
             </Link>
-          
+            </div>
+          <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
             <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
             <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
               กลุ่มสาระสุขศึกษาและพลศึกษา
