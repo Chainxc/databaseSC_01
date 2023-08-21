@@ -115,7 +115,6 @@ import { faFlaskVial,
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
               กิจกรรม “Wonderful World of Astronomy”
               </span>
-              <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
               <img src="/img/lab/phya8.webg"  />
                 <div className='flex flex-col justify-center gap-2'>
                   <span className='font-IBMPlexLoop text-sm md:text-base'>
@@ -127,9 +126,8 @@ import { faFlaskVial,
                     ห้องจัดกิจกรรม 3605
                     </li>
                   </ol>
-                  </div>
+                  </div>   
               </div>
-            </div>
             
             </div>
           </div>
