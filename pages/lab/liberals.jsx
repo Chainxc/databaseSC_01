@@ -1,219 +1,102 @@
-import {
-    faFileDownload,
-    faFilePen,
-    faFlaskVial,
-    faVideo,
-  } from '@fortawesome/free-solid-svg-icons'
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import Link from 'next/link'
-  import MetaHeader from '../../components/metaHeader'
-  
-  export default function VirtualLab() {
-    const meta = {
-      title:
-        'เรียน ๆ เล่น ๆ ให้เป็นเคมี - สาขาวิชาเคมี | Virtual Lab & Activity | MWIT Open House 2022',
-      url: 'lab/chemistry',
-      description:
-        'เรียนรู้การทดลองทางเคมีผ่านแพลทฟอร์มออนไลน์ที่ได้ทั้งความรู้และความสนุก เช่น การหาความเข้มข้นสารละลายด้วย simulation, เรียนรู้การทำปฏิกิริยาเคมีจากการทำแซนวิช หรือฝึกทักษะพื้นฐานทางเคมี | MWIT Open House 2022',
-      img: 'ogimage.png',
-    }
-  
-    const labData = [
-      {
-        name: 'กิจกรรมที่ 1 “Discover Wood Cut”      ',
-        desc: ' ร่วมค้นหาเทคนิควิธีการของศิลปะภาพพิมพ์ เช่น การทำแม่พิมพ์ กระบวนการพิมพ์ ตลอดจนทดลองสร้างสรรค์ผลงานศิลปะภาพพิมพ์เทคนิคแกะไม้ (wood cut)',
-        place : 'สถานที่จัดกิจกรรม: ห้องปฏิบัติการศิลปะ 1109',
-        type : 'รูปแบบการจัด :จัดเป็นรอบ รอบละ 30 นาที รับรอบละไม่เกิน 12 คน วันละ 4 รอบ ดังนี้รอบเช้า 10.30-11.00 น. และ 11.30-12.00 น.รอบบ่าย 13.00 -13.30 น. และ 14.00-14.30 น.',
-        people : 'จำนวนผู้เข้าร่วม : 20 คน',
-        award : 'ของรางวัล : ลูกอม',
-        img: 'chema1p1.webp',
-        button: [
-          {
-            name: 'Virtual Lab',
-            href: 'https://chemcollective.org/vlab/87',
-            icon: faFlaskVial,
-          },
-          {
-            name: 'เอกสารแนะนำการทดลอง',
-            href: 'https://drive.google.com/file/d/1kKkISpkJuL64qGnK8guICIwqD1UrJ9xG/view?usp=sharing',
-            icon: faFileDownload,
-          },
-        ],
-      },
-      {
-        name: 'กิจกรรมที่ 2 Discover the power of water',
-        desc: 'การหาความเข้มข้นที่แท้จริงของสารละลาย ผ่านการวัดค่า absorbance และ full spectrum(จาก data logger) ผ่านนักสืบไขคดี',
-        place : 'สถานที่ : 3601',
-        type : 'รูปแบบการจัด : walk-in ',
-        people : 'วัสดุอุปกรณ์ : data logger, เกลือ, น้ำกลั่น, สีผสมอาหาร, cuvette, บีกเกอร์, ปิเปต',
-        award : 'จำนวนผู้เข้าร่วม : ไม่จำกัด',
-        img: 'chema2p1.webp',
-        button: [
-          {
-            name: 'Virtual Lab',
-            href: 'https://phet.colorado.edu/sims/html/concentration/latest/concentration_en.html',
-            icon: faFlaskVial,
-          },
-          {
-            name: 'วิดีโอแนะนำการทดลอง',
-            href: 'https://youtu.be/bTQIB0Z84Uw',
-            icon: faVideo,
-          },
-          {
-            name: 'ใบงาน',
-            href: 'https://forms.gle/x7jGDYMEL2znBzcj7',
-            icon: faFilePen,
-          },
-        ],
-      },
-      {
-        name: 'กิจกรรมที่ 3 Discover the power of water',
-        desc: 'กิจกรรมศึกษาปฏิกิริยารีดอกซ์ ผ่านการสร้างกระแสไฟฟ้าจากการแตกตัวของน้ำเกลือ',
-        place : 'สถานที่ : 3603',
-        type : 'รูปแบบการจัด : walk-in ',
-        people : 'วัสดุอุปกรณ์ : มัลติมิเตอร์ แผ่นอะลูมิเนียมฟอยล์ น้ำเกลือ ถ่าน',
-        award : 'จำนวนผู้เข้าร่วม : ไม่จำกัด',
-        list: [
-          'ศึกษาการทำแซนวิช (วัตถุดิบตั้งต้น ผลิตภัณฑ์แซนวิช และวัตถุดิบที่เหลือ) ',
-          'ศึกษาโมเลกุลก่อนและหลังการเกิดปฏิกริยา เช่น ปฏิกิริยาการเกิดน้ำ การเกิดแอมโมเนีย และการเผาไหม้มีเทน',
-          'แข่งขันเล่นเกมส์ ในระดับความยากแตกต่างกัน',
-        ],
-        img: 'chema3p1.webp',
-        button: [
-          {
-            name: 'Virtual Lab',
-            href: 'https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_th.html',
-            icon: faFlaskVial,
-          },
-        ],
-      },
-      {
-        name: 'กิจกรรมที่ 4 Discover the secret of rock',
-        desc: 'กิจกรรมศึกษาหินและไมโครพลาสติกในน้ำชาและน้ำซักผ้า ผ่านกล้อง USB digital microscope',
-        place : 'สถานที่ : 2505',
-        type : 'รูปแบบการจัด : walk-in ',
-        people : 'วัสดุอุปกรณ์ : ตัวอย่างหิน น้ำชา น้ำซักผ้า กล้อง USB digital microscope',
-        award : 'จำนวนผู้เข้าร่วม : ไม่จำกัด',
-        img: 'chema4p1.webp',
-        button: [
-          {
-            name: 'Virtual Lab',
-            href: 'https://teachchemistry.org/classroom-resources/measuring-volume-simulation',
-            icon: faFlaskVial,
-          },
-          {
-            name: 'เอกสารแนะนำการทดลอง',
-            href: 'https://drive.google.com/file/d/1FMTKLdfd3Zehj1cfRpz7gqr7bqVNLCBr/view?usp=sharing',
-            icon: faFileDownload,
-          },
-        ],
-      },
-  
-    ]
-  
-    return (
-      <>
-        <MetaHeader meta={meta} />
-  
-        <main className='w-full bg-bvl/60'>
-          <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
-            <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
-              สาขาวิชาเคมี
-            </span>
-            <span className='font-CS font-bold text-bbk text-xl md:text-2xl lg:text-3xl'>
-              Virtual Lab & Activities
-            </span>
-          </div>
-          <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
-            <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'>
-              <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
-                เรียน ๆ เล่น ๆ ให้เป็นเคมี
+import { faFlaskVial,
+    faFileImport
+    ,faVideo } from '@fortawesome/free-solid-svg-icons'
+    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+    import Link from 'next/link'
+    import MetaHeader from '../../components/metaHeader'
+    
+    export default function VirtualLab() {
+      const meta = {
+        title:
+          'Math&Com Rally in Gather.town - สาขาวิชาคณิตศาสตร์และวิทยาการคำนวณ | Virtual Lab & Activity | MWIT Open House 2022',
+        url: 'lab/mathcom',
+        description:
+          'นิทรรศการออนไลน์เกี่ยวกับเรื่องราวที่น่าสนใจทางคณิตศาสตร์และวิทยาการคำนวณ โดยจะมีเกม walk rally ให้ผู้เข้าชมตามหาคำถามที่ซ่อนไว้ในบริเวณต่าง ๆ แล้วจึงตอบให้ถูกต้องใน Google Form เพื่อชิงเงินรางวัล | MWIT Open House 2022',
+        img: 'ogimage.png',
+      }
+    const peData = [
+        {
+          name: 'กิจกรรม Amazing bicep',
+          desc: 'กิจกรรม แนะนํา อุปกรณ์เน้นอธิบายการทํางานและใช้งานของเครื่องอธิบายการเข้าใช้งานสถานที่ และกิจกรรม hands-on เน้นการลงมือทําและได้ค้นพบเครื่องมือการออกกําลังกายใหม่ๆ',
+          type : 'รูปแบบกิจกรรม ได้แก่ (1) กิจกรรมแนะนําอุปกรณ์ต่างในห้องฟิตเนสและวิธีการใช้คร่าวๆ (2)กิจกรรม hands-on ให้ผู้เข้าร่วมได้ลองใช้และทําใบกิจกรรมเพื่อแลกของรางวัล',
+          place : 'ห้องจัดกิจกรรม ห้องฟิตเนส ชั้น 3',
+        },
+        {
+          name: 'กิจกรรม bang the ball',
+          desc: '**กิจกรรมจัดชวงบ่ายเท่านั้น**',
+          type : 'รูปแบบกิจกรรม ได้แก่ (1)กิจกรรมแนะนําสถานที่ทั้งหมดในศูนย์กีฬาและแนะนํากิจกรรมต่างๆ เกี่ยวกับกีฬาในโรงเรียน (2) กิจกรรม hands-on ให้ผู้เข้าร่วมได้ลองใช้สนามบาสศูนย์กีฬาซึ่งจะมีมินิเกมต่างๆให้เล่น',
+          place : 'สถานที่จัดกิจกรรม สนามบาสศูนย์กีฬา ชั้น 4',
+        },
+      ]
+      return (
+        <>
+          <MetaHeader meta={meta} />
+    
+          <main className='w-full bg-bvl/60'>
+            <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
+              <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
+              สาขาวิชาวิชาศิลปศาสตร์
               </span>
-              <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
-                <img
-                  src={process.env.CDN_URL + '/img/lab/' + 'chemcov.webp'}
-                  className='w-full max-w-sm rounded-xl'
-                />
-                <div className='flex flex-col justify-center gap-2'>
-                  <span className='font-IBMPlexLoop text-sm md:text-base'>
-                    เรียนรู้การทดลองทางเคมีผ่านแพลทฟอร์มออนไลน์ที่ได้ทั้งความรู้และความสนุก
-                    เช่น การหาความเข้มข้นสารละลายด้วย simulation,
-                    เรียนรู้การทำปฏิกิริยาเคมีจากการทำแซนวิช
-                    หรือฝึกทักษะพื้นฐานทางเคมี
-                  </span>
-                  <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                    พบกับ 5 กิจกรรม
-                  </span>
-                  <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                    {labData.map((l, li) => (
-                      <li key={li}>{l.name}</li>
-                    ))}
-                  </ol>
-                </div>
-              </div>
-              <Link href={'/lab'}>
-                <a className='absolute text-sm md:text-base left-3 font-IBMPlex font-semibold text-gray-600 hover:text-black transition-colors duration-300 -top-4 bg-purple-300/60 hover:bg-purple-300/80 rounded-full py-1 px-3'>
-                  {'< Back'}
-                </a>
-              </Link>
+              <span className='font-CS font-bold text-bbk text-xl md:text-2xl lg:text-3xl'>
+              “Discover Liberal Arts @MWIT”
+              </span>
             </div>
-            {labData.map((l, li) => (
-              <div
-                key={li}
-                className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
-              >
-                <div className='grid grid-flow-row md:grid-flow-col gap-4 '>
-                  {l.img && (
-                    <img
-                      src={process.env.CDN_URL + '/img/lab/' + l.img}
-                      className='w-full max-w-sm rounded-xl'
-                    />
-                  )}
-                  <div
-                    className={
-                      'flex flex-col justify-center gap-2 ' +
-                      (!l.img && 'items-center')
-                    }
-                  >
-                    <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
-                      {l.name}
+            <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
+              <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
+              กิจกรรม “Discover Wood Cut”
+                </span>
+                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
+                รายละเอียดกิจกรรม: ร่วมค้นหาเทคนิควิธีการของศิลปะภาพพิมพ์ เช่น การทำแม่พิมพ์ กระบวนการพิมพ์ ตลอดจนทดลองสร้างสรรค์ผลงานศิลปะภาพพิมพ์เทคนิคแกะไม้ (wood cut) 
+                </span>
+                <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
+                  <img
+                  /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
+                    className='w-full max-w-sm rounded-xl' */
+                  />
+                  <div className='flex flex-col justify-center gap-2'>
+                    <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    •รูปแบบกิจกรรม
                     </span>
-                    <span className='font-IBMPlexLoop text-sm md:text-base'>
-                      {l.desc}
-                    </span>
-                    <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                      <li key={li}>{l.place}</li><li key={li}>{l.type}</li><li key={li}>{l.people}</li><li key={li}>{l.award}</li>
-                  </ol>
-                    {/* <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                    พบกับ 6 กิจกรรม
-                  </span>
-                  <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                    <li>ทุกวันเวลา 18:00-21:00 น.</li>
-                    <li>
-                      เสาร์อาทิตย์เพิ่มช่วง 9:00-12:00 น. และ 13:00-16:00 น.
-                    </li>
-                  </ol> */}
-                    <div className='flex flex-wrap gap-1'>
-                      {l.button.map((b, bi) => (
-                        <Link key={bi} href={b.href}>
-                          <a
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
-                          >
-                            <FontAwesomeIcon icon={b.icon} />
-                            <span>{b.name}</span>
-                          </a>
-                        </Link>
-                      ))}
-                    </div>
+                    <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    จัดเป็นรอบ รอบละ 30 นาที รับรอบละไม่เกิน 12 คน วันละ 4 รอบ ดังนี้
+	- รอบเช้า 10.30-11.00 น. และ 11.30-12.00 น.
+	- รอบบ่าย 13.00 -13.30 น. และ 14.00-14.30 น.
+                    </span >
+                    <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    สถานที่จัดกิจกรรม: ห้องปฏิบัติการศิลปะ 1109
+                    </span>  
                   </div>
                 </div>
+                </div>
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
+                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
+                ห้องที่ 2 - ผีอังกฤษ (ผีแฟรงเกนสไตน์)
+                </span>
+                  <div className='flex flex-col justify-center gap-2'>
+                    <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    •วิธีเล่นเกม
+                    </span>
+                    <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    ไกด์จะเดินตามมาเเล้วบรีฟว่าต้องทำเพื่อคืนชีพแฟงค์กินสไลล์ โดยเริ่มเเรกต้องไปเล่มเกมสั้นๆ เช่นเกม tongue twister กับคนเเรกเพื่อคืนชีพเเขน เเขนผีเเฟงค์ก็จะกระตุกเเล้วชี้ไปยังคนที่สองเพื่อไปเล่นเกมเเล้วฟื้นคืนชีพหัว ผีเเฟงค์ก็จะพูดได้เเล้ว โดยบอกผู้เล่นให้ไปเเปล riddle เเล้วหาคำตอบไฟฟื้นชีพขา เมื่อฟื้นครบทุกส่วน ผีเเฟงค์จะตื่นขึ้นเเล้วช่วยให้ไปห้องต่อไปได้
+                    </span >
+                  </div>
               </div>
-            ))}
-          </div>
-        </main>
-      </>
-    )
-  }
-  
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
+                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
+                ห้องที่ 3 - ผียุโรป (ผีตุ๊กตา)
+                </span>
+                  <div className='flex flex-col justify-center gap-2'>
+                    <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    •วิธีเล่นเกม
+                    </span>
+                    <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    ไกลด์จะเดินตามมาเเล้วบรีฟว่าในการจะผ่านต้องทำการหาเเละเรียงลำดับตุ๊กตาให้ถูก โดยจะมีกระดาษเเปะคำศัพท์เเละความหมายของมัน มีทั้งหมด 3 ใบ ผู้เล่นต้องเเปลคำใบ้เเละหาตุ๊กตาที่มีลักษณะตามนั้นมาใส่ให้ถูกเพื่อให้สามารถเปิดห้องได้
+                    </span >
+                  </div>
+              </div>
+            </div>
+          </main>
+        </>
+      )
+    }
