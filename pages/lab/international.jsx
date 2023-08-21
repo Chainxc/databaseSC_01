@@ -77,7 +77,19 @@ import { faFlaskVial,
                     </span >
                   </div>
               </div>
-
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
+                <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
+                ห้องที่ 3 - ผียุโรป (ผีตุ๊กตา)
+                </span>
+                  <div className='flex flex-col justify-center gap-2'>
+                    <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    •วิธีเล่นเกม
+                    </span>
+                    <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    ไกลด์จะเดินตามมาเเล้วบรีฟว่าในการจะผ่านต้องทำการหาเเละเรียงลำดับตุ๊กตาให้ถูก โดยจะมีกระดาษเเปะคำศัพท์เเละความหมายของมัน มีทั้งหมด 3 ใบ ผู้เล่นต้องเเปลคำใบ้เเละหาตุ๊กตาที่มีลักษณะตามนั้นมาใส่ให้ถูกเพื่อให้สามารถเปิดห้องได้
+                    </span >
+                  </div>
+              </div>
             </div>
           </main>
         </>
