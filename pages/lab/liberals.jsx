@@ -60,9 +60,13 @@ import { faFlaskVial,
                     </span>
                     <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
                     จัดเป็นรอบ รอบละ 30 นาที รับรอบละไม่เกิน 12 คน วันละ 4 รอบ ดังนี้
-	- รอบเช้า 10.30-11.00 น. และ 11.30-12.00 น.
-	- รอบบ่าย 13.00 -13.30 น. และ 14.00-14.30 น.
                     </span >
+                    <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    <li>รอบเช้า 10.30-11.00 น. และ 11.30-12.00 น.</li>
+                    <li>
+                    รอบบ่าย 13.00 -13.30 น. และ 14.00-14.30 น.
+                    </li>
+                  </ol>
                     <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
                     สถานที่จัดกิจกรรม: ห้องปฏิบัติการศิลปะ 1109
                     </span>  
