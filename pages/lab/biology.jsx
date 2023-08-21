@@ -71,20 +71,7 @@ import { faFlaskVial,
                     </li>
                      <li>ของรางวัล: เครื่องเขียน</li>
                   </ol>
-                  <Link
-                    href={
-                      'https://app.gather.town/app/RJ7jsDxnstdu3JVS/MWIT_MathCom'
-                    }
-                  >
-                    <a
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
-                    >
-                      <FontAwesomeIcon icon={faFlaskVial} className='w-[1em]' />
-                      <span>เข้าร่วมกิจกรรม</span>
-                    </a>
-                  </Link>
+      
                 </div>
               </div>
               <Link href={'/lab'}>
