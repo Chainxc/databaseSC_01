@@ -249,16 +249,16 @@ export default function SciProject(){
         </div>
 
         <div className="w-full  grid md:grid-cols-2 mx-auto justify-items-center "> 
-        <div className="max-w-[853px] max-h-[480px] min-w-max w-[16rem] md:w-[48rem] h-[31rem] m-auto py-8 px-2 relative group">
+        <div className="max-w-[600px] max-h-[390px] min-w-max w-[16rem] md:w-[600px] md:h-[390px] h-[12.5rem] m-auto py-8 px-2 relative group">
             <div
               className=" w-full h-full rounded-2xl bg-center bg-cover duration-100 group1"
               style={{ backgroundImage: `url(${scimages[currentImageIndex2].src})` }}
               ></div>
-             <div className='group1-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
-                  <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage2} size='lg' />
+             <div className='group1-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
+                  <FontAwesomeIcon icon={faChevronLeft} onClick={showPrevImage2} size='md' />
                 </div>
-              <div className='group1-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-3 bg-black/40 text-white cursor-pointer'>
-                  <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='lg' />
+              <div className='group1-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
+                  <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='md' />
             </div>
         </div>
         <div className="my-5 mx-5 max-w-xl py-8 px-8 bg-white rounded-lg shadow-lg">
