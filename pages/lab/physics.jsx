@@ -49,7 +49,6 @@ import { faFlaskVial,
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
               กิจกรรม “Amazing Physics in Daily Life”
               </span>
-              <bc>ชื่อกิจกรรม “Amazing Physics in Daily Life”</bc>
               <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
                 <img
                 /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
@@ -111,45 +110,30 @@ import { faFlaskVial,
             <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
               <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
-                กลุ่มสาระสุขศึกษาและพลศึกษา
+                กลุ่มสาระดาราศาสตร์
+              </span>
+              <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
+              กิจกรรม “Wonderful World of Astronomy”
               </span>
               <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
+                <img
+                /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
+                  className='w-full max-w-sm rounded-xl' */
+                />
                 <div className='flex flex-col justify-center gap-2'>
-                  <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                    หมวดพลศึกษาจะมีการเรียนรู้เกี่ยวกับการเล่นกีฬาประเภททีม
-                    และกิจกรรมนอกห้องเรียน
+                  <span className='font-IBMPlexLoop text-sm md:text-base'>
+                  {'ตัวอย่างกิจกรรม เช่น การใช้กล้องโทรทรรศนในการสังเกตวัตถุระยะไกล (ตั้งกล้องบริเวณหน้าห้อง3605) การสังเกตวัตถุท้องฟ้าด้วย Software/App ทางดาราศาสตร์ เป็นต้น'}
                   </span>
-  
                   <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                    {peData.map((b, bi) => (
-                      <li key={bi}>{b.name}</li>
-                    ))}
+                    <li>กิจกรรมสาธิต เน้นการสาธิตปรากฏการณ์โดยมีคําถามให้ผู้เข้าร่วมกิจกรรมได้หาคําตอบจากการสังเกตปรากฏการณ์ที่เกิดขึ้น และลองอธิบายปรากฏการณ์ที่เกิดขึ้น</li>
+                    <li>
+                    ห้องจัดกิจกรรม 3605
+                    </li>
                   </ol>
-                </div>
+                  </div>
               </div>
             </div>
             
-            {peData.map((l, li) => (
-              <div
-                key={li}
-                className='flex relative flex-col gap-2 items-start shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
-              >
-                <div className='grid grid-flow-row md:grid-flow-col gap-4'>
-                  <div className='flex flex-col justify-center gap-2 '>
-                    <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
-                      {l.name}
-                    </span>
-                    <span className='font-IBMPlexLoop text-sm md:text-base'>
-                      {l.desc}
-                    </span>
-                    <span className='font-IBMPlexLoop text-sm md:text-base'>
-                      {l.type}
-                    </span>
-                    <li key={li}>{l.place}</li>
-                  </div>
-                </div>
-              </div>
-            ))}
             </div>
           </div>
         </main>
