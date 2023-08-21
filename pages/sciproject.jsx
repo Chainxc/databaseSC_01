@@ -247,8 +247,9 @@ export default function SciProject(){
 
         
         </div>
-        <div className="w-full max-w-[1707px] grid md:grid-cols-2 divide-x mx-auto justify-items-start"> 
-        <div className="max-w-[1707px] max-h-[960px] min-w-max w-[16rem] md:w-[48rem] h-[31rem] m-auto py-8 px-2 relative group">
+
+        <div className="w-full  grid md:grid-cols-2 mx-auto justify-items-center mx-10"> 
+        <div className="max-w-[853px] max-h-[480px] min-w-max w-[16rem] md:w-[48rem] h-[31rem] m-auto py-8 px-2 relative group">
             <div
               className=" w-full h-full rounded-2xl bg-center bg-cover duration-100 group1"
               style={{ backgroundImage: `url(${scimages[currentImageIndex2].src})` }}
@@ -260,11 +261,11 @@ export default function SciProject(){
                   <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='lg' />
             </div>
         </div>
-        <div className="my-5 max-w-3xl p-10 px-15 bg-white rounded-lg shadow-lg">
-        <div className="font-CS font-bold text-bmw text-xl md:text-3xl lg:text-4xl text-2xl font-semibold ">กำหนดการ</div>
+        <div className="my-5 max-w-xl py-8 px-8 bg-white rounded-lg shadow-lg">
+        <div className="font-CS font-bold text-bmw  md:text-3xl lg:text-4xl text-2xl font-semibold mb-3">กำหนดการ</div>
         {scheduleData.map((dayData, index) => (
           <div key={index} className="mb-6">
-            <h2 className="font-CS font-bold text-bmw text-xl md:text-2xl lg:text-3xl pt-8 text-2xl font-semibold mb-3">{dayData.day}</h2>
+            <h2 className="font-CS font-bold text-bmw  md:text-2xl lg:text-3xl text-xl font-semibold  mb-3">{dayData.day}</h2>
             {dayData.events.map((event, eventIndex) => (
               <div
                 key={eventIndex}
@@ -272,9 +273,9 @@ export default function SciProject(){
                   eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
                 }`}
               >
-                <div className="font-CS  text-bmw text-xl md:text-2xl  pt-4 text-lg font-semibold">{event.time}</div>
-                <div className="font-CS font-bold text-bmw text-xl md:text-2xl  pt-4 text-lg">{event.title}</div>
-                <div className="font-CS font-semibold text-bmw text-xl md:text-2xl  pt-4 text-lg">{event.place}</div>
+                <div className="font-CS  text-bmw text-lg md:text-xl  pt-4 text-lg font-semibold mr-10">{event.time}</div>
+                <div className="font-CS font-bold text-bmw  md:text-xl  pt-4 text-lg ml-8">{event.title}</div>
+                <div className="font-CS font-semibold text-bmw md:text-xl  pt-4 text-lg ">{event.place}</div>
               </div>
             ))}
           </div>
