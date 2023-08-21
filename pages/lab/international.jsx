@@ -89,6 +89,16 @@ import { faFlaskVial,
                     <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
                     ไกลด์จะเดินตามมาเเล้วบรีฟว่าในการจะผ่านต้องทำการหาเเละเรียงลำดับตุ๊กตาให้ถูก โดยจะมีกระดาษเเปะคำศัพท์เเละความหมายของมัน มีทั้งหมด 3 ใบ ผู้เล่นต้องเเปลคำใบ้เเละหาตุ๊กตาที่มีลักษณะตามนั้นมาใส่ให้ถูกเพื่อให้สามารถเปิดห้องได้
                     </span >
+                    <span  className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    •สถานที่ที่จัด 1106
+                    </span >
+                    <span  className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    •จำนวนผู้เข้าร่วม (ต่อ 1 รอบ ไม่เกิน 25 คน) 7-10
+                    </span >
+                    <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
+                    ยินดีต้อนรับทุกท่านสู่บ้านผีสิงสุดสยองชวนขนหัวลุก ที่เต็มไปด้วยผีสุดเฮี้ยนจากหลายประเทศทั่วโลก🏚️👻ในที่นี้คุณจะทำหน้าที่นักล่าท้าผี  มีหน้าที่ในการช่วยกันสืบสวนปริศนา🔍 พร้อมกับเรียนรู้ภาษาต่างประเทศ🇯🇵🏴󠁧󠁢󠁥󠁮󠁧󠁿🇪🇸 เพื่อนำไปสู่คำตอบของเรื่องราวอันพิศวงของที่เเห่งนี้‼️
+                </span>
+
                   </div>
               </div>  
             </div>
