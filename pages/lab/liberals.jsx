@@ -49,14 +49,13 @@ import { faFlaskVial,
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
                 รายละเอียดกิจกรรม: ร่วมค้นหาเทคนิควิธีการของศิลปะภาพพิมพ์ เช่น การทำแม่พิมพ์ กระบวนการพิมพ์ ตลอดจนทดลองสร้างสรรค์ผลงานศิลปะภาพพิมพ์เทคนิคแกะไม้ (wood cut) 
                 </span>
-                <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
                   <img
                   /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
                     className='w-full max-w-sm rounded-xl' */
                   />
                   <div className='flex flex-col justify-center gap-2'>
                     <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                    •รูปแบบกิจกรรม
+                    รูปแบบกิจกรรม
                     </span>
                     <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
                     จัดเป็นรอบ รอบละ 30 นาที รับรอบละไม่เกิน 12 คน วันละ 4 รอบ ดังนี้
@@ -71,7 +70,7 @@ import { faFlaskVial,
                     สถานที่จัดกิจกรรม: ห้องปฏิบัติการศิลปะ 1109
                     </span>  
                   </div>
-                </div>
+                
                 </div>
               <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
