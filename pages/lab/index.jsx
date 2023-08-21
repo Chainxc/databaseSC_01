@@ -84,9 +84,9 @@ export default function VirtualLab() {
               >
                 <div
                   style={{
-                    backgroundImage: `url(${
-                      process.env.CDN_URL + '/img/' + 'lab/' + l.img + '.webp'
-                    })`,
+                    backgroundImage: 
+                      '/img/' + 'lab/' + l.img + '.webp'
+                    ,
                   }}
                   className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
                 />
