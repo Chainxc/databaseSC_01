@@ -20,7 +20,6 @@ import { faFlaskVial,
         desc: 'กิจกรรม แนะนํา อุปกรณ์เน้นอธิบายการทํางานและใช้งานของเครื่องอธิบายการเข้าใช้งานสถานที่ และกิจกรรม hands-on เน้นการลงมือทําและได้ค้นพบเครื่องมือการออกกําลังกายใหมๆ่',
         type : 'รูปแบบกิจกรรม ได้แก่ (1) กิจกรรมแนะนําอุปกรณ์ต่างในห้องฟิตเนสและวิธีการใช้คร่าวๆ (2)กิจกรรม hands-on ให้ผู็เข้าร่วมได้ลองใช้และทําใบกิจกรรมเพื่อแลกของรางวัล',
         place : 'ห้องจัดกิจกรรม ห้องฟิตเนส ชั้น 3',
-        vid: 'https://www.youtube.com/embed/LP4QcGFob8s?modestbranding=1&color=white&iv_load_policy=3',
         button: [
           {
             name: 'ชมวิดีโอ',
@@ -34,7 +33,7 @@ import { faFlaskVial,
         desc: '**กิจกรรมจัดชวงบ่ายเท่านั้น**',
         type : 'รูปแบบกิจกรรม ได้แก (1) ่ กิจกรรมแนะนําสถานที่ทั้งหมดในศูนย์กีฬาและแนะนํากิจกรรมต่างๆ เกี่ยวกับกีฬาในโรงเรียน(2)กิจกรรม hands-on ใหผ้เขู้ ้าร่วมไดลองใช ้ ้สนามบาสศูนย์กีฬาซึ่งจะมีมนิิเกมต่างๆให้เล่น',
         place : 'สถานที่จัดกิจกรรม สนามบาสศูนย์กีฬา ชั้น 4',
-        vid: 'https://www.youtube.com/embed/ugHg0oWE5Ps?modestbranding=1&color=white&iv_load_policy=3',
+
         button: [
           {
             name: 'ชมวิดีโอ',
@@ -153,13 +152,6 @@ import { faFlaskVial,
                 className='flex relative flex-col gap-2 items-start shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
               >
                 <div className='grid grid-flow-row md:grid-flow-col gap-4'>
-                  <iframe
-                    type='text/html'
-                    className='w-full sm:w-[30rem] aspect-video rounded-xl'
-                    src={l.vid}
-                    frameBorder='0'
-                    allowFullScreen
-                  />
                   <div className='flex flex-col justify-center gap-2 '>
                     <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
                       {l.name}
@@ -170,9 +162,7 @@ import { faFlaskVial,
                     <span className='font-IBMPlexLoop text-sm md:text-base'>
                       {l.type}
                     </span>
-                    <span className='font-IBMPlexLoop text-sm md:text-base'>
-                      {l.place}
-                    </span>
+                    <li key={li}>{l.place}</li>
                     <div className='flex flex-wrap gap-1'>
                       {l.button.map((b, bi) => (
                         <Link key={bi} href={b.href}>
