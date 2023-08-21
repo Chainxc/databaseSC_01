@@ -49,7 +49,7 @@ export default function VirtualLab() {
     <>
       <MetaHeader meta={meta} />
 
-      <main className='w-full bg-bvl/60 -z-10'>
+      <main className='w-full bg-bvl/60'>
         <div className='flex flex-col text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
           <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
             Virtual Lab & Activities
