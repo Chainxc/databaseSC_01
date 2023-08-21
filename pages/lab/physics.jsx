@@ -47,7 +47,7 @@ import { faFlaskVial,
               กลุ่มสาระฟิสิกส์
               </span>
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
-              กิจกรรมฐานฟิสิกส์
+              กิจกรรม “Amazing Physics in Daily Life”
               </span>
               <bc>ชื่อกิจกรรม “Amazing Physics in Daily Life”</bc>
               <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
