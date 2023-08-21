@@ -31,6 +31,7 @@ export default function VirtualLab() {
             <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
             กิจกรรม OPH ฐานชีววิทยา
             </span>
+            <bc>ชื่อกิจกรรม : Who ไคร้ข่า</bc>
             <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
               <img
                 src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
