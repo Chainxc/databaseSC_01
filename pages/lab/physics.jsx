@@ -82,7 +82,7 @@ import { faFlaskVial,
                 className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
               >
                 <FontAwesomeIcon icon={faFileImport} />
-                <span>ตัวอย่างกิจกรรมที่น่าประหลาดใจ/น่าตื่นเต้น/น่าสนใจ</span>
+                <span>ตัวอย่างกิจกรรมที่น่าประหลาดใจ/น่าตื่นเต้น/น่าสนใจ คลิปที่ 1</span>
               </a>
               </Link>
               <Link
@@ -96,7 +96,7 @@ import { faFlaskVial,
                 className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
               >
                 <FontAwesomeIcon icon={faFileImport} />
-                <span>ตัวอย่างกิจกรรมที่น่าประหลาดใจ/น่าตื่นเต้น/น่าสนใจ</span>
+                <span>ตัวอย่างกิจกรรมที่น่าประหลาดใจ/น่าตื่นเต้น/น่าสนใจ คลิปที่ 2</span>
               </a>
               </Link>
 
