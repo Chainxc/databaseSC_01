@@ -117,8 +117,7 @@ import { faFlaskVial,
                 </a>
               </Link>
               </div>
-              <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
-            <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
               <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
                 กลุ่มสาระสุขศึกษาและพลศึกษา
@@ -154,7 +153,7 @@ import { faFlaskVial,
                   <span>ร่วมตอบคำถามลุ้นรางวัล</span>
                 </a>
               </Link>
-            </div>
+            
             </div>
             {peData.map((l, li) => (
               <div
