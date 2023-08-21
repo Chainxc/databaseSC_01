@@ -1,5 +1,12 @@
 import Link from 'next/link'
 import MetaHeader from '../../components/metaHeader'
+import {
+  faFileDownload,
+  faFilePen,
+  faFlaskVial,
+  faVideo,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function VirtualLab() {
   const meta = {
