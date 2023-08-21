@@ -274,7 +274,7 @@ export default function SciProject(){
                   >
                     <motion.span
                       layoutId={'welcome-desc'}
-                      className='font-CS text-base text-lg md:text-lg lg:text-xl text-black font-bold'
+                      className='font-CS  text-lg md:text-lg lg:text-xl text-black font-bold text-center'
                     >
                       กิจกรรมการนำเสนอโครงงานของนักเรียน MWIT กว่า 91 โครงงาน จาก 6 สาขาวิชา ที่กลับมาให้รับชมในรูปแบบ on-site 
                     </motion.span>
