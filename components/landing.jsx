@@ -135,7 +135,7 @@ export default function LandingPage({ homeRef, children, ...props }) {
                 >
                   Closed!
                 </motion.div>
-                <span className='whitespace-nowrap'>Register Now!</span>
+                <span className='whitespace-nowrap'>Registration</span>
               </motion.a>
               </a>
             </Link>
