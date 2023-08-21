@@ -47,29 +47,20 @@ import { faFlaskVial,
               กิจกรรม “discovery of the spooky tales”
                 </span>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
-                โดยจะเป็นกิจกรรมบ้านผีสิงที่สอดแทรกคำศัพท์ภาษาต่างประเทศ
-                ซึ่งจะมีผี 3 ตัว 1 ผีญี่ปุน แฟรงแกนสไตล์ ผีตุ๊กตา
+                ห้องที่ 1 - ผีเอเชีย (ผีญี่ปุ่น)
                 </span>
-                <bc>ชื่อกิจกรรม : Who ไคร้ข่า</bc>
                 <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
                   <img
                   /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
                     className='w-full max-w-sm rounded-xl' */
                   />
                   <div className='flex flex-col justify-center gap-2'>
-                    <span className='font-IBMPlexLoop text-sm md:text-base'>
-                    ห้องที่ 1 - ผีเอเชีย (ผีญี่ปุ่น)
-                    </span>
                     <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                      พบกับนักเรียนปัจจุบัน ในช่วงเวลาดังนี้
+                    •วิธีเล่นเกม
                     </span>
-                    <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                      <li>•วิธีเล่นเกม
-	            จะมีไกด์บรีฟเกี่ยวกับเนื้อเรื่องย่อของผีก่อนเเล้วบอกว่าในการจะผ่านด่านนี้ต้องพูดคำศัพท์ภาษา ญี่ปุน เพื่อทำให้ผีตนนั้นตายอย่างสุขคติ โดยจะมีคนเเสตนบายด์ที่ต้องถาม 2 คนคือคนแรกจะต้องทำภารกิจก่อน บอกมาเป็นภาษาจีนก่อน และให้ไปถามอีกคน เพื่อให้เล่นอีกเกมนึงและแปลคำศัพท์เป็นญี่ปุ่น 
-                      </li>
-            
-                    </ol>
-        
+                    <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    จะมีไกด์บรีฟเกี่ยวกับเนื้อเรื่องย่อของผีก่อนเเล้วบอกว่าในการจะผ่านด่านนี้ต้องพูดคำศัพท์ภาษา ญี่ปุน เพื่อทำให้ผีตนนั้นตายอย่างสุขคติ โดยจะมีคนเเสตนบายด์ที่ต้องถาม 2 คนคือคนแรกจะต้องทำภารกิจก่อน บอกมาเป็นภาษาจีนก่อน และให้ไปถามอีกคน เพื่อให้เล่นอีกเกมนึงและแปลคำศัพท์เป็นญี่ปุ่น  
+                    </span >
                   </div>
                 </div>
                 </div>
@@ -90,6 +81,7 @@ import { faFlaskVial,
                   </div>
                 </div>
               </div>
+
               </div>
             </div>
           </main>
