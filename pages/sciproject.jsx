@@ -154,7 +154,7 @@ export default function SciProject(){
               </center>
               </div>
           <div className='w-full max-w-7xl grid items-center justify-items-center mx-auto px-6'>
-          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-screen m-auto py-8 px-4 relative group '>
+          <div className='max-w-[640px] max-h-[480px] min-w-max w-[16rem] md:w-[32rem] h-[25rem] m-auto py-8 px-4 relative group '>
             <div className="relative w-full h-full ">
              <div
               className="w-full h-full rounded-2xl bg-center bg-cover duration-100"
@@ -260,22 +260,36 @@ export default function SciProject(){
               <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>
                   <FontAwesomeIcon icon={faChevronRight} onClick={showNextImage2} size='md' />
             </div>
+            <div className="absolute -mt-10 bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {images.map((_, index) => (
+               <button
+                key={index}
+                className={`w-4 h-4 rounded-full ${
+                index === currentImageIndex2 ? 'bg-blue-700' : 'bg-gray-400'
+                }`}
+                onClick={() => {goToImage(index);
+                setShowFullDescription(false);}}
+                
+            ></button>
+                ))}
+        
+          </div>
         </div>
         <div className="my-5 mx-5 max-w-lg md:w-sm py-8 px-8 bg-white rounded-lg shadow-lg">
-        <div className="font-CS font-bold text-bmw  md:text-3xl lg:text-4xl text-2xl font-semibold mb-3">กำหนดการ</div>
+        <div className="font-CS font-bold text-bmw  md:text-2xl lg:text-3xl text-xl font-semibold mb-3">กำหนดการ</div>
         {scheduleData.map((dayData, index) => (
           <div key={index} className="mb-6">
-            <h2 className="font-CS font-bold text-bmw  md:text-2xl lg:text-3xl text-xl font-semibold  mb-3">{dayData.day}</h2>
+            <h2 className="font-CS font-bold text-bmw  md:text-xl lg:text-2xl text-lg font-semibold  mb-3">{dayData.day}</h2>
             {dayData.events.map((event, eventIndex) => (
               <div
                 key={eventIndex}
-                className={`flex flex-wrap max-w-md justify-between items-center p-4 mb-4 ${
+                className={`flex flex-wrap max-w-xl justify-between items-center p-4 mb-4 ${
                   eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
                 }`}
               >
-                <div className="font-CS  text-bmw text-lg md:text-xl  pt-4 text-lg font-semibold mr-16">{event.time}</div>
-                <div className="font-CS font-bold text-bmw  md:text-xl  pt-4 text-lg ">{event.title}</div>
-                <div className="font-CS font-semibold text-bmw md:text-xl  pt-4 text-lg ">{event.place}</div>
+                <div className="font-CS  text-bmw  md:text-lg pt-4 text-md font-semibold mr-16">{event.time}</div>
+                <div className="font-CS font-bold text-bmw  md:text-lg  pt-4 text-md ">{event.title}</div>
+                <div className="font-CS font-semibold text-bmw md:text-lg  pt-4 text-md ">{event.place}</div>
               </div>
             ))}
           </div>
