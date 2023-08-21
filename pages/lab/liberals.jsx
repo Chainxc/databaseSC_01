@@ -35,19 +35,19 @@ import { faFlaskVial,
           <main className='w-full bg-bvl/60'>
             <div className='flex flex-col text-center text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
               <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
-              สาขาวิชาภาษาต่างประเทศ
+              สาขาวิชาวิชาศิลปศาสตร์
               </span>
               <span className='font-CS font-bold text-bbk text-xl md:text-2xl lg:text-3xl'>
-                Lab & Activities
+              “Discover Liberal Arts @MWIT”
               </span>
             </div>
             <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
               <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
-              กิจกรรม “discovery of the spooky tales”
+              กิจกรรม “Discover Wood Cut”
                 </span>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
-                ห้องที่ 1 - ผีเอเชีย (ผีญี่ปุ่น)
+                รายละเอียดกิจกรรม: ร่วมค้นหาเทคนิควิธีการของศิลปะภาพพิมพ์ เช่น การทำแม่พิมพ์ กระบวนการพิมพ์ ตลอดจนทดลองสร้างสรรค์ผลงานศิลปะภาพพิมพ์เทคนิคแกะไม้ (wood cut) 
                 </span>
                 <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
                   <img
@@ -56,14 +56,24 @@ import { faFlaskVial,
                   />
                   <div className='flex flex-col justify-center gap-2'>
                     <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
-                    •วิธีเล่นเกม
+                    •รูปแบบกิจกรรม
                     </span>
                     <span  className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                    จะมีไกด์บรีฟเกี่ยวกับเนื้อเรื่องย่อของผีก่อนเเล้วบอกว่าในการจะผ่านด่านนี้ต้องพูดคำศัพท์ภาษา ญี่ปุน เพื่อทำให้ผีตนนั้นตายอย่างสุขคติ โดยจะมีคนเเสตนบายด์ที่ต้องถาม 2 คนคือคนแรกจะต้องทำภารกิจก่อน บอกมาเป็นภาษาจีนก่อน และให้ไปถามอีกคน เพื่อให้เล่นอีกเกมนึงและแปลคำศัพท์เป็นญี่ปุ่น  
+                    จัดเป็นรอบ รอบละ 30 นาที รับรอบละไม่เกิน 12 คน วันละ 4 รอบ ดังนี้
                     </span >
-                    <bc></bc>
+                    <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
+                    <li>รอบเช้า 10.30-11.00 น. และ 11.30-12.00 น.</li>
+                    <li>
+                    รอบบ่าย 13.00 -13.30 น. และ 14.00-14.30 น.
+                    </li>
+                  </ol>
+                    <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
+                    สถานที่จัดกิจกรรม: ห้องปฏิบัติการศิลปะ 1109
+                    </span>  
                   </div>
                 </div>
+                </div>
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
                 ห้องที่ 2 - ผีอังกฤษ (ผีแฟรงเกนสไตน์)
                 </span>
@@ -75,7 +85,8 @@ import { faFlaskVial,
                     ไกด์จะเดินตามมาเเล้วบรีฟว่าต้องทำเพื่อคืนชีพแฟงค์กินสไลล์ โดยเริ่มเเรกต้องไปเล่มเกมสั้นๆ เช่นเกม tongue twister กับคนเเรกเพื่อคืนชีพเเขน เเขนผีเเฟงค์ก็จะกระตุกเเล้วชี้ไปยังคนที่สองเพื่อไปเล่นเกมเเล้วฟื้นคืนชีพหัว ผีเเฟงค์ก็จะพูดได้เเล้ว โดยบอกผู้เล่นให้ไปเเปล riddle เเล้วหาคำตอบไฟฟื้นชีพขา เมื่อฟื้นครบทุกส่วน ผีเเฟงค์จะตื่นขึ้นเเล้วช่วยให้ไปห้องต่อไปได้
                     </span >
                   </div>
-              
+              </div>
+              <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
                 <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center'>
                 ห้องที่ 3 - ผียุโรป (ผีตุ๊กตา)
                 </span>
@@ -87,7 +98,7 @@ import { faFlaskVial,
                     ไกลด์จะเดินตามมาเเล้วบรีฟว่าในการจะผ่านต้องทำการหาเเละเรียงลำดับตุ๊กตาให้ถูก โดยจะมีกระดาษเเปะคำศัพท์เเละความหมายของมัน มีทั้งหมด 3 ใบ ผู้เล่นต้องเเปลคำใบ้เเละหาตุ๊กตาที่มีลักษณะตามนั้นมาใส่ให้ถูกเพื่อให้สามารถเปิดห้องได้
                     </span >
                   </div>
-              </div>  
+              </div>
             </div>
           </main>
         </>

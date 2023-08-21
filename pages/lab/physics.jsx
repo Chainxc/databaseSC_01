@@ -115,11 +115,10 @@ import { faFlaskVial,
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
               กิจกรรม “Wonderful World of Astronomy”
               </span>
-              <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
-              <img src="/img/lab/phya8.webg"  />
+              </div>
                 <div className='flex flex-col justify-center gap-2'>
                   <span className='font-IBMPlexLoop text-sm md:text-base'>
-                  {'ตัวอย่างกิจกรรม เช่น การใช้กล้องโทรทรรศนในการสังเกตวัตถุระยะไกล (ตั้งกล้องบริเวณหน้าห้อง3605) การสังเกตวัตถุท้องฟ้าด้วย Software/App ทางดาราศาสตร์ เป็นต้น'}
+                  {'ตัวอย่างกิจกรรม เช่น การใช้กล้องโทรทรรศน์ในการสังเกตวัตถุระยะไกล (ตั้งกล้องบริเวณหน้าห้อง3605) การสังเกตวัตถุท้องฟ้าด้วย Software/App ทางดาราศาสตร์ เป็นต้น'}
                   </span>
                   <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
                     <li>กิจกรรมสาธิต เน้นการสาธิตปรากฏการณ์โดยมีคําถามให้ผู้เข้าร่วมกิจกรรมได้หาคําตอบจากการสังเกตปรากฏการณ์ที่เกิดขึ้น และลองอธิบายปรากฏการณ์ที่เกิดขึ้น</li>
@@ -127,10 +126,7 @@ import { faFlaskVial,
                     ห้องจัดกิจกรรม 3605
                     </li>
                   </ol>
-                  </div>
-              </div>
-            </div>
-            
+                  </div>         
             </div>
           </div>
         </main>
