@@ -34,21 +34,24 @@ export default function VirtualLab() {
             <bc>ชื่อกิจกรรม : Who ไคร้ข่า</bc>
             <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
               <img
-                src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
-                className='w-full max-w-sm rounded-xl'
+              /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
+                className='w-full max-w-sm rounded-xl' */
               />
               <div className='flex flex-col justify-center gap-2'>
                 <span className='font-IBMPlexLoop text-sm md:text-base'>
-                มาช่วยกันร่วมตามหาฆาตกรจากหลัก CSI ไปด้วยกัน เพราะหลักฐานที่อยู่ รหัสลับ กลอุบาย การต่อรองผู้มองเห็นความจริง มีเพียงหนึ่งเดียวถึงตัวจะเป็นเด็ก แต่สมองเป็นผู้ใหญ่ชื่อของเขาคือWHO ไคร้ข่า!!
+                มาช่วยกันร่วมตามหาฆาตกร ใคร!เป็น!คน!ท า!ไปด้วยกัน เพราะ
+                หลักฐานที่อยู่ รหัสลับ กลอุบาย การต่อรองผู้มองเห็นความจริง มีเพียงหนึ่งเดียวถึงตัวจะเป็นเด็ก แต่สมองเป็น
+                ผู้ใหญ่ชื่อของเขาคือยอดนักสืบ CSI
                 </span>
                 <span className='font-IBMPlexLoop text-sm md:text-base font-semibold'>
                   พบกับนักเรียนปัจจุบัน ในช่วงเวลาดังนี้
                 </span>
                 <ol className='font-IBMPlexLoop text-sm md:text-base list-inside list-disc space-y-1'>
-                  <li>จำนวนผู้เข้าร่วม : 15 คน</li>
+                  <li>จำนวนผู้เข้าร่วม : 20 คน</li>
                   <li>
-                  สถานที่จัด: โกวิท 1
+                  สถานที่จัด: 3401, 3403
                   </li>
+                  <li>สถานที่จัด: 3401, 3403</li> <li>ของรางวัล: เครื่องเขียน</li>
                 </ol>
                 <Link
                   href={
