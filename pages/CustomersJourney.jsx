@@ -25,42 +25,133 @@ const meta = {
       'Customers Journey ที่จะพาทุกคนไปรู้จักับ MWIT OPENHOUSE 2023 มากขึ้น',
     img: 'ogimage.png',
   }
-/*const events = [
+const events = [
+  
   {
+    id: '',
     name: '',
     description: '',
     location: '',
     time: '',
-    img: ''
+    img: '',
+    reccommend :[],
+    locate:
+      {
+        top:'',
+        left:'',
+        size:'',
+      }
+
   },
-]
-const eventfri = [
   {
-    name: '',
-    description: '',
-    location: '',
-    time: '',
-    img: ''
+    id: '1',
+    name: 'กิจกรรมนำเสนอโครงงาน กิจกรรมเปิดบ้าน',
+    description: '2 งาน นำเสนอโครงงาน กิจกรรมเปิดบ้าน',
+    location: 'ตึก 1',
+    time: 'นำเสนอโครงงานช่วง 9-12, กิจกรรมเปิดบ้าน 9-16',
+    img: 'img/2023/journey/1Building.png',
+    reccommend :[2,3,4],
+    locate:
+      {
+        top:'21%',
+        left:'15.5%',
+        size:'3.5vw',
+      }
+  },
+  {
+    id: '2',
+    name: 'name',
+    description: 'description',
+    location: 'location',
+    time: 'time',
+    img: 'img/2023/journey/2Building.png',
+    reccommend :[1,5,6],
+    locate:
+      {
+        top:'12.7%',
+        left:'22%',
+        size:'4.5vw',
+      }
+  },
+  {
+    id: '3',
+    name: 'name',
+    description: 'description',
+    location: 'location',
+    time: 'time',
+    img: 'img/2023/journey/3Building.png',
+    reccommend :[4,5,6],
+    locate:
+      {
+        top:'15%',
+        left:'37%',
+        size:'4.5vw',
+      }
+  },
+  {
+    id: '4',
+    name: 'name',
+    description: 'description',
+    location: 'location',
+    time: 'time',
+    img: 'img/2023/journey/5Building.png',
+    reccommend :[1,5,6],
+    locate:
+      {
+        top:'8%',
+        left:'56%',
+        size:'4.5vw',
+      }
+  },
+  {
+    id: '5',
+    name: 'name',
+    description: 'description',
+    location: 'location',
+    time: 'time',
+    img: 'img/2023/journey/6Building.png',
+    reccommend :[1,3,6],
+    locate:
+      {
+        top:'12%',
+        left:'77%',
+        size:'4.5vw',
+      }
+  },
+  {
+    id: '6',
+    name: 'name',
+    description: 'description',
+    location: 'location',
+    time: 'time',
+    img: 'img/2023/journey/9Building.png',
+    reccommend :[1,5,6],
+    locate:
+      {
+        top:'58%',
+        left:'77%',
+        size:'4.5vw',
+      }
   },
 ]
 
-const eventsat = [
-  {
-    name: '',
-    description: '',
-    location: '',
-    time: '',
-    img: ''
-  },
-]*/
 export default function Customerjourney() {
   const [event, seteventVisible] = useState({});
-  const toggleevent = (dateIndex, slotIndex, actIndex) => {
-    setDescriptionVisible(prevState => ({
+  const toggleevent = (eventid) => {
+    seteventVisible(prevState => ({
       ...prevState,
-      [`${dateIndex}-${slotIndex}-${actIndex}`]: !prevState[`${dateIndex}-${slotIndex}-${actIndex}`]
+      [`${eventid}`]: !prevState[`${eventid}`]
     }));
   };
+  const changeColor = (id) => {
+    const colors = ['rgba(255, 0, 0, 1)', 'rgba(0, 255, 0, 0.8)', 'rgba(0, 0, 255, 0.6)'];
+    const currentIndex = colors.indexOf(document.getElementById(id).style.backgroundColor);
+    const newIndex = (currentIndex + 1) % colors.length;
+    const newColor = colors[newIndex];
+
+    document.getElementById(id).style.backgroundColor = newColor;
+  };
+  
     return (
       <>
         <Head>
@@ -103,93 +194,104 @@ export default function Customerjourney() {
               </div>
               <div className='grid relative grid-cols-1'>
                 <div className='col-span-1 relative max-w-max '>
-                <img
-                  className='w-full max-h-fit'
-                  src={'img/2023/journey/base.png'}
-                />
+                  <img
+                    className='w-full max-h-fit'
+                    src={'img/2023/journey/base.png'}
+                  />
                   <div>
                     <a
-                    className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                      className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
+                      target='_blank'
+                      rel='noopener noreferrer'
                     >  
-                      <button type='button' className="cursor-pointer">
-                      <img
-                          className='absolute w-[3.5vw] top-[40%] left-[37.3%] translate-y-[-50%] translate-x-[-50]'
+                      <button  className="cursor-pointer ">
+                        <img
+                          type='button'
+                          id='test'
+                          className='bg-origin-padding bg-black rounded-md p-[0.3vw] absolute w-[4.1vw] top-[39%] left-[36.3%] translate-y-[-50%] translate-x-[-50]'
                           src='img/2023/journey/tour.png'
+                          onClick={() => changeColor('test')}
+                        />
+                        <img
+                          className='absolute w-[4.5vw] top-[21%] left-[15.5%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/1Building.png'
+                        />
+                        <img
+                          className='absolute  w-[4.5vw] top-[12.7%] left-[22%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/2Building.png'
+                        />
+                        <img
+                          className='absolute w-[4.5vw] top-[15%] left-[37%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/3Building.png'
+                        />
+                        <img
+                          className='absolute w-[4.5vw] top-[8%] left-[56%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/5Building.png'
+                        />
+                        <img
+                          className='absolute w-[4.5vw] top-[12%] left-[77%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/6Building.png'
+                        />
+                        <img
+                          className='absolute w-[4.5vw] top-[58%] left-[37.5%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/9Building.png'
+                        />
+                        <img
+                          className='absolute w-[3.3vw] top-[70%] left-[41%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/9regis.png'
+                        />
+                        <img
+                          className='absolute w-[2.5vw] top-[40%] left-[63%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/coverway.png'
+                        />
+                        <img
+                          className='absolute w-[4.5vw] top-[81%] left-[42.36%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/entrance_rear.png'
+                        />
+                        <img
+                          className='absolute w-[8vw] top-[35.6%] left-[78%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/front_entrance.png'
+                        />
+                        <img
+                          className='absolute w-[3vw] top-[14.5%] left-[28%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/library.png'
+                        />
+                        <img
+                          className='absolute w-[3vw] top-[40%] left-[85%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/frontregis.png'
+                        />
+                        <img
+                          className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/movie_3d.png'
+                        />
+                        <img
+                          className='absolute w-[3.5vw] top-[64%] left-[65%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/soccer_field.png'
+                        />
+                        <img
+                          className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/movie_3d.png'
+                        />
+                        <img
+                          className='absolute w-[2.5vw] top-[25%] left-[27%] translate-y-[-50%] translate-x-[-50]'
+                          src='img/2023/journey/flag.png'
                         />
                       </button>                    
+                        
                       
+                          
                     </a>
                     
-                    <img
-                      className='absolute w-[4.5vw] top-[21%] left-[15.5%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/1Building.png'
-                    />
-                    <img
-                      className='absolute  w-[4.5vw] top-[12.7%] left-[22%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/2Building.png'
-                    />
-                    <img
-                      className='absolute w-[4.5vw] top-[15%] left-[37%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/3Building.png'
-                    />
-                    <img
-                      className='absolute w-[4.5vw] top-[8%] left-[56%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/5Building.png'
-                    />
-                    <img
-                      className='absolute w-[4.5vw] top-[12%] left-[77%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/6Building.png'
-                    />
-                    <img
-                      className='absolute w-[4.5vw] top-[58%] left-[37.5%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/9Building.png'
-                    />
-                    <img
-                      className='absolute w-[3.3vw] top-[70%] left-[41%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/9regis.png'
-                    />
-                    <img
-                      className='absolute w-[2.5vw] top-[40%] left-[63%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/coverway.png'
-                    />
-                    <img
-                      className='absolute w-[4.5vw] top-[81%] left-[42.36%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/entrance_rear.png'
-                    />
-                    <img
-                      className='absolute w-[8vw] top-[35.6%] left-[78%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/front_entrance.png'
-                    />
-                    <img
-                      className='absolute w-[3vw] top-[14.5%] left-[28%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/library.png'
-                    />
-                    <img
-                      className='absolute w-[3vw] top-[40%] left-[85%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/frontregis.png'
-                    />
-                    <img
-                      className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/movie_3d.png'
-                    />
-                    <img
-                      className='absolute w-[3.5vw] top-[64%] left-[65%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/soccer_field.png'
-                    />
-                    <img
-                      className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/movie_3d.png'
-                    />
-                    <img
-                      className='absolute w-[2.5vw] top-[25%] left-[27%] translate-y-[-50%] translate-x-[-50]'
-                      src='img/2023/journey/flag.png'
-                    />
-                    
                   </div>
-                
-                </div> 
+                </div>
+                {events.map((p,pID) => (
+                  <>
+                    <div key={pID} className='grid justify-self-center justify-items-center justify-center gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl w-[60%]'>
+                      {p.description}
+                    </div>
+                  </>
+                )
+                )}
               </div>
             </div>
           </div>
