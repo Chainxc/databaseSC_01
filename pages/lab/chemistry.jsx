@@ -184,18 +184,7 @@ export default function VirtualLab() {
                   </li>
                 </ol> */}
                   <div className='flex flex-wrap gap-1'>
-                    {l.button.map((b, bi) => (
-                      <Link key={bi} href={b.href}>
-                        <a
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='self-center text-sm md:text-base flex gap-1 items-center mt-2 px-3 py-1 rounded-full font-IBMPlex font-semibold bg-ymw/60 hover:bg-ymw transition-colors duration-300'
-                        >
-                          <FontAwesomeIcon icon={b.icon} />
-                          <span>{b.name}</span>
-                        </a>
-                      </Link>
-                    ))}
+                    
                   </div>
                 </div>
               </div>
