@@ -170,6 +170,8 @@ export default function Tour() {
       : setSelected(0)
   }, [router.query.place])
 
+  
+
 const meta = {
     title: 'MWIT School Tour | MWIT Open House 2022',
     url: 'schtour',

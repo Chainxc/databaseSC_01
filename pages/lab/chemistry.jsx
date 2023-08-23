@@ -163,18 +163,8 @@ export default function VirtualLab() {
               className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
             >
               <div className='grid grid-flow-row md:grid-flow-col gap-4 '>
-                {l.img && (
-                  <img
-                    src={process.env.CDN_URL + '/img/lab/' + l.img}
-                    className='w-full max-w-sm rounded-xl'
-                  />
-                )}
-                <div
-                  className={
-                    'flex flex-col justify-center gap-2 ' +
-                    (!l.img && 'items-center')
-                  }
-                >
+                
+                <div>
                   <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
                     {l.name}
                   </span>

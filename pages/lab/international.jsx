@@ -41,6 +41,7 @@ import { faFlaskVial,
                 Lab & Activities
               </span>
             </div>
+            
             <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
               <div className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-pink-200/40 backdrop-blur-md rounded-xl'>
               <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold text-center mt-2'>
@@ -100,7 +101,14 @@ import { faFlaskVial,
                 </span>
 
                   </div>
-              </div>  
+              </div> 
+              <div>
+              <Link href={'/lab'}>
+                <a className='absolute text-sm md:text-base left-3 font-IBMPlex font-semibold text-gray-600 hover:text-black transition-colors duration-300 -top-4 bg-purple-300/60 hover:bg-purple-300/80 rounded-full py-1 px-3'>
+                  {'< Back'}
+                </a>
+              </Link>
+              </div> 
             </div>
           </main>
         </>

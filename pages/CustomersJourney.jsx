@@ -1,11 +1,13 @@
 import Head from 'next/head'
 /*import Modal from "../components/Modal";*/
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { AnimateSharedLayout, motion, useScroll } from 'framer-motion'
+import { AnimateSharedLayout, motion, useScroll,AnimatePresence } from 'framer-motion'
 import { clamp } from 'lodash'
 import Link from 'next/link'
 import ActCard from '../components/actcard'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+import {events} from './Journeypath'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBook,
@@ -25,133 +27,39 @@ const meta = {
       'Customers Journey ที่จะพาทุกคนไปรู้จักับ MWIT OPENHOUSE 2023 มากขึ้น',
     img: 'ogimage.png',
   }
-const events = [
-  
-  {
-    id: '',
-    name: '',
-    description: '',
-    location: '',
-    time: '',
-    img: '',
-    reccommend :[],
-    locate:
-      {
-        top:'',
-        left:'',
-        size:'',
-      }
-
-  },
-  {
-    id: '1',
-    name: 'กิจกรรมนำเสนอโครงงาน กิจกรรมเปิดบ้าน',
-    description: '2 งาน นำเสนอโครงงาน กิจกรรมเปิดบ้าน',
-    location: 'ตึก 1',
-    time: 'นำเสนอโครงงานช่วง 9-12, กิจกรรมเปิดบ้าน 9-16',
-    img: 'img/2023/journey/1Building.png',
-    reccommend :[2,3,4],
-    locate:
-      {
-        top:'21%',
-        left:'15.5%',
-        size:'3.5vw',
-      }
-  },
-  {
-    id: '2',
-    name: 'name',
-    description: 'description',
-    location: 'location',
-    time: 'time',
-    img: 'img/2023/journey/2Building.png',
-    reccommend :[1,5,6],
-    locate:
-      {
-        top:'12.7%',
-        left:'22%',
-        size:'4.5vw',
-      }
-  },
-  {
-    id: '3',
-    name: 'name',
-    description: 'description',
-    location: 'location',
-    time: 'time',
-    img: 'img/2023/journey/3Building.png',
-    reccommend :[4,5,6],
-    locate:
-      {
-        top:'15%',
-        left:'37%',
-        size:'4.5vw',
-      }
-  },
-  {
-    id: '4',
-    name: 'name',
-    description: 'description',
-    location: 'location',
-    time: 'time',
-    img: 'img/2023/journey/5Building.png',
-    reccommend :[1,5,6],
-    locate:
-      {
-        top:'8%',
-        left:'56%',
-        size:'4.5vw',
-      }
-  },
-  {
-    id: '5',
-    name: 'name',
-    description: 'description',
-    location: 'location',
-    time: 'time',
-    img: 'img/2023/journey/6Building.png',
-    reccommend :[1,3,6],
-    locate:
-      {
-        top:'12%',
-        left:'77%',
-        size:'4.5vw',
-      }
-  },
-  {
-    id: '6',
-    name: 'name',
-    description: 'description',
-    location: 'location',
-    time: 'time',
-    img: 'img/2023/journey/9Building.png',
-    reccommend :[1,5,6],
-    locate:
-      {
-        top:'58%',
-        left:'77%',
-        size:'4.5vw',
-      }
-  },
-]
 
 export default function Customerjourney() {
-  const [event, seteventVisible] = useState({});
-  const toggleevent = (eventid) => {
-    seteventVisible(prevState => ({
+  const [color, setcolor] = useState({});
+  function togglecolor(eventid) {
+    setcolor(prevState => ({
       ...prevState,
-      [`${eventid}`]: !prevState[`${eventid}`]
-    }));
-  };
-  const changeColor = (id) => {
-    const colors = ['rgba(255, 0, 0, 1)', 'rgba(0, 255, 0, 0.8)', 'rgba(0, 0, 255, 0.6)'];
-    const currentIndex = colors.indexOf(document.getElementById(id).style.backgroundColor);
-    const newIndex = (currentIndex + 1) % colors.length;
-    const newColor = colors[newIndex];
-
-    document.getElementById(id).style.backgroundColor = newColor;
-  };
+      [`${eventid}`]: 'black' ? 'lightblue' : 'black'
+    }))
+  }
   
+  const router = useRouter()
+  useEffect(() => {
+    
+  },[])
+  const [enter,setenter] = useState(12)
+  const [visit,setvisit] = useState(enter)
+  const [show,setshow] = useState(enter)
+  useEffect(() => {
+    router.query.events &&
+    events.find((p) => p.name.replaceAll(' ', '_') === router.query.events)
+      ? setvisit(
+        events.findIndex(
+          (p) => p.name.replaceAll(' ', '_') === router.query.events,
+        ))
+      : setvisit(12)
+  },[router.query.events])
+  {/*useEffect(()=>{
+    router.query.events &&
+    events.find((p)=>p.name.replaceAll(' ', '_') === router.query.events)
+    ? setshow(
+      events.findIndex((p) => p.name.replaceAll(' ', '_') === router.query.events)
+      ):setshow({})
+  },router.query.events)*/}
     return (
       <>
         <Head>
@@ -198,101 +106,102 @@ export default function Customerjourney() {
                     className='w-full max-h-fit'
                     src={'img/2023/journey/base.png'}
                   />
-                  <div>
-                    <a
-                      className='ds-btn ds-btn-sm ds-btn-secondary hover:scale-105 transition-all duration-200 font-IBMPlex font-bold md:ds-btn-md md:text-xl lg:ds-btn-lg lg:text-2xl space-x-2'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >  
-                      <button  className="cursor-pointer ">
-                        <img
-                          type='button'
-                          id='test'
-                          className='bg-origin-padding bg-black rounded-md p-[0.3vw] absolute w-[4.1vw] top-[39%] left-[36.3%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/tour.png'
-                          onClick={() => changeColor('test')}
-                        />
-                        <img
-                          className='absolute w-[4.5vw] top-[21%] left-[15.5%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/1Building.png'
-                        />
-                        <img
-                          className='absolute  w-[4.5vw] top-[12.7%] left-[22%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/2Building.png'
-                        />
-                        <img
-                          className='absolute w-[4.5vw] top-[15%] left-[37%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/3Building.png'
-                        />
-                        <img
-                          className='absolute w-[4.5vw] top-[8%] left-[56%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/5Building.png'
-                        />
-                        <img
-                          className='absolute w-[4.5vw] top-[12%] left-[77%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/6Building.png'
-                        />
-                        <img
-                          className='absolute w-[4.5vw] top-[58%] left-[37.5%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/9Building.png'
-                        />
-                        <img
-                          className='absolute w-[3.3vw] top-[70%] left-[41%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/9regis.png'
-                        />
-                        <img
-                          className='absolute w-[2.5vw] top-[40%] left-[63%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/coverway.png'
-                        />
-                        <img
-                          className='absolute w-[4.5vw] top-[81%] left-[42.36%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/entrance_rear.png'
-                        />
-                        <img
-                          className='absolute w-[8vw] top-[35.6%] left-[78%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/front_entrance.png'
-                        />
-                        <img
-                          className='absolute w-[3vw] top-[14.5%] left-[28%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/library.png'
-                        />
-                        <img
-                          className='absolute w-[3vw] top-[40%] left-[85%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/frontregis.png'
-                        />
-                        <img
-                          className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/movie_3d.png'
-                        />
-                        <img
-                          className='absolute w-[3.5vw] top-[64%] left-[65%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/soccer_field.png'
-                        />
-                        <img
-                          className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/movie_3d.png'
-                        />
-                        <img
-                          className='absolute w-[2.5vw] top-[25%] left-[27%] translate-y-[-50%] translate-x-[-50]'
-                          src='img/2023/journey/flag.png'
-                        />
-                      </button>                    
-                        
-                      
-                          
-                    </a>
-                    
-                  </div>
+                  <a>
+                    <AnimatePresence exitBeforeEnter>
+                      <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className= {`absolute ${events[visit].locate.size} ${events[visit].locate.top} ${events[visit].locate.left} translate-y-[-50%] translate-x-[-50]`}
+                        src={events[visit].img}
+                      />
+                    </AnimatePresence>
+                  </a>
+                  {events[visit].reccommend.map((s,sID)=>(
+                    <>
+                      <Link
+                        key = {sID}
+                        scroll={false}
+                        visit
+                        href={{
+                          pathname: '/CustomersJourney',
+                          query: {
+                            ...router.query,
+                            events: events[s.tour].name.replaceAll(' ', '_'),
+                          },
+                        }}
+                        //onClick={()=>setshow(s.tour)}
+                        passHref
+                      >
+                        <a className=''>
+                          <AnimatePresence>
+                            <motion.img
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ duration: 0.5 }}
+                              key={`${show}-${s.tour}`}
+                              className= {`absolute ${events[s.tour].locate.size} ${events[s.tour].locate.top} ${events[s.tour].locate.left} translate-y-[-50%] translate-x-[-50]`}
+                              src={events[s.tour].img}
+                            />
+                          </AnimatePresence>
+                        </a>
+                      </Link>
+                    </>
+                  ))}
+                  
                 </div>
-                {events.map((p,pID) => (
+                {/*<div className='col-span-1 relative max-w-max '>
+                  <img
+                    className='w-full max-h-fit'
+                    src={'img/2023/journey/base.png'}
+                  />
+                  <img
+                    className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
+                    src='img/2023/journey/movie_3d.png'
+                  />
+                  <img
+                    className='absolute w-[3.5vw] top-[64%] left-[65%] translate-y-[-50%] translate-x-[-50]'
+                    src='img/2023/journey/soccer_field.png'
+                  />
+                  <img
+                    className='absolute w-[2.5vw] top-[89%] left-[50.5%] translate-y-[-50%] translate-x-[-50]'
+                    src='img/2023/journey/17Building.png'
+                  />
+                  <img
+                    className='absolute w-[2.5vw] top-[25%] left-[27%] translate-y-[-50%] translate-x-[-50]'
+                    src='img/2023/journey/flag.png'
+                  />
+                  
+                </div>*/}
+                {/*events.map((p,pID) => (
                   <>
                     <div key={pID} className='grid justify-self-center justify-items-center justify-center gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl w-[60%]'>
                       {p.description}
                     </div>
                   </>
                 )
-                )}
+                )*/}
               </div>
+              
+            </div>
+          </div>
+          <div className='grid justify-items-center justify-center gap-1 w-screen pt-12 w-screen'>
+            <div className='bg-white/40 shadow-lg backdrop-blur-sm rounded-xl w- px-6 py-6'>
+              <span className='font-CS text-2xl md:text-4xl font-bold text-bmw justify-center'>
+                {`Current Place:${events[visit].name}`}
+              </span>
+              <div className='grid md:grid-cols-3 justify-center'>
+                <img 
+                  src={events[visit].img}
+                  className='md:col-span-1 h-[10vh] justify-center'
+                />
+                <span className='md:col-span-2 font-CS text-2xl py-[3vh]'>
+                  {events[visit].description}
+                </span>
+              </div>
+              
             </div>
           </div>
         </div>
