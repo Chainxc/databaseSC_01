@@ -15,7 +15,6 @@ export default function VirtualLab() {
     url: 'lab/chemistry',
     description:
       'เรียนรู้การทดลองทางเคมีผ่านแพลทฟอร์มออนไลน์ที่ได้ทั้งความรู้และความสนุก เช่น การหาความเข้มข้นสารละลายด้วย simulation, เรียนรู้การทำปฏิกิริยาเคมีจากการทำแซนวิช หรือฝึกทักษะพื้นฐานทางเคมี | MWIT Open House 2022',
-    img: 'ogimage.png',
   }
 
   const labData = [
@@ -26,7 +25,6 @@ export default function VirtualLab() {
       type : 'รูปแบบการจัด : จัดเป็นรอบๆ รอบละ 20นาที',
       people : 'จำนวนผู้เข้าร่วม : 20 คน',
       award : 'ของรางวัล : ลูกอม',
-      img: 'chema1p1.webp',
       button: [
         {
           name: 'Virtual Lab',
@@ -47,7 +45,6 @@ export default function VirtualLab() {
       type : 'รูปแบบการจัด : walk-in ',
       people : 'วัสดุอุปกรณ์ : data logger, เกลือ, น้ำกลั่น, สีผสมอาหาร, cuvette, บีกเกอร์, ปิเปต',
       award : 'จำนวนผู้เข้าร่วม : ไม่จำกัด',
-      img: 'chema2p1.webp',
       button: [
         {
           name: 'Virtual Lab',
@@ -78,7 +75,6 @@ export default function VirtualLab() {
         'ศึกษาโมเลกุลก่อนและหลังการเกิดปฏิกริยา เช่น ปฏิกิริยาการเกิดน้ำ การเกิดแอมโมเนีย และการเผาไหม้มีเทน',
         'แข่งขันเล่นเกมส์ ในระดับความยากแตกต่างกัน',
       ],
-      img: 'chema3p1.webp',
       button: [
         {
           name: 'Virtual Lab',
@@ -94,7 +90,6 @@ export default function VirtualLab() {
       type : 'รูปแบบการจัด : walk-in ',
       people : 'วัสดุอุปกรณ์ : ตัวอย่างหิน น้ำชา น้ำซักผ้า กล้อง USB digital microscope',
       award : 'จำนวนผู้เข้าร่วม : ไม่จำกัด',
-      img: 'chema4p1.webp',
       button: [
         {
           name: 'Virtual Lab',
