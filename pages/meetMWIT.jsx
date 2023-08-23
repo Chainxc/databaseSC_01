@@ -111,7 +111,7 @@ const meta = {
             </div>
           </a>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 mt-4 ml-5 mr-5 lg:ml-16 lg:mr-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 mt-4 ml-5 mr-5 lg:mx-64">
           <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
             <img src="/img/catimg/2.jpg" className='rounded' /> 
           </div>
@@ -128,7 +128,60 @@ const meta = {
           <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
             กิจกรรมบรรยายพิเศษ
           </span>
+          <br />
+          <span className='text-lg lg:text-2xl font-CS'>การบรรยายพิเศษจาก<b className='text-bmw'>ศิษย์เก่า</b>โรงเรียนมหิดลวิทยานุสรณ์<br /><b className='text-bmw'>เวลา 13.00 - 14.00 น.</b></span>
         </center>
+        <center>
+          <div className="mx-16 lg:mx-64">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-8 mt-4">
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 25 สิงหาคม 2566</span>
+                <span className='font-CS text-md lg:text-xl mb-5'>พี่ไนน์ (MWIT25/6)</span>
+                <img src="img/catimg/5.jpg" alt="" className='w-full' />
+              </div>
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-pink-100">
+                <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                  <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 26 สิงหาคม 2566</span>
+                  <span className='font-CS text-md lg:text-xl mb-5'>พี่บลิงค์กี้ (MWIT30/5)</span>
+                  <img src="img/catimg/5.jpg" alt="" className='w-full' />
+                </div>
+              </div>
+            </div>
+            <div className="py-5"></div>
+            <span className='text-lg lg:text-2xl font-CS'>การบรรยายพิเศษจาก<b className='text-bmw'>ศิษย์รุ่นปัจจุบัน</b>โรงเรียนมหิดลวิทยานุสรณ์<br /><b className='text-bmw'>วันที่ 25 สิงหาคม 2566 เวลา 14.00 - 15.00 น.</b></span>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5 mt-4">
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-xl mb-5 mt-5'>พี่แทน (MWIT31/4)</span>
+                <img src="img/2023/meetmwit/1.png" alt="" className='w-full' />
+              </div>
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-xl mb-5 mt-5'>พี่แปม (MWIT32/10)</span>
+                <img src="img/2023/meetmwit/2.png" alt="" className='w-full' />
+              </div>
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-xl mb-5 mt-5'>พี่เจจา (MWIT33/9)</span>
+                <img src="img/2023/meetmwit/3.png" alt="" className='w-full' />
+              </div>
+            </div>
+            <div className='mt-5'></div>
+            <span className='text-lg lg:text-2xl font-CS mt-5'><b className='text-bmw  mt-5'>วันที่ 26 สิงหาคม 2566 เวลา 14.00 - 15.00 น.</b></span>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5 mt-4">
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-xl mb-5 mt-5'>พี่แก้ม (MWIT31/8)</span>
+                <img src="img/2023/meetmwit/4.png" alt="" className='w-full' />
+              </div>
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-xl mb-5 mt-5'>พี่ไทม์ (MWIT32/4)</span>
+                <img src="img/2023/meetmwit/5.png" alt="" className='w-full' />
+              </div>
+              <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+                <span className='font-CS text-md lg:text-xl mb-5 mt-5'>พี่วอร์ม (MWIT33/7)</span>
+                <img src="img/2023/meetmwit/6.png" alt="" className='w-full' />
+              </div>
+            </div>
+          </div>
+        </center>
+        <div className="pt-5"></div>
         
       </main>
     </>
