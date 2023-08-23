@@ -89,32 +89,47 @@ const meta = {
 
       <main className='w-full bg-white/20'>
         <div className='flex flex-col text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
-          <Link scroll={false} href={'/schtour'}>
-            <a className='font-CS font-bold text-bmw text-5xl md:text-4xl lg:text-5xl'>
-              "น้อง" ถาม "พี่" ตอบ
-            </a>
-          </Link>
+          <a className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
+            "น้อง" ถาม "พี่" ตอบ
+          </a>
         </div>
-        <div className='ml-32 mr-32'>
-          <center>
-            <div className="grid grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-3 mt-4 ">
-              <div className="flex flex-col items-center w-full max-w-sm pt-5 pb-5 col-span-1">
-                <img
-                  className='w-full'
-                  src={
-                    '/img/catimg/1.jpg'
-                  }
-                />
-              </div>
-              <div className="flex flex-col items-center w-full max-w-sm pt-5 pb-5 col-span-2">
-                <div className="border border-1 border-black rounded bg-white w-full h-full">
-                  sdsdd
-                </div>
-              </div>
-              
+        <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
+          <a className='w-full relative group shadow-lg flex flex-col md:flex-row rounded-xl overflow-hidden min-h-[15rem] justify-end'>
+            <div
+              style={{ backgroundImage: `url("/img/catimg/1.jpg")` }}
+              className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
+            />
+            <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-yellow-100/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
+              <span className='font-CS font-semibold text-xl md:text-2xl text-bmw'>
+                "น้อง" ถาม "พี่" ตอบ
+              </span>
+              <span className='font-IBMPlex font-semibold text-sm md:text-base text-gray-700'>
+                🙌🏻 ใครที่อยากรู้ว่าพี่ ๆ MWIT เตรียมตัวสอบเข้ายังไง การใช้ชีวิตในโรงเรียนเป็นยังไง เรียนอะไรบ้าง พลาดกิจกรรมนี้ไม่ได้แล้ว!<br></br>
+                💬 กิจกรรมที่เปิดโอกาสให้มีการพูดคุย ถามตอบ ระหว่างรุ่นน้องและรุ่นพี่ คลายข้อสงสัย และทำให้รู้จักโรงเรียนได้ดีมากขึ้น<br></br>
+                🔥มีทั้งรูปแบบการคุยแบบ 1:1 และกลุ่ม 🔥
+              </span>
             </div>
-          </center>
+          </a>
         </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 mt-4 ml-5 mr-5 lg:ml-16 lg:mr-16">
+          <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
+            <img src="/img/catimg/2.jpg" className='rounded' /> 
+          </div>
+          <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-pink-100">
+            <img src="/img/catimg/3.jpg" className='rounded' />
+          </div>
+          <div className="mt-5"></div>
+        </div>
+        <center>
+          <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
+            พบกันได้ที่ .................
+          </span>
+          <div className="mt-16"></div>
+          <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
+            กิจกรรมบรรยายพิเศษ
+          </span>
+        </center>
+        
       </main>
     </>
   )
