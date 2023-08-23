@@ -1,10 +1,12 @@
 import Button from '../components/button'
+
 import { faHouse, faPersonChalkboard } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
 import Link from 'next/link'
 import MotionLogo from './motionlogo'
-import React, { useState } from 'react'; // Import useState
+import VideoModal from '../components/VideoModal';
+import React, { useState, useEffect } from 'react'; // Import useState
 const mainMenu = [
   {
     name: 'Home',
@@ -45,11 +47,16 @@ const mainMenu = [
 ]
 
 export default function LandingPage({ homeRef, children, ...props }) {
+    
+  
   return (
+    
+    <>
     <div className='w-full bg-ybg/50 absolute h-[calc(100vh-calc(100vh-100%))]'
     style={{
       backgroundImage: '/img/2023/yellowfade.webp',
     }}>
+      
       
       <div className='p-4 flex flex-col w-full h-[calc(100vh-calc(100vh-100%))]'>
         <div className='grow flex flex-col justify-center items-center py-4 mx-auto gap-6 lg:gap-8'>
@@ -105,7 +112,7 @@ export default function LandingPage({ homeRef, children, ...props }) {
             <Link href={'https://forms.gle/9r7ax1gAwxDK5Hov6'}>
               <a>
               <motion.a
-                className='relative bg-ymw/50 hover:bg-ymw hover:text-black cursor-pointer transition-colors duration-200 py-2 md:py-2 px-5 md:px-4 rounded-full font-CS font-bold text-lg md:text-4xl lg:text-6xl text-bmw'
+                className='relative bg-ymw/50 hover:bg-ymw hover:text-black cursor-pointer transition-colors duration-200 py-2 md:py-2 px-5 md:px-4 rounded-full font-CS font-bold text-lg md:text-xl lg:text-2xl text-bmw'
                 initial={{ opacity: 0, scale: 0.7, y: 10, rotate: -10 }}
                 animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
                 transition={{
@@ -126,9 +133,9 @@ export default function LandingPage({ homeRef, children, ...props }) {
                     type: 'spring',
                   }}
                 >
-                  NEW!
+                  Closed!
                 </motion.div>
-                <span className='whitespace-nowrap'>Register Now!</span>
+                <span className='whitespace-nowrap'>Registration</span>
               </motion.a>
               </a>
             </Link>
@@ -177,5 +184,7 @@ export default function LandingPage({ homeRef, children, ...props }) {
         </div>
       </div>
     </div>
+    </>
+
   )
 }

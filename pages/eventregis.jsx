@@ -26,14 +26,16 @@ const File = [
         href : "https://forms.gle/9r7ax1gAwxDK5Hov6",
         src: "logo",
         desc: "ขอความกรุณาทุกท่านที่มีความประสงค์เข้าร่วมกิจกรรมร่วมมือกรอกข้อมูลลงทะเบียนเข้าร่วมกิจกรรมเพื่อความสะดวกในการเข้ากิจกรรมในวันจริง",
-        button: "ฟอร์ม"
+        button: "ปิดลงทะเบียน",
+        btnclass: "bg-red-500/50 hover:bg-red-500 px-3 text-sm md:text-base absolute top-2 right-2 font-IBMPlex font-semibold rounded-full transition-colors duration-300 backdrop-blur-sm"
     },
     {
         name : "Google Form ลงทะเบียนเข้าแข่งขัน MWIT SPELLING BEE",
         href : "https://forms.gle/pbQWEdGUUAN5L3JP9",
         src: "SpellingBee",
         desc: "สำหรับผู้ที่สนใจเข้าแข่งขันในกิจกรรม Spelling bee ในวันที่ 25 สิงหาคม 2566",
-        button: "ฟอร์ม"
+        button: "ฟอร์ม",
+      btnclass: "bg-white/50 hover:bg-white px-3 text-sm md:text-base absolute top-2 right-2 font-IBMPlex font-semibold rounded-full transition-colors duration-300 backdrop-blur-sm"
     }
 
 ]
@@ -69,7 +71,7 @@ export default function eventregis() {
           content='https://openhouse.mwit.ac.th/img/2023/thumb2023.png'
         />
     </Head>
-        <main className='flex flex-col items-center w-full max-w-7xl px-8 py-6 gap-4 mx-auto bg-cover bg-bottom sm:bg-fixed min-h-screen space-y-2'>
+        <main className='z-0 flex flex-col items-center w-full max-w-7xl px-8 py-6 gap-4 mx-auto bg-cover bg-bottom sm:bg-fixed min-h-screen space-y-2'>
             <span
               className='font-CS font-bold text-2xl md:text-3xl lg:text-4xl pt-16'
             >
@@ -84,6 +86,7 @@ export default function eventregis() {
                   desc={a.desc}
                   href={a.href}
                   button={a.button}
+                  btnclass={a.btnclass}
                 />
               ))}
               </div>

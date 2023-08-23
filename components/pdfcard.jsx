@@ -8,6 +8,7 @@ export default function Pdfcard({
   desc,
   status,
   button,
+  btnclass,
   href,
   children,
   ...props
@@ -57,7 +58,7 @@ export default function Pdfcard({
             </motion.span>
           )}
         </motion.div>
-        <div className='px-3 text-sm md:text-base absolute top-2 right-2 font-IBMPlex font-semibold rounded-full bg-white/50 hover:bg-white transition-colors duration-300 backdrop-blur-sm'>
+        <div className={btnclass}>
           {button}
         </div>
       </a>

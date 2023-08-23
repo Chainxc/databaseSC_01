@@ -24,7 +24,8 @@ import {
   faXmark,
   faFile,
   faCompass,
-  faFlagCheckered
+  faFlagCheckered,
+  faHandshake
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -150,31 +151,32 @@ export default function Navbar({
           href: '/club',
           icon: faCubes,
           auth: null,
-        },
+        },*/
         {
-          name: 'Virtual Lab',
+          name: 'Activities',
           href: '/lab',
           icon: faFlaskVial,
           auth: null,
-        },*/
-        /*{
+        },
+        {
           name: 'Curriculum',
           href: '/curriculum',
           icon: faFileInvoice,
           auth: null,
-        },*/
-        {
-          name: 'Virtual School Tour',
-          href: '/virtualschtour',
-          icon: faSchoolFlag,
-          auth: null,
         },
         {
-          name: 'Onsite School Tour',
+          name: 'School Tour',
           href: '/schtour',
           icon: faSchoolFlag,
           auth: null,
         },
+        {
+          name: "Meet MWIT's",
+          href: '/meetMWIT',
+          icon: faHandshake,
+          auth: null,
+        },
+        
         /*{
           name: 'MWITagram',
           href: '/mwitagram',
@@ -227,7 +229,7 @@ export default function Navbar({
       className={'flex flex-col w-full min-h-screen ' + (addClass || '')}
       ref={homeRef}
     >
-      <div className='w-full sticky z-50 top-0 px-4 bg-gradient-to-r from-bmw to-phd text-ymw text-lg lg:text-xl font-CS font-bold'>
+      <div className='z-50 w-full sticky top-0 px-4 bg-gradient-to-r from-bmw to-phd text-ymw text-lg lg:text-xl font-CS font-bold'>
         <div className='flex relative gap-3 md:gap-4 max-w-6xl mx-auto items-center'>
           <Link href={'/'}>
             <a className='flex gap-3 md:gap-4 items-center py-[0.35rem]'>

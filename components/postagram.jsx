@@ -167,7 +167,7 @@ export default function Postagram({
                   </div>
                   <FacebookShareButton
                     url={shareUrl}
-                    hashtag={'#MWITOpenHouse2022'}
+                    hashtag={'#MWITOpenHouse2023'}
                   >
                     <FacebookIcon size={24} round />
                   </FacebookShareButton>
