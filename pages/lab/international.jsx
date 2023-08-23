@@ -101,13 +101,13 @@ import { faFlaskVial,
                 </span>
 
                   </div>
+                  <Link href={'/lab'}>
+              <a className='absolute text-sm md:text-base left-3 font-IBMPlex font-semibold text-gray-600 hover:text-black transition-colors duration-300 -top-4 bg-purple-300/60 hover:bg-purple-300/80 rounded-full py-1 px-3'>
+                {'< Back'}
+              </a>
+            </Link>
               </div> 
               <div>
-              <Link href={'/lab'}>
-                <a className='absolute text-sm md:text-base left-3 font-IBMPlex font-semibold text-gray-600 hover:text-black transition-colors duration-300 -top-4 bg-purple-300/60 hover:bg-purple-300/80 rounded-full py-1 px-3'>
-                  {'< Back'}
-                </a>
-              </Link>
               </div> 
             </div>
           </main>
