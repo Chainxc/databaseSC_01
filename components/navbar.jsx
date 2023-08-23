@@ -122,12 +122,12 @@ export default function Navbar({
       icon: faCalendarDay,
       auth: null,
     },
-    {
+    /*{
       name: 'Registration Form',
       href: '/eventregis',
       icon: faFile,
       auth: null,
-    },
+    },*/
     {
       name: 'Exhibitions',
       href: '',
@@ -146,12 +146,12 @@ export default function Navbar({
           icon: faFlagCheckered,
           auth: null,
         },
-        /*{
+        {
           name: 'MWIT Club',
-          href: '/club',
+          href: '/clubfes',
           icon: faCubes,
           auth: null,
-        },*/
+        },
         {
           name: 'Activities',
           href: '/lab',
@@ -185,12 +185,12 @@ export default function Navbar({
         },*/
       ],
     },
-    /*{
-      name: 'Booking',
-      href: '/booking',
+    {
+      name: 'OPEN HOUSE Guide',
+      href: '/CustomersJourney',
       icon: faCalendarCheck,
-      auth: true,
-    },*/
+      auth: null,
+    },
     /*{
       name: 'Register',
       href: '/register',

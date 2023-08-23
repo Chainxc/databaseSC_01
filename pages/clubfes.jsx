@@ -22,7 +22,7 @@ const wcText = "Hi"
 
 
 
-export default function club() {
+export default function clubfes() {
   const slides1 = [
     {
       url: '/img/2023/slide/slide1/ch1.jpeg'
@@ -48,13 +48,13 @@ export default function club() {
 
   function prevSlide() {
     const isFirstSlide = currentIndex === 0
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1
+    const newIndex = isFirstSlide ? slides1.length - 1 : currentIndex - 1
     setCurrentIndex(newIndex)
   }
 
 
   function nextSlide() {
-    const isLastSlide = currentIndex === slides.length - 1
+    const isLastSlide = currentIndex === slides1.length - 1
     const newIndex = isLastSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
   }
@@ -87,55 +87,49 @@ export default function club() {
       title: 'กิจกรรมแนะแนวการศึกษา',
       subtt:
         '3 ปีในโรงเรียนกับการปูทางมุ่งสู่อนาคต',
-      img: 'chem1',
+      img: 'exchange',
       desc: 'การแนะแนวการศึกษา ให้คำแนะนำเกี่ยวกับเส้นทางในการเรียนต่อในอนาคต เปิดใจค้นหาตัวเอง เพื่อเปิดโลกไปสู่สาขาวิชาที่ชอบ พร้อมด้วยการวางกรอบและเป้าหมายที่ใช่ เพื่อเตรียมพร้อมเข้าสู่มหาวิทยาลัยที่ปรารถนา',
-      href: 'chemistry',
     },
     {
       title: 'กิจกรรมเรียนรู้นอกห้องเรียน',
       subtt:
         'ฟังบรรยายพิเศษจากศิษย์เก่าและผู้เชี่ยวชาญ ทัศนศึกษา และค่ายวิชาการ',
-      img: 'bio',
+      img: 'outside',
       desc: 'เรียนรู้มุมมอง แนวคิด วิธีการทำงานจากบุคคลที่มีความสามารถ ส่งเสริมความรู้รอบด้าน และได้เรียนรู้การใช้วิทยาศาสตร์ในชีวิตจริง ',
-      href: 'biology',
     },
     {
       title: 'กิจกรรม STEM challlenge',
       subtt:
         'บูรณาการความคิด แข่งขันพิชิตโจทย์ปัญหา STEM',
-      img: 'phy',
+      img: 'challenge',
       desc: 'กิจกรรมแก้ปัญหาที่กำหนดให้ในแต่ละปีโดยใช้การบูรณาการความรู้วิทยาศาสตร์ คณิตศาสตร์ วิศวกรรมศาสตร์ และเทคโนโลยี โดยเข้าร่วมการแข่งขันแบบกลุ่ม ได้ทั้งทักษะการทำงานเป็นทีม การประยุกต์และพลิกแพลงแก้ไขปัญหา และความท้าทายของกิจกรรม',
-      href: 'physic',
     },
     {
       title: 'กิจกรรมส่งเสริมการอ่าน',
       subtt:
         'อ่านหนังสืออันทรงคุณค่า พัฒนาทั้งความรู้และความคิด',
-      img: 'phy',
+      img: 'book',
       desc: 'ทีมนักอ่านมาทางนี้ ! ชั่วโมงอ่านหนังสือ พัฒนาทักษะกระบวนการคิดจากการสรุปเรื่องราวและวิเคราะห์ และยังมีกิจกรรม MWIT Read & Share ที่นำหนังสือเล่มโปรดมาจัดกิจกรรมเพื่อแลกเปลี่ยน พูดคุย และวิเคราะห์เนื้อหาร่วมกับคนอื่น ๆ ที่สนใจหนังสือเล่มนี้เช่นกัน',
-      href: 'physic',
     },
     {
       title: 'กิจกรรมส่งเสริมคุณธรรมจริยธรรม',
       subtt:
         'ปลูกฝังคุณธรรมและการใช้ชีวิตในศตวรรษที่ 21',
-      img: 'phy',
+      img: 'moral',
       desc: 'เสริมสร้างภาวะผู้นำในตนเอง การตระหนักรู้และจัดการตนเองได้ เสริมสร้างความมุ่งมั่น ความกล้าที่จะเปลี่ยนแปลง มีคุณธรรมจริยธรรม',
-      href: 'physic',
     },
     {
       title: 'กิจกรรมจิตอาสา',
       subtt:
         'ปลูกฝังความเป็นผู้ให้ และการพัฒนาสังคม',
-      img: 'phy',
+      img: 'social',
       desc: 'กิจกรรมบำเพ็ญประโยชน์สู่สังคม การจัดค่ายบำเพ็ญประโยชน์เพื่อส่งเสริมความเป็นผู้นำ และการประดิษฐ์ของใช้เพื่อนำไปมอบให้กับโรงพยาบาลหรือสถานสงเคราะห์เพื่อปลูกฝังจิตสำนึกที่ดี',
-      href: 'physic',
     },
     {
       title: 'กิจกรรม MWIT Ambassador',
       subtt:
         'พัฒนาความสามารถและการทำงานร่วมกับผู้อื่น',
-      img: 'phy',
+      img: 'ambassador',
       desc: 'พัฒนาความสามารถและพัฒนาสัมพันธ์ภาพกับผู้อื่น มีจิตสาธารณะ มีความสามารถขับเคลื่อนการทำงานเป็นทีมได้อย่างมีประสิทธิภาพ การเป็นผู้นำและเป็นส่วนหนึ่งของโรงเรียน นำเสนอกิจกรรมของโรงเรียน',
       href: 'physic',
     },
@@ -143,15 +137,50 @@ export default function club() {
       title: 'กิจกรรมจิตสำนึกความเป็นไทย และความเป็นพลเมืองโลก',
       subtt:
         'อนุรักษ์ความเป็นไทย และก้าวไปสู่การเป็นพลเมืองโลก',
-      img: 'phy',
+      img: 'thai',
       desc: 'อนุรักษ์ขนบธรรมเนียมประเพณีและศิลปวัฒนธรรมไทยในการแข่งขันทักษะศิลปศาสตร์ ทั้งประกกวดการวาด ร้อง แรป เรียงความ แต่งกลอน ร่วมแลกเปลี่ยนความคิดเห็นในประเด็นสังคมไทย',
-      href: 'physic',
     },
   ]
 
 
 return (
-  <div class="flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-6 pb-10
+  <>
+  <Head>
+        {/* <!-- HTML Meta Tags --> */}
+        <title>MWIT Open House 2023</title>
+        <meta
+          name='description'
+          content='MWIT Open House 2023 เปิดบ้านโรงเรียนมหิดลวิทยานุสรณ์ พบกับกิจกรรมและนิทรรศการมากมายตลอดวันที่ 25 และ 26 สิงหาคม 2566 ในรูปแบบออนไซต์'
+        />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property='og:url' content='https://openhouse.mwit.ac.th/' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='MWIT Open House 2023' />
+        <meta
+          property='og:description'
+          content='MWIT Open House 2023 เปิดบ้านโรงเรียนมหิดลวิทยานุสรณ์ พบกับกิจกรรมและนิทรรศการมากมายตลอดวันที่ 25 และ 26 สิงหาคม 2566 ในรูปแบบออนไซต์'
+        />
+        <meta
+          property='og:image'
+          content='https://openhouse.mwit.ac.th/img/2023/thumb2023.png'
+        />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta property='twitter:domain' content='openhouse.mwit.ac.th/' />
+        <meta property='twitter:url' content='https://openhouse.mwit.ac.th/' />
+        <meta name='twitter:title' content='MWIT Open House 2023' />
+        <meta
+          name='twitter:description'
+          content='MWIT Open House 2023 เปิดบ้านโรงเรียนมหิดลวิทยานุสรณ์ พบกับกิจกรรมและนิทรรศการมากมายตลอดวันที่ 25 และ 26 สิงหาคม 2566 ในรูปแบบออนไซต์'
+        />
+        <meta
+          name='twitter:image'
+          content='https://openhouse.mwit.ac.th/img/2023/thumb2023.png'
+        />
+      </Head>
+  <div className="flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-6 pb-10
   font-CS font-bold text-2xl md:text-3xl lg:text-4xl pt-16">
 
 
@@ -165,7 +194,7 @@ return (
       <div className='max-w-[800px] max-h-[450px] min-w-max w-[16rem] md:w-[32rem] h-auto m-auto py-2 px-4 relative group'>
         <motion.img
           src = '/img/2023/clubfes/clubfes_1.JPG'
-          className='w-[300px]  w-[120] md:w-[500px] md:h-[300] lg:w-[600px] flex self-center'
+          className='w-[300px]  w-[120] md:w-[500px] md:h-[300] lg:w-[600px] flex self-center '
           initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{
@@ -178,19 +207,16 @@ return (
       </div>
      
       <div class = "w-full max-w-7xl grid grid-rows-2 grid-flow-col gap-4 items-center justify-items-center mx-auto py-8 px-6">
-
-
-         
             <div>
-            <div class="font-IBMPlex font-semibold text-sm col-start-2 col-end-4 container mx-auto px-8 bg-white rounded-lg shadow-md p-4 text-l">
-              <h2 class="text-2xl font-bold">สร้างสิ่งใหม่อย่างสร้างสรรค์</h2>
-              <p class>นำเสนอกิจกรรมชุมนุมใน MWIT ที่นักเรียนเป็นผู้จัดตั้งขึ้นเอง เวทีเปิดโอกาสให้ได้ชมผลงานของแต่ละชุมนุม ไม่ว่าจะเป็นด้านดนตรี ศิลปะ หรือเกม</p>
+            <div className="font-IBMPlex font-semibold text-sm col-start-2 col-end-4 container mx-auto px-8 bg-white rounded-lg shadow-md p-4 text-l">
+              <h2 className="text-2xl font-bold">สร้างสิ่งใหม่อย่างสร้างสรรค์</h2>
+              <p>นำเสนอกิจกรรมชุมนุมใน MWIT ที่นักเรียนเป็นผู้จัดตั้งขึ้นเอง เวทีเปิดโอกาสให้ได้ชมผลงานของแต่ละชุมนุม ไม่ว่าจะเป็นด้านดนตรี ศิลปะ หรือเกม</p>
             </div>
           </div>
           <div>
-            <div class= "font-IBMPlex font-semibold text-sm container mx-auto px-8 bg-amber-200 rounded-lg shadow-md p-4 text-l">
+            <div className= "font-IBMPlex font-semibold text-sm container mx-auto px-8 bg-amber-200 rounded-lg shadow-md p-4 text-l">
               <FontAwesomeIcon icon={faLocationDot} size='s'/>
-                <h2 class="text-2xl font-bold">สถานที่จัดแสดง Club road</h2>
+                <h2 className="text-2xl font-bold">สถานที่จัดแสดง Club road</h2>
                 <p>สถานที่จัด: ลู่แดงฝั่ง covered walkway</p>
                 <p>เวลา: 9:00 - 16:00 ทั้งสองวัน</p>
             </div>
@@ -241,9 +267,9 @@ return (
               </Link>
           </div>
           <div>
-            <div class= "font-IBMPlex font-semibold text-sm container mx-auto px-8 bg-amber-200 rounded-lg shadow-md p-4 text-l">
+            <div className= "font-IBMPlex font-semibold text-sm container mx-auto px-8 bg-amber-200 rounded-lg shadow-md p-4 text-l">
               <FontAwesomeIcon icon={faLocationDot} size='s'/>
-                <h2 class="text-2xl font-bold">สถานที่จัดนิทรรศการกิจกรรมพัฒนาผู้เรียน</h2>
+                <h2 className="text-2xl font-bold">สถานที่จัดนิทรรศการกิจกรรมพัฒนาผู้เรียน</h2>
                 <p>สถานที่จัด: ในศูนย์วิทยบริการ (ห้องสมุด) </p>
                 <p>เวลา: 9:00 - 16:00 ทั้งสองวัน</p>
             </div>
@@ -259,11 +285,9 @@ return (
               >
                 <div
                   style={{
-                    backgroundImage: `url(${
-                      process.env.CDN_URL + '/img/' + 'clubfes/' + l.img + '.jpg'
-                    })`,
+                    backgroundImage: `url(${'/img/' + 'clubfes/' + l.img + '.png'})`,
                   }}
-                  className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
+                  className='relative md:absolute bg-auto bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
                 />
                 <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-white/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
                   <span className='font-CS font-semibold text-xl md:text-2xl text-bmw'>
@@ -283,13 +307,8 @@ return (
 
 
     </header>
-   
-
-
-   
-
-
   </div>
+  </>
     )
   }
  

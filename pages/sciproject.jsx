@@ -47,14 +47,14 @@ export default function SciProject(){
     // Add more image paths and alt text here
   ];
   const scimages=[
-    {src:'/img/2023/slide/slidesp/sp10.jpg'},
   {src:'/img/2023/slide/slidesp/sp11.jpg'},
   {src:'/img/2023/slide/slidesp/sp12.jpg'},
+  {src:'/img/2023/slide/slidesp/sp10.jpg'},
   {src:'/img/2023/slide/slidesp/sp13.jpg'},
   {src:'/img/2023/slide/slidesp/sp14.jpg'},
-  {src:'/img/2023/slide/slidesp/sp15.jpg'},
   {src:'/img/2023/slide/slidesp/sp16.jpg'},
   {src:'/img/2023/slide/slidesp/sp17.jpg'},
+  {src:'/img/2023/slide/slidesp/sp15.jpg'},
   {src:'/img/2023/slide/slidesp/sp18.jpg'},
   {src:'/img/2023/slide/slidesp/sp19.jpg'},];
   const images3=[
@@ -312,10 +312,10 @@ export default function SciProject(){
         
             </div>
 
-        <div className="w-full  grid md:grid-cols-2 mx-auto justify-items-center "> 
-        <div className="max-w-[600px] max-h-[390px] min-w-max w-[20rem] md:w-[600px] md:h-[390px] h-[14.6rem] m-auto py-8 px-2 relative group">
+        <div className="w-full  grid  mx-auto justify-items-center "> 
+          <div className="m-auto py-8 px-2 relative group">
             <div
-              className=" w-full h-full rounded-2xl bg-center bg-cover duration-100 group1"
+              className=" w-[80vw] h-[45vw]  rounded-2xl bg-center bg-cover duration-100 group1"
               style={{ backgroundImage: `url(${scimages[currentImageIndex2].src})` }}
               ></div>
              <div className=' group-hover:block absolute top-[50%] t-ranslate-x-100 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer'>

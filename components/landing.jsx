@@ -37,13 +37,13 @@ const mainMenu = [
     href: 'https://square.mwit.ac.th',
     disabled: false,
   },
-  {
+  /*{
     name: 'Spelling Bee',
     fa: false,
     icon: 'img/2023/SpellingBee_Alt.png',
     href: 'https://forms.gle/pbQWEdGUUAN5L3JP9',
     disabled: false,
-  },
+  },*/
 ]
 
 export default function LandingPage({ homeRef, children, ...props }) {
@@ -109,7 +109,7 @@ export default function LandingPage({ homeRef, children, ...props }) {
             </motion.div>
           </div>
           <div className='flex flex-wrap items-center justify-center gap-3'>
-            <Link href={'https://forms.gle/9r7ax1gAwxDK5Hov6'}>
+            <Link href={'/CustomersJourney'}>
               <a>
               <motion.a
                 className='relative bg-ymw/50 hover:bg-ymw hover:text-black cursor-pointer transition-colors duration-200 py-2 md:py-2 px-5 md:px-4 rounded-full font-CS font-bold text-lg md:text-xl lg:text-2xl text-bmw'
@@ -133,9 +133,9 @@ export default function LandingPage({ homeRef, children, ...props }) {
                     type: 'spring',
                   }}
                 >
-                  Closed!
+                  NEW!
                 </motion.div>
-                <span className='whitespace-nowrap'>Registration</span>
+                <span className='whitespace-nowrap'>OPEN HOUSE Guide</span>
               </motion.a>
               </a>
             </Link>

@@ -91,7 +91,7 @@ export default function VirtualLab() {
                 }
               >
                 <div
-                  style={{ backgroundImage: `url(${l.url})` }}
+                  style={{ backgroundImage: `url(${l.img})` }}
                   className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
                 />
                 <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-white/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
