@@ -158,12 +158,7 @@ export default function VirtualLab() {
             </Link>
           </div>
           {labData.map((l, li) => (
-            <div
-              key={li}
-              className='flex relative flex-col gap-2 items-center shadow-lg py-3 px-4 bg-white backdrop-blur-md rounded-xl'
-            >
               <div className='grid grid-flow-row md:grid-flow-col gap-4 '>
-                
                 <div>
                   <span className='text-lg md:text-xl lg:text-2xl font-CS font-semibold'>
                     {l.name}
@@ -199,7 +194,6 @@ export default function VirtualLab() {
                   </div>
                 </div>
               </div>
-            </div>
           ))}
         </div>
       </main>
