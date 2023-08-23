@@ -24,7 +24,8 @@ import {
   faXmark,
   faFile,
   faCompass,
-  faFlagCheckered
+  faFlagCheckered,
+  faHandshake
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -167,6 +168,12 @@ export default function Navbar({
           name: 'School Tour',
           href: '/schtour',
           icon: faSchoolFlag,
+          auth: null,
+        },
+        {
+          name: "Meet MWIT's",
+          href: '/meetMWIT',
+          icon: faHandshake,
           auth: null,
         },
         
