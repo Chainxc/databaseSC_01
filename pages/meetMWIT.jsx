@@ -96,7 +96,7 @@ const meta = {
         <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
           <a className='w-full relative group shadow-lg flex flex-col md:flex-row rounded-xl overflow-hidden min-h-[15rem] justify-end'>
             <div
-              style={{ backgroundImage: `url("/img/catimg/1.jpg")` }}
+              style={{ backgroundImage: `url("/img/catimg/10.jpg")` }}
               className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
             />
             <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-yellow-100/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
@@ -113,10 +113,10 @@ const meta = {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 mt-4 ml-5 mr-5 lg:mx-64">
           <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
-            <img src="/img/catimg/2.jpg" className='rounded' /> 
+            <img src="/img/catimg/1.jpg" className='rounded' /> 
           </div>
           <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-pink-100">
-            <img src="/img/catimg/3.jpg" className='rounded' />
+            <img src="/img/catimg/2.jpg" className='rounded' />
           </div>
           <div className="mt-5"></div>
         </div>
@@ -137,13 +137,13 @@ const meta = {
               <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
                 <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 25 สิงหาคม 2566</span>
                 <span className='font-CS text-md lg:text-xl mb-5'>พี่ไนน์ (MWIT25/6)</span>
-                <img src="img/catimg/5.jpg" alt="" className='w-full' />
+                <img src="img/catimg/8.jpg" alt="" className='w-full' />
               </div>
               <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-pink-100">
                 <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
                   <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 26 สิงหาคม 2566</span>
                   <span className='font-CS text-md lg:text-xl mb-5'>พี่บลิงค์กี้ (MWIT30/5)</span>
-                  <img src="img/catimg/5.jpg" alt="" className='w-full' />
+                  <img src="img/catimg/6.jpg" alt="" className='w-full' />
                 </div>
               </div>
             </div>
