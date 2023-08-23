@@ -95,6 +95,77 @@ export default function Customerjourney() {
           <div className='grid justify-items-center font-CS font-bold text-3xl md:text-4xl lg:text-5xl py-12 '>
             Customers Journey
           </div>
+          <div className='flew flex-row pb-6'>
+            <div className=' grid justify-items-start gap-1 pl-8 md:pl-32 w-fit '>
+              <p className='font-CS text-3xl md:text-4xl font-bold text-bmw rounded-xl px-4 py-5 bg-white/40 shadow-lg backdrop-blur-sm '>
+                แก้ไขจุดเริ่มต้น
+              </p>
+              <div className='grid grid-cols-3 pt-3'>
+                <div className=''>
+                  <Link
+                    key = {"ent1"}
+                    scroll={false}
+                    visit
+                    href={{
+                      pathname: '/CustomersJourney',
+                      query: {
+                        ...router.query,
+                        events: events[7].name.replaceAll(' ', '_'),
+                      },
+                    }}
+                    //onClick={()=>setshow(s.tour)}
+                    passHref
+                  >
+                    <a className='col-span-1 font-CS text-xl md:text-2xl font-bold text-bmw rounded-xl px-4 py-3 bg-orange-400 shadow-lg backdrop-blur-sm'>
+                      ประตูข้าง
+                    </a>
+                  </Link>
+                </div>
+
+                <div className='inline-block'>
+                  <Link
+                    key = {"ent2"}
+                    scroll={false}
+                    visit
+                    href={{
+                      pathname: '/CustomersJourney',
+                      query: {
+                        ...router.query,
+                        events: events[12].name.replaceAll(' ', '_'),
+                      },
+                    }}
+                    //onClick={()=>setshow(s.tour)}
+                    passHref
+                  >
+                    <a className='col-span-1 font-CS text-xl md:text-2xl font-bold text-bmw rounded-xl px-4 py-3 bg-white/40 shadow-lg backdrop-blur-sm'>
+                      ประตูหน้า
+                    </a>
+                  </Link>
+                </div>
+                <div className=''>
+                  <Link
+                    key = {"ent1"}
+                    scroll={false}
+                    visit
+                    href={{
+                      pathname: '/CustomersJourney',
+                      query: {
+                        ...router.query,
+                        events: events[0].name.replaceAll(' ', '_'),
+                      },
+                    }}
+                    //onClick={()=>setshow(s.tour)}
+                    passHref
+                  >
+                    <a className='col-span-1 font-CS text-xl md:text-2xl font-bold text-bmw rounded-xl px-4 py-3 bg-orange-400 shadow-lg backdrop-blur-sm'>
+                      ดูทั้งหมด
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div className='grid justify-items-center'>          
             <div className='grid justify-items-center justify-center gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl w-5/6'>
               <div className='font-CS text-3xl md:text-4xl font-bold text-bmw'>
@@ -152,50 +223,19 @@ export default function Customerjourney() {
                   ))}
                   
                 </div>
-                {/*<div className='col-span-1 relative max-w-max '>
-                  <img
-                    className='w-full max-h-fit'
-                    src={'img/2023/journey/base.png'}
-                  />
-                  <img
-                    className='absolute w-[3.5vw] top-[8.5%] left-[27.7%] translate-y-[-50%] translate-x-[-50]'
-                    src='img/2023/journey/movie_3d.png'
-                  />
-                  <img
-                    className='absolute w-[3.5vw] top-[64%] left-[65%] translate-y-[-50%] translate-x-[-50]'
-                    src='img/2023/journey/soccer_field.png'
-                  />
-                  <img
-                    className='absolute w-[2.5vw] top-[89%] left-[50.5%] translate-y-[-50%] translate-x-[-50]'
-                    src='img/2023/journey/17Building.png'
-                  />
-                  <img
-                    className='absolute w-[2.5vw] top-[25%] left-[27%] translate-y-[-50%] translate-x-[-50]'
-                    src='img/2023/journey/flag.png'
-                  />
-                  
-                </div>*/}
-                {/*events.map((p,pID) => (
-                  <>
-                    <div key={pID} className='grid justify-self-center justify-items-center justify-center gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl w-[60%]'>
-                      {p.description}
-                    </div>
-                  </>
-                )
-                )*/}
               </div>
               
             </div>
           </div>
           <div className='grid justify-items-center justify-center gap-1 w-screen pt-12 w-screen'>
-            <div className='bg-white/40 shadow-lg backdrop-blur-sm rounded-xl w- px-6 py-6'>
+            <div className='bg-white/40 shadow-lg backdrop-blur-sm rounded-xl w-5/6 px-6 py-6'>
               <span className='font-CS text-2xl md:text-4xl font-bold text-bmw justify-center'>
                 {`Current Place:${events[visit].name}`}
               </span>
-              <div className='grid md:grid-cols-3 justify-center'>
+              <div className='grid md:grid-cols-3 justify-center w-5/6 '>
                 <img 
-                  src={events[visit].img}
-                  className='md:col-span-1 h-[10vh] justify-center'
+                  src={events[visit].landscape}
+                  className='md:col-span-1 h-[20vh] justify-center py-[3vh] '
                 />
                 <span className='md:col-span-2 font-CS text-2xl py-[3vh]'>
                   {events[visit].description}

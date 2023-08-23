@@ -1,9 +1,9 @@
 export const events = [
     {
         id: 0,
-        name: 'error',
+        name: 'เลือกสถานที่ของคุณ',
         description: 'descript',
-        location: '',
+        activity: '',
         time: '',
         img: '',
         landscape:'',
@@ -11,6 +11,18 @@ export const events = [
             {tour: 1},
             {tour: 2},
             {tour: 3},
+            {tour: 4},
+            {tour: 5},
+            {tour: 6},
+            {tour: 7},
+            {tour: 8},
+            {tour: 9},
+            {tour: 10},
+            {tour: 11},
+            {tour: 12},
+            {tour: 13},
+            {tour: 14},
+            {tour: 15},
         ],
         locate:
         {
@@ -21,11 +33,12 @@ export const events = [
     },
     {
         id: 1,
-        name: 'build 1',
-        description: 'descript1',
-        location: '',
-        time: '',
+        name: 'อาคาร 1',
+        description: 'ภายในตึก 1 มีกิจกรรมเช่น กิจกรรมพัฒนาผู้เรียน กิจกรรมสาขาวิชา และกิจกรรมอื่น ๆ อีกมากมายรอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ',
+        activity: 'กิจสาขา กิจพัฒ',
+        time: 'มีกิจกรรมตลอดทั้งวัน',
         img: 'img/2023/journey/1Building.png',
+        landscape: 'img/2023/journeyLS/build_1_2.jpg',
         reccommend: [
             {tour: 14},
             {tour: 11},
@@ -39,11 +52,12 @@ export const events = [
     },
     {
         id: 2,
-        name: 'build 2',
-        description: 'descript2',
-        location: '',
-        time: '',
+        name: 'อาคาร 2',
+        description: 'ภายในตึก 2 เรามีสถานที่ให้เลือกไปมากมาย ตั้งแต่ศูนย์วิทยบริการซึ่งมีกิจกรรมพัฒนาผู้เรียน และห้องดาราศาสตร์ 3 มิติ ที่จัด Spelling bee',
+        activity: 'กิจสาขา กิจพัฒ',
+        time: 'มีกิจกรรมตลอดทั้งวัน',
         img: 'img/2023/journey/2Building.png',
+        landscape: 'img/2023/journeyLS/build_2.jpg',
         reccommend: [
             {tour: 1},
             {tour: 2},
@@ -61,11 +75,12 @@ export const events = [
     },
     {
         id: 3,
-        name: 'build 3',
-        description: 'descript3',
-        location: '',
-        time: '',
+        name: 'อาคาร 3',
+        description: 'ภายในตึก 3 มีกิจกรรมเช่น กิจกรรมพัฒนาผู้เรียน กิจกรรมสาขาวิชา และกิจกรรมอื่น ๆ อีกมากมายรอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ ',
+        activity: 'กิจสาขา กิจพัฒ',
+        time: 'มีกิจกรรมตลอดทั้งวัน',
         img: 'img/2023/journey/3Building.png',
+        landscape: 'img/2023/journeyLS/build_3.jpg',
         reccommend: [
             {tour: 2},
             {tour: 14},
@@ -79,11 +94,12 @@ export const events = [
     },
     {
         id: 4,
-        name: 'build 5',
-        description: 'descript4',
-        location: '',
-        time: '',
+        name: 'หอประชุมพระอุบาลี',
+        description: 'หอประชุมพระอุบาลี ใช้สำหรับจัด MWIT SQUARE ในวันศุกร์ และ MWIT CHALLENGE ในวันเสาร์',
+        activity: 'MWIT SQUARE และ MWIT CHALLENGE',
+        time: 'MWIT SQUARE วันศุกร์ และ MWIT CHALLENGE วันเสาร์',
         img: 'img/2023/journey/5Building.png',
+        landscape: 'img/2023/journeyLS/Ubali_Hall.jpg',
         reccommend: [
             {tour: 5},
             {tour: 8},
@@ -97,11 +113,12 @@ export const events = [
     },
     {
         id: 5,
-        name: 'build 6',
-        description: '',
-        location: '',
-        time: '',
+        name: 'ศูนย์กีฬา',
+        description: 'ศูนย์กีฬา เป็นสถานที่สำหรับออกกำลังกาย และมีกิจสาขา กิจพัฒ ',
+        activity: 'กิจสาขา กิจพัฒ',
+        time: 'มีกิจกรรมตลอดทั้งวัน',
         img: 'img/2023/journey/6Building.png',
+        landscape: 'img/2023/journeyLS/sport.jpg',
         reccommend: [
             {tour: 4},
             {tour: 12},
@@ -118,7 +135,7 @@ export const events = [
         id: 6,
         name: 'build 9',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/9Building.png',
         reccommend: [
@@ -138,7 +155,7 @@ export const events = [
         id: 7,
         name: 'side registration',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/9regis.png',
         reccommend: [
@@ -156,7 +173,7 @@ export const events = [
         id: 8,
         name: 'coverway',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/coverway.png',
         reccommend: [
@@ -176,7 +193,7 @@ export const events = [
         id: 9,
         name: 'School Tour',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/tour.png',
         reccommend: [
@@ -194,7 +211,7 @@ export const events = [
         id: 10,
         name: 'soccer field',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/soccer_field.png',
         reccommend: [
@@ -213,7 +230,7 @@ export const events = [
         id: 11,
         name: 'library',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/library.png',
         reccommend: [
@@ -230,7 +247,7 @@ export const events = [
         id: 12,
         name: 'front registration',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/frontregis.png',
         reccommend: [
@@ -248,7 +265,7 @@ export const events = [
         id: 13,
         name: 'Movie room',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/movie_3d.png',
         reccommend: [
@@ -265,7 +282,7 @@ export const events = [
         id: 14,
         name: 'Flag ground',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/flag.png',
         reccommend: [
@@ -285,7 +302,7 @@ export const events = [
         id: 15,
         name: '17 Building',
         description: '',
-        location: '',
+        activity: '',
         time: '',
         img: 'img/2023/journey/17Building.png',
         reccommend: [
