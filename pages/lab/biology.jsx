@@ -51,10 +51,6 @@ import { faFlaskVial,
               </span>
               <bc>ชื่อกิจกรรม : Who ไคร้ข่า</bc>
               <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-items-center'>
-                <img
-                /*  src={process.env.CDN_URL + '/img/lab/' + 'mathact.webp'}
-                  className='w-full max-w-sm rounded-xl' */
-                />
                 <div className='flex flex-col justify-center gap-2'>
                   <span className='font-IBMPlexLoop text-sm md:text-base'>
                   มาช่วยกันร่วมตามหาฆาตกร ใคร!เป็น!คน!ทำ!ไปด้วยกัน เพราะ
