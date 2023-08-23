@@ -128,14 +128,14 @@ export default function SciProject(){
       day: 'วันที่ 25 สิงหาคม 2566',
       events: [
         { time: '09:00-12:00 น.', title: 'Oral presentation', place:'@ อาคาร 1 ชั้น 1'},
-        { time: '13:00-14:30 น.', title: 'Poster presentation', place:'@........'},
+        { time: '13:00-14:30 น.', title: 'Poster presentation', place:'@ ใต้หอ 9 และบริเวณ Covered Walkway'},
       ],
     },
     {
       day: 'วันที่ 26 สิงหาคม 2566',
       events: [
         { time: '09:00-12:00 น.', title: 'Oral presentation',place:'@ อาคาร 1 ชั้น 1' },
-        { time: '13:00-14:30 น.', title: 'Poster presentation', place:'@........' },
+        { time: '13:00-14:30 น.', title: 'Poster presentation', place:'@ ใต้หอ 9 และบริเวณ Covered Walkway' },
         // Add more events for Tuesday and other days
       ],
     },
