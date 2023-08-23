@@ -131,7 +131,7 @@ export default function Competition() {
         />
         
       </Head>
-      <div className='-z-10 flex flex-col w-full'>
+      <div className='flex flex-col w-full'>
         <div className='w-full bg-cover bg-[url(/img/2023/yellowfade.webp)] bg-repeat sm:bg-fixed min-h-[180vh] space-y-2 '>
           <span className='flex justify-center font-CS font-bold text-2xl md:text-3xl lg:text-4xl pt-16'>
               Competition

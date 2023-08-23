@@ -29,7 +29,7 @@ const meta = {
 
 const timetb = [
   {
-    date: '25 สิงหาคม 2565',
+    date: '25 สิงหาคม 2566',
     head: {
       title: 'Class @MWIT',
       desc: 'เรียนรู้การจัดการเรียนการสอนของ MWIT ผ่านกิจกรรมคุณครูแต่ละสาขาวิชา',
@@ -144,7 +144,7 @@ const timetb = [
     ],
   },
   {
-    date: '26 สิงหาคม 2565',
+    date: '26 สิงหาคม 2566',
     head: {
       title: 'Class @MWIT',
       desc: 'เรียนรู้การจัดการเรียนการสอนของ MWIT ผ่านกิจกรรมคุณครูแต่ละสาขาวิชา',
@@ -344,7 +344,7 @@ export default function Schedule() {
                             {(a.title !== 'ลงทะเบียนเข้าแข่งขัน MWIT Square' && a.title !==  'ลงทะเบียนเข้าแข่งขัน MWIT Spelling bee' && a.title !== 'ลงทะเบียนเข้าแข่งขัน MWIT Challenge'&& a.title !== 'ลงทะเบียนแข่งขัน MWIT Challenge' && a.title !== 'การนำเสนอโครงงานแบบโปสเตอร์' && a.title !== 'การนำเสนอโครงงานวิทยาศาสตร์'&& a.title !== 'ลงทะเบียนเข้างาน' && a.title !== 'ลงทะเบียนแข่งขัน MWIT Spelling bee' )&& (
                             <button
                               className='flex w-fit h-fit items-center gap-1 px-2 text-white bg-gradient-to-r from-sdf1 to-sdf2 rounded-md'
-                              onClick={() => toggleDescription(dateIndex, slotIndex, actIndex)}
+                              onClick={() => toggleDescription(a, slotIndex, actIndex)}
                             >
                               <FontAwesomeIcon className='text-xs' />
                               <span className='text-sm font-semibold'>
