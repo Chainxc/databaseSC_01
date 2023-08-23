@@ -91,7 +91,7 @@ export default function Customerjourney() {
             content={'https://openhouse.mwit.ac.th/img/2023/thumb2023.png'}
           />
         </Head>
-        <div className='w-screen h-[200vh]'>
+        <div className='w-screen h-[220vh] '>
           <div className='grid justify-items-center font-CS font-bold text-3xl md:text-4xl lg:text-5xl py-12 '>
             Customers Journey
           </div>
@@ -232,14 +232,16 @@ export default function Customerjourney() {
               <span className='font-CS text-2xl md:text-4xl font-bold text-bmw justify-center'>
                 {`Current Place:${events[visit].name}`}
               </span>
-              <div className='grid md:grid-cols-3 justify-center w-5/6 '>
-                <img 
-                  src={events[visit].landscape}
-                  className='md:col-span-1 h-[20vh] justify-center py-[3vh] '
-                />
-                <span className='md:col-span-2 font-CS text-2xl py-[3vh]'>
+              <div className='grid md:grid-cols-3 justify-center w-fit'>
+                <div
+                      style={{ backgroundImage: `url(${events[visit].landscape})` }}
+                      className='h-[30vh] rounded-2xl bg-center bg-cover duration-100'
+                >
+                </div>
+                <p className='grid justify-items-center md:col-span-2 font-CS text-2xl py-[3vh] px-6'>
                   {events[visit].description}
-                </span>
+                  {events[visit].activity}
+                </p>
               </div>
               
             </div>
