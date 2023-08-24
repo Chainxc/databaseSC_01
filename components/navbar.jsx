@@ -152,12 +152,12 @@ export default function Navbar({
           icon: faCubes,
           auth: null,
         },
-        /*{
+        {
           name: 'Activities',
           href: '/lab',
           icon: faFlaskVial,
           auth: null,
-        },*/
+        },
         /*{
           name: 'Curriculum',
           href: '/curriculum',
