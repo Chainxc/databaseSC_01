@@ -38,29 +38,29 @@ const meta = {
 export default function SciProject(){
 
   const images = [
-    { src: '/img/2023/slide/slidesp/sp6.jpg',description:'รางวัล Special Award จากเวที Regeneron International Science and Engineering Fair (ISEF) 2022 ณ สหรัฐอเมริกาด้วยผลงานในสาขา Biomedical and Health Sciences "โครงงานการพัฒนาต้นแบบชุดทดสอบเชิงสีชนิดใหม่สำหรับไวรัสทั้งชนิด DNA และ RNA เพื่อรับมือกับโรคอุบัติใหม่ในอนาคตอย่างครอบคลุม" (Project Title: Sawasdee-AMP: Highly efficient, portable and low-cost point of care test kit for future emerging RNA/DNA disease diagnosis) โดยมี  ดร.เกียรติภูมิ รอดพันธ์ ครูสาขาเคมี โรงเรียนมหิดลวิทยานุสรณ์  และ ดร.วันเสด็จ เจริญรัมย์ จาก ศูนย์พันธุวิศวกรรมและเทคโนโลยีชีวภาพแห่งชาติ เป็นที่ปรึกษา'},
-    { src: '/img/2023/slide/slidesp/sp1.jpg',description: 'รางวัล NSM President\u2019s Science Communication Award สนับสนุนโดย องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ (อพวช.) โครงงานเรื่อง “แนวคิดใหม่แห่งวงการชีวเคมีทางการแพทย์: การตรวจสอบ DNA ของมะเร็งบนผิวเม็ดเลือดแดงโดยใช้เลือดไก่เป็นแบบในการศึกษา เพื่อพัฒนาสู่นวัตกรรมใหม่ในการวินิจฉัยโรคมะเร็งที่รวดเร็ว” ผลงานของ นายวงศกร มาลาลักษมี นักเรียนชั้น ม.6/5  นางสาวมทินา บุญเต็ม นักเรียนชั้น ม.6/5 และ นางสาวชุตินันต์ สุขพงศ์จิรากุล นักเรียนชั้น ม.6/5  โดยมี ดร.เกียรติภูมิ รอดพันธ์  ครูสาขาวิชาเคมี และ รองศาสตราจารย์ ดร.นายแพทย์ปีติ ธุวจิตต์ จาก ภาควิชาวิทยาภูมิคุ้มกัน คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล เป็นที่ปรึกษาโครงงาน' } ,
-    { src: '/img/2023/slide/slidesp/sp3.jpg' ,description: 'รางวัล First Prize สาขา Applied Sciences จากงาน ASPC 2023 โครงงานเรื่อง “นวัตกรรมเครื่องมือวัดปริมาณแคลเซียมจากปลายเล็บโดยวิธีแคลอริเมตริกและการดูดกลืนแสงเพื่อใช้ในการประเมินปริมาณแคลเซียมและความเสี่ยงต่อโรคกระดูก” ผลงานของ นายณภัทร ด่านชนะ นักเรียนชั้น ม.6/9 นายภัทรพล ใจเย็น นักเรียนชั้น ม.6/4 และ นายธีรัตม์ สันติลินนท์ นักเรียนชั้น ม.6/9 มีดร.เกียรติภูมิ รอดพันธ์ และอาจารย์วีรวุฒิ เทียนขาว ครูสาขาวิชาเคมี เป็นที่ปรึกษาโครงงาน'},
-    { src: '/img/2023/slide/slidesp/sp4.jpg',description:'รางวัลเหรียญทอง สาขาสุขภาพ และรางวัล INSPO Special Awards: I2ASPO (IYSA) พร้อมได้รับเชิญให้เข้าร่วมงาน Indonesia International Applied Science Project Olympiad (I2ASPO) จัดโดย Indonesian Young Scientist Association (IYSA) ณ สาธารณรัฐอินโดนีเซีย โครงงานสาขาวิชาเคมีเรื่อง “In vitro and in silico study of the antioxidation properties, α-glucosidase inhibitory, and anti-breast MCF-7 cancer cells activities of gallic acid and synthetic derivatives”  นำเสนอโดย นายปัณณวิชญ์ วรภาสไพบูลย์ นักเรียนชั้น ม.6/9  นายอิทธิพัทธ์ เณรบำรุง นักเรียนชั้น ม.6/3 และ นายพัฐนนท์ เอี่ยมพงษ์ไพฑูรย์ นักเรียนชั้น ม.6/3  โดยมี อาจารย์สรชัย แซ่ลิ่ม ครูสาขาวิชาเคมี และ ดร.มูฮำหมัด นิยมเดชา จาก ภาควิชาเคมี คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร เป็นที่ปรึกษาโครงงาน'},
-    { src: '/img/2023/slide/slidesp/sp5.jpg',description:'ผลงานที่ได้รับคัดเลือกให้เป็นผู้แทนประเทศไทยประกวดสิ่งประดิษฐ์ในงาน i-CREATEe 2023 โครงงานสาขาวิชาคณิตศาสตร์และวิทยาการคำนวณ เรื่อง “Diagnosis Application for Parkinson’s Disease by Hand Tremor Analysis”  ผลงานของ นางสาวบุณยวีร์ วิริยวงวานศ์ นักเรียนชั้น ม.6/4 และ นางสาวนัสวรรณ รุ่งฤทธิเดช นักเรียนชั้น ม.6/5 โดยมี ดร.มนสิการ จันทร์สร้าง และ อาจารย์ทศพร แสงจ้า เป็นที่ปรึกษา'}
+    { src: '/img/2023/slide/slidesp/sp6.webp',description:'รางวัล Special Award จากเวที Regeneron International Science and Engineering Fair (ISEF) 2022 ณ สหรัฐอเมริกาด้วยผลงานในสาขา Biomedical and Health Sciences "โครงงานการพัฒนาต้นแบบชุดทดสอบเชิงสีชนิดใหม่สำหรับไวรัสทั้งชนิด DNA และ RNA เพื่อรับมือกับโรคอุบัติใหม่ในอนาคตอย่างครอบคลุม" (Project Title: Sawasdee-AMP: Highly efficient, portable and low-cost point of care test kit for future emerging RNA/DNA disease diagnosis) โดยมี  ดร.เกียรติภูมิ รอดพันธ์ ครูสาขาเคมี โรงเรียนมหิดลวิทยานุสรณ์  และ ดร.วันเสด็จ เจริญรัมย์ จาก ศูนย์พันธุวิศวกรรมและเทคโนโลยีชีวภาพแห่งชาติ เป็นที่ปรึกษา'},
+    { src: '/img/2023/slide/slidesp/sp1.webp',description: 'รางวัล NSM President\u2019s Science Communication Award สนับสนุนโดย องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ (อพวช.) โครงงานเรื่อง “แนวคิดใหม่แห่งวงการชีวเคมีทางการแพทย์: การตรวจสอบ DNA ของมะเร็งบนผิวเม็ดเลือดแดงโดยใช้เลือดไก่เป็นแบบในการศึกษา เพื่อพัฒนาสู่นวัตกรรมใหม่ในการวินิจฉัยโรคมะเร็งที่รวดเร็ว” ผลงานของ นายวงศกร มาลาลักษมี นักเรียนชั้น ม.6/5  นางสาวมทินา บุญเต็ม นักเรียนชั้น ม.6/5 และ นางสาวชุตินันต์ สุขพงศ์จิรากุล นักเรียนชั้น ม.6/5  โดยมี ดร.เกียรติภูมิ รอดพันธ์  ครูสาขาวิชาเคมี และ รองศาสตราจารย์ ดร.นายแพทย์ปีติ ธุวจิตต์ จาก ภาควิชาวิทยาภูมิคุ้มกัน คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล เป็นที่ปรึกษาโครงงาน' } ,
+    { src: '/img/2023/slide/slidesp/sp3.webp' ,description: 'รางวัล First Prize สาขา Applied Sciences จากงาน ASPC 2023 โครงงานเรื่อง “นวัตกรรมเครื่องมือวัดปริมาณแคลเซียมจากปลายเล็บโดยวิธีแคลอริเมตริกและการดูดกลืนแสงเพื่อใช้ในการประเมินปริมาณแคลเซียมและความเสี่ยงต่อโรคกระดูก” ผลงานของ นายณภัทร ด่านชนะ นักเรียนชั้น ม.6/9 นายภัทรพล ใจเย็น นักเรียนชั้น ม.6/4 และ นายธีรัตม์ สันติลินนท์ นักเรียนชั้น ม.6/9 มีดร.เกียรติภูมิ รอดพันธ์ และอาจารย์วีรวุฒิ เทียนขาว ครูสาขาวิชาเคมี เป็นที่ปรึกษาโครงงาน'},
+    { src: '/img/2023/slide/slidesp/sp4.webp',description:'รางวัลเหรียญทอง สาขาสุขภาพ และรางวัล INSPO Special Awards: I2ASPO (IYSA) พร้อมได้รับเชิญให้เข้าร่วมงาน Indonesia International Applied Science Project Olympiad (I2ASPO) จัดโดย Indonesian Young Scientist Association (IYSA) ณ สาธารณรัฐอินโดนีเซีย โครงงานสาขาวิชาเคมีเรื่อง “In vitro and in silico study of the antioxidation properties, α-glucosidase inhibitory, and anti-breast MCF-7 cancer cells activities of gallic acid and synthetic derivatives”  นำเสนอโดย นายปัณณวิชญ์ วรภาสไพบูลย์ นักเรียนชั้น ม.6/9  นายอิทธิพัทธ์ เณรบำรุง นักเรียนชั้น ม.6/3 และ นายพัฐนนท์ เอี่ยมพงษ์ไพฑูรย์ นักเรียนชั้น ม.6/3  โดยมี อาจารย์สรชัย แซ่ลิ่ม ครูสาขาวิชาเคมี และ ดร.มูฮำหมัด นิยมเดชา จาก ภาควิชาเคมี คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร เป็นที่ปรึกษาโครงงาน'},
+    { src: '/img/2023/slide/slidesp/sp5.webp',description:'ผลงานที่ได้รับคัดเลือกให้เป็นผู้แทนประเทศไทยประกวดสิ่งประดิษฐ์ในงาน i-CREATEe 2023 โครงงานสาขาวิชาคณิตศาสตร์และวิทยาการคำนวณ เรื่อง “Diagnosis Application for Parkinson’s Disease by Hand Tremor Analysis”  ผลงานของ นางสาวบุณยวีร์ วิริยวงวานศ์ นักเรียนชั้น ม.6/4 และ นางสาวนัสวรรณ รุ่งฤทธิเดช นักเรียนชั้น ม.6/5 โดยมี ดร.มนสิการ จันทร์สร้าง และ อาจารย์ทศพร แสงจ้า เป็นที่ปรึกษา'}
 
     // Add more image paths and alt text here
   ];
   const scimages=[
-  {src:'/img/2023/slide/slidesp/sp11.jpg'},
-  {src:'/img/2023/slide/slidesp/sp12.jpg'},
-  {src:'/img/2023/slide/slidesp/sp10.jpg'},
-  {src:'/img/2023/slide/slidesp/sp13.jpg'},
-  {src:'/img/2023/slide/slidesp/sp14.jpg'},
-  {src:'/img/2023/slide/slidesp/sp16.jpg'},
-  {src:'/img/2023/slide/slidesp/sp17.jpg'},
-  {src:'/img/2023/slide/slidesp/sp15.jpg'},
-  {src:'/img/2023/slide/slidesp/sp18.jpg'},
-  {src:'/img/2023/slide/slidesp/sp19.jpg'},];
+  {src:'/img/2023/slide/slidesp/sp11.webp'},
+  {src:'/img/2023/slide/slidesp/sp12.webp'},
+  {src:'/img/2023/slide/slidesp/sp10.webp'},
+  {src:'/img/2023/slide/slidesp/sp13.webp'},
+  {src:'/img/2023/slide/slidesp/sp14.webp'},
+  {src:'/img/2023/slide/slidesp/sp16.webp'},
+  {src:'/img/2023/slide/slidesp/sp17.webp'},
+  {src:'/img/2023/slide/slidesp/sp15.webp'},
+  {src:'/img/2023/slide/slidesp/sp18.webp'},
+  {src:'/img/2023/slide/slidesp/sp19.webp'},];
   const images3=[
-    {src:'/img/2023/slide/slidesp/sp7.jpg'},
-  {src:'/img/2023/slide/slidesp/sp8.jpg'},
-  {src:'/img/2023/slide/slidesp/sp9.jpg'},
+    {src:'/img/2023/slide/slidesp/sp7.webp'},
+  {src:'/img/2023/slide/slidesp/sp8.webp'},
+  {src:'/img/2023/slide/slidesp/sp9.webp'},
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

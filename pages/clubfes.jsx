@@ -238,9 +238,9 @@ return (
               >
                 <div
                   style={{
-                    backgroundImage: `url(${'/img/' + 'clubfes/' + l.img + '.png'})`,
+                    backgroundImage: `url(${'/img/' + 'clubfes/' + l.img + '.webp'})`,
                   }}
-                  className='relative md:absolute bg-auto bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
+                  className='relative bg-auto bg-center bg-cover bg-no-repeat w-full aspect-[16/5] md:inset-0'
                 />
                 <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-white/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
                   <span className='font-CS font-semibold text-xl md:text-2xl text-bmw'>

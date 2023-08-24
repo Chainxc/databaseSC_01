@@ -31,8 +31,8 @@ export default function Customerjourney() {
   const events = [
     {
         id: 0,
-        name: 'เลือกสถานที่ของคุณ',
-        description: 'descript',
+        name: ' โหมดเลือกสถานที่',
+        description: 'ตอนนี้สามารถเลือกสถานที่ที่สนใจได้เลย',
         activity: '',
         time: '',
         img: '',
@@ -64,9 +64,9 @@ export default function Customerjourney() {
     {
         id: 1,
         name: 'อาคาร 1',
-        description: 'ภายในตึก 1 มีกิจกรรมเช่น การบรรยายโครงงานแบบ Presentation กิจกรรมสาขาวิชา และกิจกรรมอื่น ๆ อีกมากมายรอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ',
-        activity: 'Sci Project Oral Presentation ',
-        time: 'Sci Project เวลา 9.00 - 12.00 น., ',
+        description: 'ภายในตึก 1 มีกิจกรรมเช่น การบรรยายโครงงานแบบ Presentation กิจกรรมสาขาวิชา รอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ',
+        activity: 'Sci Project Oral Presentation และ กิจกรรมสาขาวิชา',
+        time: 'Sci Project เวลา 9.00 - 12.00 น., กิจกรรมสาขาวิชา เวลา 9.00 - 16.00 น.',
         img: 'img/2023/journey/1Building.png',
         landscape: 'img/2023/journeyLS/build_1_2.jpg',
         reccommend: [
@@ -77,15 +77,15 @@ export default function Customerjourney() {
         locate:
         {
             top:'top-[21%]',
-            left:'left-[15.5%]',
+            left:'left-[12.5%]',
             size:'w-[4.5vw]',
         }
     },
     {
         id: 2,
         name: 'อาคาร 2',
-        description: 'ภายในตึก 2 เรามีสถานที่ให้เลือกไปมากมาย ตั้งแต่ศูนย์วิทยบริการซึ่งมีกิจกรรมพัฒนาผู้เรียน และห้องดาราศาสตร์ 3 มิติ ที่จัด Spelling bee',
-        activity: 'กิจสาขา กิจพัฒ',
+        description: 'ภายในตึก 2 เรามีสถานที่ให้เลือกไปมากมาย ตั้งแต่ศูนย์วิทยบริการซึ่งมีกิจกรรมพัฒนาผู้เรียน และห้องดาราศาสตร์ 3 มิติ ที่จัด Spelling bee และการบรรยายพิเศษ นอกจากนี้ ภายในอาคาร 2 ยังมีกิจกรรมสาขาวิชาอีกด้วย',
+        activity: 'กิจกรรมพัฒนาผู้เรียน',
         time: 'มีกิจกรรมตลอดทั้งวัน',
         img: 'img/2023/journey/2Building.png',
         landscape: 'img/2023/journeyLS/build_2.jpg',
@@ -99,16 +99,16 @@ export default function Customerjourney() {
         ],
         locate:
         {
-            top:'top-[12.7%]',
-            left:'left-[22%]',
+            top:'top-[13.7%]',
+            left:'left-[20%]',
             size:'w-[4.5vw]',
         }
     },
     {
         id: 3,
         name: 'อาคาร 3',
-        description: 'ภายในตึก 3 มีกิจกรรมเช่น กิจกรรมพัฒนาผู้เรียน กิจกรรมสาขาวิชา และกิจกรรมอื่น ๆ อีกมากมายรอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ ',
-        activity: 'กิจสาขา กิจพัฒ',
+        description: 'ภายในตึก 3 มีกิจกรรมสาขาวิชารอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ ',
+        activity: 'กิจกรรมสาขาวิชา',
         time: 'มีกิจกรรมตลอดทั้งวัน',
         img: 'img/2023/journey/3Building.png',
         landscape: 'img/2023/journeyLS/build_3.jpg',
@@ -119,9 +119,9 @@ export default function Customerjourney() {
         ],
         locate:
         {
-            top:'top-[15%]',
-            left:'left-[37%]',
-            size:'w-[4.5vw]',
+            top:'top-[17%]',
+            left:'left-[36%]',
+            size:'w-[3.5vw]',
         }   
     },
     {
@@ -161,16 +161,16 @@ export default function Customerjourney() {
         locate:
         {
             top:'top-[12%]',
-            left:'left-[77%]',
+            left:'left-[79.5%]',
             size:'w-[4.5vw]',
         }
     },
     {
         id: 6,
         name: 'build 9',
-        description: '',
-        activity: '',
-        time: '',
+        description: 'อาคาร 9 เป็นอีกสถานที่mujมีกิจกรรมบรรยายโครงงานแบบ Poster',
+        activity: 'Sci Project Poster Presentation',
+        time: 'บรรยายโครงงานแบบ Poster ในเวลา 13.00-14.30 น.',
         img: 'img/2023/journey/9Building.png',
         landscape: 'img/2023/journeyLS/9_regis.jpg',
         reccommend: [
@@ -212,7 +212,7 @@ export default function Customerjourney() {
         name: 'Cover Walkway',
         description: 'ที่ Cover walkway มีกิจกรรมบรรยายโครงงานแบบ Poster',
         activity: 'Sci Project Poster Presentation',
-        time: 'บรรยายโครงงานแบบ Poster ในเวลา 13.00-14.30 น.,',
+        time: 'บรรยายโครงงานแบบ Poster ในเวลา 13.00-14.30 น.',
         img: 'img/2023/journey/coverway.png',
         landscape:'img/2023/journeyLS/coverway.jpg',
         reccommend: [
@@ -463,7 +463,7 @@ export default function Customerjourney() {
             content={'https://openhouse.mwit.ac.th/img/2023/thumb2023.png'}
           />
         </Head>
-        <div className='w-screen h-[300vh] '>
+        <div className='w-screen h-[350vh] '>
           <div className='grid justify-items-center font-CS font-bold text-3xl md:text-4xl lg:text-5xl py-12 '>
             Customers Journey
           </div>
@@ -472,8 +472,8 @@ export default function Customerjourney() {
               <p className='font-CS text-3xl md:text-4xl font-bold text-bmw rounded-xl px-4 py-5 bg-white/40 shadow-lg backdrop-blur-sm '>
                 แก้ไขจุดเริ่มต้น
               </p>
-              <div className='grid grid-cols-3 pt-3'>
-                <div className=''>
+              <div className='grid grid-cols-3 pt-5'>
+                <div className='pr-2'>
                   <Link
                     key = {"ent1"}
                     scroll={false}
@@ -494,7 +494,7 @@ export default function Customerjourney() {
                   </Link>
                 </div>
 
-                <div className='inline-block'>
+                <div className='inline-block px-2'>
                   <Link
                     key = {"ent2"}
                     scroll={false}
@@ -514,7 +514,7 @@ export default function Customerjourney() {
                     </a>
                   </Link>
                 </div>
-                <div className=''>
+                <div className='pl-2'>
                   <Link
                     key = {"ent1"}
                     scroll={false}
@@ -599,7 +599,7 @@ export default function Customerjourney() {
             </div>
           </div>
           <div>
-            <div className='max-w-[640px] max-h-[480px] h-screen min-w-max w-[16rem] md:w-[32rem] m-auto py-16 px-4 relative group'>
+            <div className='w-[80vw] h-[60vw] m-auto py-16 px-4 relative group'>
               <div
                 style={{ backgroundImage: `url(${events[currentIndex].landscape})`  }}
                 className='w-full h-full rounded-2xl bg-center bg-cover duration-100'
@@ -636,6 +636,27 @@ export default function Customerjourney() {
           <div className='grid justify-items-center justify-center gap-1 w-screen pt-12 w-screen'>
             <div className='bg-white/40 shadow-lg backdrop-blur-sm rounded-xl w-5/6 px-6 py-6'>
               <span className='font-CS text-2xl md:text-4xl font-bold text-bmw justify-center'>
+                {`ขณะนี้คุณอยู่ที่:${events[visit].name}`}
+              </span>
+              <div className='grid justify-center w-fit'>
+                <div className='grid grid-row-span-3'>
+                <p className='grid justify-items-sta font-CS text-2xl py-[3vh] px-6 text-justify'>
+                  {events[currentIndex].description}
+                </p>
+                <span className='grid justify-items-start font-CS text-2xl py-[3vh] px-6 text-justify'>
+                  {`กิจกรรม: ${events[currentIndex].activity}`}
+                </span>
+                <p className='grid justify-items-staer font-CS text-2xl py-[3vh] px-6 text-justify'>
+                  {`ช่วงเวลาที่จัดกิจกรรม: ${events[currentIndex].time}`}
+                </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div className='grid justify-items-center justify-center gap-1 w-screen pt-12 w-screen'>
+            <div className='bg-white/40 shadow-lg backdrop-blur-sm rounded-xl w-5/6 px-6 py-6'>
+              <span className='font-CS text-2xl md:text-4xl font-bold text-bmw justify-center'>
                 {`ขณะนี้คุณกำลังดู:${events[currentIndex].name}`}
               </span>
               <div className='grid justify-center w-fit'>
@@ -644,7 +665,7 @@ export default function Customerjourney() {
                   {events[currentIndex].description}
                 </p>
                 <span className='grid justify-items-start font-CS text-2xl py-[3vh] px-6 text-justify'>
-                  {`กิจกรรมภายใน: ${events[currentIndex].activity}`}
+                  {`กิจกรรม: ${events[currentIndex].activity}`}
                 </span>
                 <p className='grid justify-items-staer font-CS text-2xl py-[3vh] px-6 text-justify'>
                   {`ช่วงเวลาที่จัดกิจกรรม: ${events[currentIndex].time}`}
@@ -658,4 +679,4 @@ export default function Customerjourney() {
       </>
       
     )
-}
+} 

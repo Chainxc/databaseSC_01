@@ -75,7 +75,7 @@ const meta = {
         <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
           <a className='w-full relative group shadow-lg flex flex-col md:flex-row rounded-xl overflow-hidden min-h-[15rem] justify-end'>
             <div
-              style={{ backgroundImage: `url("/img/catimg/memi.jpg")` }}
+              style={{ backgroundImage: `url("/img/catimg/memi.webp")` }}
               className='relative bg-cover bg-center bg-no-repeat w-full aspect-[16/9] md:inset-0'
             />
             <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-yellow-100/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
@@ -122,13 +122,13 @@ const meta = {
               <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
                 <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 25 สิงหาคม 2566</span>
                 <span className='font-CS text-md lg:text-xl mb-5'>พี่ไนน์ (MWIT25/6)</span>
-                <img src="img/catimg/nine.jpg" alt="" className='w-full' />
+                <img src="img/catimg/nine.webp" alt="" className='w-full' />
               </div>
               <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-pink-100">
                 <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
                   <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 26 สิงหาคม 2566</span>
                   <span className='font-CS text-md lg:text-xl mb-5'>พี่บลิงค์กี้ (MWIT30/5)</span>
-                  <img src="img/catimg/blinky.jpg" alt="" className='w-full' />
+                  <img src="img/catimg/blinky.webp" alt="" className='w-full' />
                 </div>
               </div>
             </div>
