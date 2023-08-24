@@ -152,18 +152,18 @@ export default function Navbar({
           icon: faCubes,
           auth: null,
         },
-        {
+        /*{
           name: 'Activities',
           href: '/lab',
           icon: faFlaskVial,
           auth: null,
-        },
-        {
+        },*/
+        /*{
           name: 'Curriculum',
           href: '/curriculum',
           icon: faFileInvoice,
           auth: null,
-        },
+        },*/
         {
           name: 'School Tour',
           href: '/schtour',
@@ -185,12 +185,12 @@ export default function Navbar({
         },*/
       ],
     },
-    {
+    /*{
       name: 'OPEN HOUSE Guide',
       href: '/CustomersJourney',
       icon: faCalendarCheck,
       auth: null,
-    },
+    },*/
     /*{
       name: 'Register',
       href: '/register',

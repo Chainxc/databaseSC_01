@@ -96,8 +96,8 @@ const meta = {
         <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
           <a className='w-full relative group shadow-lg flex flex-col md:flex-row rounded-xl overflow-hidden min-h-[15rem] justify-end'>
             <div
-              style={{ backgroundImage: `url("/img/catimg/10.jpg")` }}
-              className='relative md:absolute bg-cover bg-bottom bg-no-repeat w-full aspect-[16/5] md:inset-0'
+              style={{ backgroundImage: `url("/img/catimg/memi.jpg")` }}
+              className='relative bg-cover bg-center bg-no-repeat w-full aspect-[16/9] md:inset-0'
             />
             <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-yellow-100/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
               <span className='font-CS font-semibold text-xl md:text-2xl text-bmw'>
@@ -106,15 +106,15 @@ const meta = {
               <span className='font-IBMPlex font-semibold text-sm md:text-base text-gray-700'>
                 🙌🏻 ใครที่อยากรู้ว่าพี่ ๆ MWIT เตรียมตัวสอบเข้ายังไง การใช้ชีวิตในโรงเรียนเป็นยังไง เรียนอะไรบ้าง พลาดกิจกรรมนี้ไม่ได้แล้ว!<br></br>
                 💬 กิจกรรมที่เปิดโอกาสให้มีการพูดคุย ถามตอบ ระหว่างรุ่นน้องและรุ่นพี่ คลายข้อสงสัย และทำให้รู้จักโรงเรียนได้ดีมากขึ้น<br></br>
-                🔥มีทั้งรูปแบบการคุยแบบ 1:1 และกลุ่ม 🔥
-                การลงทะเบียน : เป็นการลงทะเบียนหน้างาน (รับคิว) รับ walk-in ในกรณีที่คิวในแต่ละรอบไม่เต็ม เปิดรับลงทะเบียนเวลา 8.00 น. เป็นต้นไป (first come, first serve)
-                จุดประสงค์การจัดงาน : ให้รุ่นน้องมาคุยกับรุ่นพี่เพื่อคลายข้อสงสัยและรู้จักเอมวิดในมุมมองที่หลากหลายขึ้น
-                เวลาที่จัด : 9.00-12.00 น. และ 13.00-16.00 น. ทั้งสองวัน จัดได้ชั่วโมงละ 4 รอบ วันละ 16 รอบ (รอบธรรมดา 12 รอบพิเศษ 4) คือหลัก ๆ คือคุยแบบ 1:1 รอบละ 10 นาที รอบพิเศษที่คุยแบบกลุ่ม รอบละ 20 นาที รายละเอียดคิวตามนี้เลยครับผมม คิวคนคุมงานน้องถาม-พี่ตอบ
+                🔥มีทั้งรูปแบบการคุยแบบ 1:1 และกลุ่ม 🔥<br></br>
+                การลงทะเบียน : เป็นการลงทะเบียนหน้างาน (รับคิว) รับ walk-in ในกรณีที่คิวในแต่ละรอบไม่เต็ม เปิดรับลงทะเบียนเวลา 8.00 น. เป็นต้นไป (first come, first serve) <br></br>
+                จุดประสงค์การจัดงาน : ให้รุ่นน้องมาคุยกับรุ่นพี่เพื่อคลายข้อสงสัยและรู้จักเอมวิดในมุมมองที่หลากหลายขึ้น<br></br>
+                เวลาที่จัด : 9.00-12.00 น. และ 13.00-16.00 น. ทั้งสองวัน จัดได้ชั่วโมงละ 4 รอบ วันละ 16 รอบ (รอบธรรมดา 12 รอบพิเศษ 4) คือหลัก ๆ คือคุยแบบ 1:1 รอบละ 10 นาที รอบพิเศษที่คุยแบบกลุ่ม รอบละ 20 นาที
               </span>
             </div>
           </a>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 mt-4 ml-5 mr-5 lg:mx-64">
+        {/*div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 mt-4 ml-5 mr-5 lg:mx-64">
           <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
             <img src="/img/catimg/1.jpg" className='rounded' /> 
           </div>
@@ -122,7 +122,7 @@ const meta = {
             <img src="/img/catimg/2.jpg" className='rounded' />
           </div>
           <div className="mt-5"></div>
-        </div>
+        </div>*/}
         <center>
           <span className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
             พบกันได้ที่ ห้องสมาคมผู้ปกครอง
@@ -143,13 +143,13 @@ const meta = {
               <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
                 <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 25 สิงหาคม 2566</span>
                 <span className='font-CS text-md lg:text-xl mb-5'>พี่ไนน์ (MWIT25/6)</span>
-                <img src="img/catimg/8.jpg" alt="" className='w-full' />
+                <img src="img/catimg/nine.jpg" alt="" className='w-full' />
               </div>
               <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-pink-100">
                 <div className="flex flex-col items-center w-full bg-white border border-gray-200 rounded-lg shadow rounded-t-2xl hover:bg-sky-100">
                   <span className='font-CS text-md lg:text-2xl text-bmw mt-5 font-bold'>วันที่ 26 สิงหาคม 2566</span>
                   <span className='font-CS text-md lg:text-xl mb-5'>พี่บลิงค์กี้ (MWIT30/5)</span>
-                  <img src="img/catimg/6.jpg" alt="" className='w-full' />
+                  <img src="img/catimg/blinky.jpg" alt="" className='w-full' />
                 </div>
               </div>
             </div>

@@ -109,7 +109,7 @@ export default function LandingPage({ homeRef, children, ...props }) {
             </motion.div>
           </div>
           <div className='flex flex-wrap items-center justify-center gap-3'>
-            <Link href={'/CustomersJourney'}>
+            {/*<Link href={'/CustomersJourney'}>
               <a>
               <motion.a
                 className='relative bg-ymw/50 hover:bg-ymw hover:text-black cursor-pointer transition-colors duration-200 py-2 md:py-2 px-5 md:px-4 rounded-full font-CS font-bold text-lg md:text-xl lg:text-2xl text-bmw'
@@ -138,7 +138,7 @@ export default function LandingPage({ homeRef, children, ...props }) {
                 <span className='whitespace-nowrap'>OPEN HOUSE Guide</span>
               </motion.a>
               </a>
-            </Link>
+                </Link>*/}
             <Link href={'download/หนังสือเชิญเข้าร่วมงาน.pdf'}>
               <motion.a
                 className='relative bg-white/50 hover:bg-ymw hover:text-black cursor-pointer transition-colors duration-200 py-1 md:py-2 px-3 md:px-4 rounded-full font-CS font-bold text-lg md:text-xl lg:text-2xl text-bmw'

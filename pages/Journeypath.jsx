@@ -6,7 +6,7 @@ export const events = [
         activity: '',
         time: '',
         img: '',
-        landscape:'',
+        landscape: 'img/2023/journeyLS/sport_door.jpg',
         reccommend: [
             {tour: 1},
             {tour: 2},
@@ -34,12 +34,13 @@ export const events = [
     {
         id: 1,
         name: 'อาคาร 1',
-        description: 'ภายในตึก 1 มีกิจกรรมเช่น กิจกรรมพัฒนาผู้เรียน กิจกรรมสาขาวิชา และกิจกรรมอื่น ๆ อีกมากมายรอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ',
-        activity: 'กิจสาขา กิจพัฒ',
-        time: 'มีกิจกรรมตลอดทั้งวัน',
+        description: 'ภายในตึก 1 มีกิจกรรมเช่น การบรรยายโครงงานแบบ Presentation กิจกรรมสาขาวิชา และกิจกรรมอื่น ๆ อีกมากมายรอให้เพื่อน ๆ เข้ามาร่วมเล่นนะ',
+        activity: 'Sci Project Oral Presentation ',
+        time: 'Sci Project เวลา 9.00 - 12.00 น., ',
         img: 'img/2023/journey/1Building.png',
         landscape: 'img/2023/journeyLS/build_1_2.jpg',
         reccommend: [
+            {tour: 1},
             {tour: 14},
             {tour: 11},
         ],
@@ -59,8 +60,8 @@ export const events = [
         img: 'img/2023/journey/2Building.png',
         landscape: 'img/2023/journeyLS/build_2.jpg',
         reccommend: [
-            {tour: 1},
             {tour: 2},
+            {tour: 1},
             {tour: 3},
             {tour: 11},
             {tour: 13},
@@ -82,6 +83,7 @@ export const events = [
         img: 'img/2023/journey/3Building.png',
         landscape: 'img/2023/journeyLS/build_3.jpg',
         reccommend: [
+            {tour: 3},
             {tour: 2},
             {tour: 14},
         ],
@@ -99,8 +101,9 @@ export const events = [
         activity: 'MWIT SQUARE และ MWIT CHALLENGE',
         time: 'MWIT SQUARE วันศุกร์ และ MWIT CHALLENGE วันเสาร์',
         img: 'img/2023/journey/5Building.png',
-        landscape: 'img/2023/journeyLS/Ubali_Hall.jpg',
+        landscape: 'img/2023/journeyLS/UbaliHall.jpg',
         reccommend: [
+            {tour: 4},
             {tour: 5},
             {tour: 8},
         ],
@@ -120,6 +123,7 @@ export const events = [
         img: 'img/2023/journey/6Building.png',
         landscape: 'img/2023/journeyLS/sport.jpg',
         reccommend: [
+            {tour: 5},
             {tour: 4},
             {tour: 12},
             {tour: 8}
@@ -138,7 +142,9 @@ export const events = [
         activity: '',
         time: '',
         img: 'img/2023/journey/9Building.png',
+        landscape: 'img/2023/journeyLS/9_regis.jpg',
         reccommend: [
+            {tour: 6},
             {tour: 9},
             {tour: 10},
             {tour: 12},
@@ -158,7 +164,9 @@ export const events = [
         activity: '',
         time: '',
         img: 'img/2023/journey/9regis.png',
+        landscape: 'img/2023/journeyLS/9_regis.jpg',
         reccommend: [
+            {tour: 7},
             {tour: 15},
             {tour: 6},
         ],
@@ -171,12 +179,14 @@ export const events = [
     },
     {
         id: 8,
-        name: 'coverway',
-        description: '',
-        activity: '',
-        time: '',
+        name: 'Cover Walkway',
+        description: 'ที่ Cover walkway มีกิจกรรมบรรยายโครงงานแบบ Poster',
+        activity: 'Sci Project Poster Presentation',
+        time: 'บรรยายโครงงานแบบ Poster ในเวลา 13.00-14.30 น.,',
         img: 'img/2023/journey/coverway.png',
+        landscape:'img/2023/journeyLS/coverway.jpg',
         reccommend: [
+            {tour: 8},
             {tour: 4},
             {tour: 5},
             {tour: 12},
@@ -191,12 +201,14 @@ export const events = [
     },
     {
         id: 9,
-        name: 'School Tour',
-        description: '',
-        activity: '',
-        time: '',
+        name: 'เคาน์เตอร์หอพัก',
+        description: 'เพื่อน ๆ สามารถลงทะเบียน School Tour ได้ที่นี่',
+        activity: 'School Tour',
+        time: 'จัดทั้งสองวันตั้งแต่ 8.00 - 16.00 น.',
         img: 'img/2023/journey/tour.png',
+        landscape: 'img/2023/journeyLS/tour.jpg',
         reccommend: [
+            {tour: 9},
             {tour: 6},
             {tour: 14},
         ],
@@ -214,7 +226,9 @@ export const events = [
         activity: '',
         time: '',
         img: 'img/2023/journey/soccer_field.png',
+        landscape: 'img/2023/journeyLS/soccer_field.jpg',
         reccommend: [
+            {tour: 10},
             {tour: 6},
             {tour: 8},
             {tour: 15}
@@ -228,12 +242,14 @@ export const events = [
     },
     {
         id: 11,
-        name: 'library',
-        description: '',
-        activity: '',
-        time: '',
+        name: 'เคาน์เตอร์ห้องสมุด',
+        description: 'ที่เคาน์เตอร์ห้องสมุด เรามีนิทรรศการหลักสูตรของ MWIT ซึ่งประกอบด้วย หลักสูตรสาขาวิชา และ กิจกรรมพัฒนาผู้เรียน และมีพื้นที่สำหรับพักผ่อนให้ด้วยนะ',
+        activity: 'MWIT CURRICULUM DISCOVERY EXHIBITION และบูธเกมกิจกรรมพัฒนาผู้เรียน',
+        time: 'จัดทั้งสองวันตั้งแต่ 9.00 - 16.00 น.',
         img: 'img/2023/journey/library.png',
+        landscape:'img/2023/journeyLS/library_2.jpg',
         reccommend: [
+            {tour: 11},
             {tour: 2},
         ],
         locate:
@@ -250,7 +266,9 @@ export const events = [
         activity: '',
         time: '',
         img: 'img/2023/journey/frontregis.png',
+        landscape: 'img/2023/journeyLS/front_regis.jpg',
         reccommend: [
+            {tour: 12},
             {tour: 5},
             {tour: 8},
         ],
@@ -263,12 +281,14 @@ export const events = [
     },
     {
         id: 13,
-        name: 'Movie room',
-        description: '',
-        activity: '',
-        time: '',
+        name: 'ห้องดาราศาสตร์ 3 มิติ',
+        description: 'ที่ห้องดาราศาสตร์ 3 มิติ มีกิจกรรมบรรยายพิเศษ และกิจกรรม',
+        activity: 'กิจกรรมบรรยายพิเศษ, ',
+        time: 'กิจกรรมบรรยายพิเศษ จัดเวลา 13.00 - 15.00 น.,',
         img: 'img/2023/journey/movie_3d.png',
+        landscape: 'img/2023/journeyLS/3dMovie_3.jpg',
         reccommend: [
+            {tour: 13},
             {tour: 2},
         ],
         locate:
@@ -280,12 +300,14 @@ export const events = [
     },
     {
         id: 14,
-        name: 'Flag ground',
-        description: '',
-        activity: '',
+        name: 'สนามบาสเกตบอล',
+        description: 'ที่สนามบาสเกตบอล เรามีการแสดงของชุมนุมต่างๆ บนเวที ระหว่างการแสดงจะมีการประกาศรางวัลกิจกรรมพัฒนาผู้เรียนควบคู่ไปด้วย',
+        activity: 'MWIT CLUB STAGE ในช่วงเวลา 12.45 - 15.45 น. ทั้ง 2 วัน,',
         time: '',
         img: 'img/2023/journey/flag.png',
+        landscape: 'img/2023/journeyLS/ground.jpg',
         reccommend: [
+            {tour: 14},
             {tour: 1},
             {tour: 2},
             {tour: 3},
@@ -300,12 +322,14 @@ export const events = [
     },
     {
         id: 15,
-        name: '17 Building',
-        description: '',
-        activity: '',
-        time: '',
+        name: 'ห้องสมาคมผู้ปกครองฯ',
+        description: 'ที่ห้องสมาคมฯ มีกิจกรรมพี่ถามน้องตามที่จะให้รุ่นน้องเข้ามาสอบถามเรื่องพี่เรื่องต่างๆ ที่สนใจเป็นแบบเดี่ยว และกลุ่ม',
+        activity: 'พี่ถามน้องตอบ',
+        time: 'มีกิจกรรมทั้ง 2 วัน เวลา  9.00-12.00 น. และ 13.00-16.00 น.',
         img: 'img/2023/journey/17Building.png',
+        landscape: 'img/2023/journeyLS/17build_3.jpg',
         reccommend: [
+            {tour: 15},
             {tour: 6},
             {tour: 7},
             {tour: 10}

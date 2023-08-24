@@ -1,6 +1,6 @@
 import Head from 'next/head'
 /*import Modal from "../components/Modal";*/
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment, use, useEffect, useRef, useState } from 'react'
 import { AnimateSharedLayout, motion, useScroll,AnimatePresence } from 'framer-motion'
 import { clamp } from 'lodash'
 import Link from 'next/link'
@@ -53,6 +53,10 @@ export default function Customerjourney() {
         ))
       : setvisit(12)
   },[router.query.events])
+  useEffect(()=>{
+    setCurrentIndex(visit)
+    setCurrentpic(0)
+  },[visit])
   {/*useEffect(()=>{
     router.query.events &&
     events.find((p)=>p.name.replaceAll(' ', '_') === router.query.events)
@@ -60,6 +64,30 @@ export default function Customerjourney() {
       events.findIndex((p) => p.name.replaceAll(' ', '_') === router.query.events)
       ):setshow({})
   },router.query.events)*/}
+  const [currentIndex,setCurrentIndex] = useState(visit)
+  const [currentpic,setCurrentpic] =useState(0)
+  function prevSlide() {
+    const isFirstSlide = currentIndex === visit
+    const newIndex = isFirstSlide ? events[visit].reccommend[events[visit].reccommend.length-1].tour: events[visit].reccommend[(currentpic)].tour
+    const cpic = (currentpic-1 < 0) ? events[visit].reccommend.length-1:currentpic-1
+    setCurrentIndex(newIndex)
+    setCurrentpic(cpic)
+  }
+
+  function nextSlide() {
+    const isLastSlide = currentIndex === events[visit].reccommend[events[visit].reccommend.length - 1].tour
+    const newIndex = isLastSlide ? visit: events[visit].reccommend[(currentpic)].tour
+    setCurrentIndex(newIndex)
+    setCurrentpic((currentpic+1)%(events[visit].reccommend.length))
+  }
+
+
+  function goToSlide(cpic,slideIndex) {
+    setCurrentIndex(slideIndex)
+    setCurrentpic(cpic)
+  }
+
+  const [currentIndex1, setCurrentIndex1] = useState(0);
     return (
       <>
         <Head>
@@ -91,7 +119,7 @@ export default function Customerjourney() {
             content={'https://openhouse.mwit.ac.th/img/2023/thumb2023.png'}
           />
         </Head>
-        <div className='w-screen h-[220vh] '>
+        <div className='w-screen h-[300vh] '>
           <div className='grid justify-items-center font-CS font-bold text-3xl md:text-4xl lg:text-5xl py-12 '>
             Customers Journey
           </div>
@@ -165,7 +193,6 @@ export default function Customerjourney() {
               </div>
             </div>
           </div>
-          
           <div className='grid justify-items-center'>          
             <div className='grid justify-items-center justify-center gap-1 bg-white/40 shadow-lg backdrop-blur-sm px-4 py-5 rounded-xl w-5/6'>
               <div className='font-CS text-3xl md:text-4xl font-bold text-bmw'>
@@ -227,21 +254,58 @@ export default function Customerjourney() {
               
             </div>
           </div>
+          <div>
+            <div className='max-w-[640px] max-h-[480px] h-screen min-w-max w-[16rem] md:w-[32rem] m-auto py-16 px-4 relative group'>
+              <div
+                style={{ backgroundImage: `url(${events[currentIndex].landscape})`  }}
+                className='w-full h-full rounded-2xl bg-center bg-cover duration-100'
+              >
+              </div>
+              {/* Left Arrow */}
+              <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <FontAwesomeIcon icon={faChevronLeft} onClick={prevSlide} size='sm' />
+              </div>
+              {/* Right Arrow */}
+              <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <FontAwesomeIcon icon={faChevronRight} onClick={nextSlide} size='sm' />
+              </div>
+              
+              <div className='flex justify-center top-4 py-2'>
+                {/*<div
+                  onClick={() => goToSlide(visit)}
+                  className='text-2xl cursor-pointer px-2'
+                >
+                    <FontAwesomeIcon icon={faCircle} size='xs' />
+                </div>*/}  
+                {events[visit].reccommend.map((slide, slideIndex) => (
+                  <div
+                    key={slideIndex}
+                    onClick={() => goToSlide(slideIndex,slide.tour)}
+                    className='text-2xl cursor-pointer px-2'
+                  >
+                    <FontAwesomeIcon icon={faCircle} size='xs' />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
           <div className='grid justify-items-center justify-center gap-1 w-screen pt-12 w-screen'>
             <div className='bg-white/40 shadow-lg backdrop-blur-sm rounded-xl w-5/6 px-6 py-6'>
               <span className='font-CS text-2xl md:text-4xl font-bold text-bmw justify-center'>
-                {`Current Place:${events[visit].name}`}
+                {`ขณะนี้คุณกำลังดู:${events[currentIndex].name}`}
               </span>
-              <div className='grid md:grid-cols-3 justify-center w-fit'>
-                <div
-                      style={{ backgroundImage: `url(${events[visit].landscape})` }}
-                      className='h-[30vh] rounded-2xl bg-center bg-cover duration-100'
-                >
-                </div>
-                <p className='grid justify-items-center md:col-span-2 font-CS text-2xl py-[3vh] px-6'>
-                  {events[visit].description}
-                  {events[visit].activity}
+              <div className='grid justify-center w-fit'>
+                <div className='grid grid-row-span-3'>
+                <p className='grid justify-items-sta font-CS text-2xl py-[3vh] px-6 text-justify'>
+                  {events[currentIndex].description}
                 </p>
+                <span className='grid justify-items-start font-CS text-2xl py-[3vh] px-6 text-justify'>
+                  {`กิจกรรมภายใน: ${events[currentIndex].activity}`}
+                </span>
+                <p className='grid justify-items-staer font-CS text-2xl py-[3vh] px-6 text-justify'>
+                  {`ช่วงเวลาที่จัดกิจกรรม: ${events[currentIndex].time}`}
+                </p>
+                </div>
               </div>
               
             </div>

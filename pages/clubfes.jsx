@@ -193,7 +193,7 @@ return (
       </div>
       <div className='max-w-[800px] max-h-[450px] min-w-max w-[16rem] md:w-[32rem] h-auto m-auto py-2 px-4 relative group'>
         <motion.img
-          src = '/img/2023/clubfes/clubfes_1.JPG'
+          src = '/img/clubfes/clubfes_1.jpg'
           className='w-[300px]  w-[120] md:w-[500px] md:h-[300] lg:w-[600px] flex self-center '
           initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -217,7 +217,7 @@ return (
             <div className= "font-IBMPlex font-semibold text-sm container mx-auto px-8 bg-amber-200 rounded-lg shadow-md p-4 text-l">
               <FontAwesomeIcon icon={faLocationDot} size='s'/>
                 <h2 className="text-2xl font-bold">สถานที่จัดแสดง Club road</h2>
-                <p>สถานที่จัด: ลู่แดงฝั่ง covered walkway</p>
+                <p>สถานที่จัด: ลู่แดงฝั่ง covered walkway, ลานหน้าเสาธง</p>
                 <p>เวลา: 9:00 - 16:00 ทั้งสองวัน</p>
             </div>
           </div>
@@ -236,7 +236,7 @@ return (
         </div>
         <div className='flex flex-wrap items-center justify-center gap-3'>
             <Link href={'/download/หลักสูตรโรงเรียนมหิดลวิทยานุสรณ์ 2566.pdf'}>
-            <motion.a
+              <motion.a
                 className='relative bg-white/50 hover:bg-ymw hover:text-black cursor-pointer transition-colors duration-200 py-1 md:py-2 px-3 md:px-4 rounded-full font-CS font-bold text-lg md:text-xl lg:text-2xl text-bmw'
                 initial={{ opacity: 0, scale: 0.7, y: 10, rotate: -10 }}
                 animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
@@ -247,26 +247,26 @@ return (
                   type: 'spring',
                 }}
               >
-                <motion.div
-                  className='absolute text-xs md:text-sm text-white -right-2 -top-2 bg-oft font-semibold px-[0.35rem] md:px-2 rounded-full'
-                  initial={{ opacity: 0, scale: 0.7, y: 10, rotate: -10 }}
-                  animate={{ opacity: 1, scale: 1, y: 0, rotate: 6 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 1.9,
-                    bounce: 0.5,
-                    type: 'spring',
-                  }}
-                >
+              <motion.div
+                className='absolute text-xs md:text-sm text-white -right-2 -top-2 bg-oft font-semibold px-[0.35rem] md:px-2 rounded-full'
+                initial={{ opacity: 0, scale: 0.7, y: 10, rotate: -10 }}
+                animate={{ opacity: 1, scale: 1, y: 0, rotate: 6 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 1.9,
+                  bounce: 0.5,
+                  type: 'spring',
+                }}
+              >
                   New!
                 </motion.div>
                 <span className='whitespace-nowrap'>
                   อัปเดตหลักสูตรปีล่าสุด
                 </span>
               </motion.a>
-              </Link>
-          </div>
-          <div>
+            </Link>
+        </div>
+          <div className='pt-6'>
             <div className= "font-IBMPlex font-semibold text-sm container mx-auto px-8 bg-amber-200 rounded-lg shadow-md p-4 text-l">
               <FontAwesomeIcon icon={faLocationDot} size='s'/>
                 <h2 className="text-2xl font-bold">สถานที่จัดนิทรรศการกิจกรรมพัฒนาผู้เรียน</h2>

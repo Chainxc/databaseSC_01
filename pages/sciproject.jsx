@@ -221,7 +221,7 @@ export default function SciProject(){
               style={{ backgroundImage: `url(${images[currentImageIndex].src})` }}
               ></div>
             <div  className="absolute bottom-0 right-0 bg-black bg-opacity-50 text-white  rounded-b-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-b-2xl ${showFullDescription ? 'h-auto' : 'h-16'}`}">
-              <p className={`text-left pt-3 px-5 font-CS font-bold text-xl `}>
+              <p className={`text-left pt-3 px-5 font-CS font-bold text-xs md:text-base`}>
               {showFullDescription
               ? images[currentImageIndex].description
                 : images[currentImageIndex].description.slice(0, 100) + '...'}
@@ -293,25 +293,28 @@ export default function SciProject(){
                   
                   </AnimateSharedLayout>
           </div>
-        
-{/*
-        <div className='font-CS font-bold text-bmw text-xl md:text-2xl lg:text-3xl pt-8 place-content-center'>
-            <center>
-              <span className='my-5'>กำหนดการ</span>
-              <br />
-              <span>วันที่ 25 และ 26 สิงหาคม </span>
-              <br />
-              <span> Oral presentation เวลา 09:00-12:00 น. </span>
-              <br />
-              <span>Poster presentation เวลา 13:00-14:30 น. </span>
-            </center>
-          </div>
-                  */}
 
       
         
+        </div>
+          <div className='grid justify-center gap-1 pl-12 md:pl-[9rem]   w-fit pt-3'>
+            <div className=''>
+              <Link
+                key = {"ent1"}
+                scroll={false}
+                visit
+                href={{
+                  pathname: '/download/ตารางนำเสนอโครงงาน.pdf',
+                }}
+                //onClick={()=>setshow(s.tour)}
+                passHref
+              >
+                <a className='justify-center font-CS text-xl md:text-2xl font-bold text-bmw rounded-xl px-4 py-3 bg-orange-400 shadow-lg backdrop-blur-sm'>
+                  ดูตารางทั้งหมด
+                </a>
+              </Link>
             </div>
-
+          </div>
         <div className="w-full  grid  mx-auto justify-items-center "> 
           <div className="m-auto py-8 px-2 relative group">
             <div
@@ -340,26 +343,26 @@ export default function SciProject(){
           </div>
         </div>
         <div className="my-5 mx-5 max-w-lg md:w-sm py-8 px-8 bg-white rounded-lg shadow-lg">
-        <div className="font-CS font-bold text-bmw  md:text-2xl lg:text-3xl text-xl font-semibold mb-3">กำหนดการ</div>
-        {scheduleData.map((dayData, index) => (
-          <div key={index} className="mb-6">
-            <h2 className="font-CS font-bold text-bmw  md:text-xl lg:text-2xl text-lg font-semibold  mb-3">{dayData.day}</h2>
-            {dayData.events.map((event, eventIndex) => (
-              <div
-                key={eventIndex}
-                className={`flex flex-wrap max-w-xl justify-between items-center p-4 mb-4 ${
-                  eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
-                }`}
-              >
-                <div className="font-CS  text-bmw  md:text-lg pt-4 text-md font-semibold mr-16">{event.time}</div>
-                <div className="font-CS font-bold text-bmw  md:text-lg  pt-4 text-md ">{event.title}</div>
-                <div className="font-CS font-semibold text-bmw md:text-lg  pt-4 text-md ">{event.place}</div>
+          <div className="font-CS font-bold text-bmw  md:text-2xl lg:text-3xl text-xl font-semibold mb-3">กำหนดการ</div>
+            {scheduleData.map((dayData, index) => (
+              <div key={index} className="mb-6">
+                <h2 className="font-CS font-bold text-bmw  md:text-xl lg:text-2xl text-lg font-semibold  mb-3">{dayData.day}</h2>
+                  {dayData.events.map((event, eventIndex) => (
+                    <div
+                      key={eventIndex}
+                      className={`flex flex-wrap max-w-xl justify-between items-center p-4 mb-4 ${
+                        eventIndex % 2 === 0 ? 'bg-blue-100': 'bg-yellow-100' 
+                      }`}
+                    >
+                      <div className="font-CS  text-bmw  md:text-lg pt-4 text-md font-semibold mr-16">{event.time}</div>
+                      <div className="font-CS font-bold text-bmw  md:text-lg  pt-4 text-md ">{event.title}</div>
+                      <div className="font-CS font-semibold text-bmw md:text-lg  pt-4 text-md ">{event.place}</div>
+                    </div>
+                  ))}
               </div>
             ))}
           </div>
-          ))}
-          </div>
-          </div>
+        </div>
           
       </div>
     </div>
