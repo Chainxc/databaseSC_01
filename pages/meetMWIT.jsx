@@ -25,27 +25,6 @@ const motionProp = {
 
 
 export default function meetMWIT() {
-  const [descriptionVisible, setDescriptionVisible] = useState({});
-  const toggleDescription = (dateIndex, slotIndex, actIndex) => {
-    setDescriptionVisible(prevState => ({
-      ...prevState,
-      [`${dateIndex}-${slotIndex}-${actIndex}`]: !prevState[`${dateIndex}-${slotIndex}-${actIndex}`]
-    }));
-  };
-  const [selected, setSelected] = useState(0)
-  const [nameOpen, setNameOpen] = useState(false)
-  const router = useRouter()
-
-  useEffect(() => {
-    router.query.place &&
-    place.find((p) => p.name.replaceAll(' ', '_') === router.query.place)
-      ? setSelected(
-          place.findIndex(
-            (p) => p.name.replaceAll(' ', '_') === router.query.place,
-          ),
-        )
-      : setSelected(0)
-  }, [router.query.place])
 
 const meta = {
     title: 'MWIT School Tour | MWIT Open House 2022',
@@ -90,7 +69,7 @@ const meta = {
       <main className='w-full bg-white/20'>
         <div className='flex flex-col text-black items-center mx-auto justify-self-center w-full max-w-6xl px-6 pt-10 pb-4'>
           <a className='font-CS font-bold text-bmw text-3xl md:text-4xl lg:text-5xl'>
-            "น้อง" ถาม "พี่" ตอบ
+            {`\"น้อง\" ถาม \"พี่\" ตอบ`}
           </a>
         </div>
         <div className='flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-4 pb-10'>
@@ -101,7 +80,7 @@ const meta = {
             />
             <div className='w-full md:w-fit md:max-w-md bg-white/70 group-hover:bg-yellow-100/90 transition-colors duration-300 backdrop-blur-md px-4 py-3 flex flex-col'>
               <span className='font-CS font-semibold text-xl md:text-2xl text-bmw'>
-                "น้อง" ถาม "พี่" ตอบ
+                {'\"น้อง\" ถาม \"พี่\" ตอบ'}
               </span>
               <span className='font-IBMPlex font-semibold text-sm md:text-base text-gray-700'>
                 🙌🏻 ใครที่อยากรู้ว่าพี่ ๆ MWIT เตรียมตัวสอบเข้ายังไง การใช้ชีวิตในโรงเรียนเป็นยังไง เรียนอะไรบ้าง พลาดกิจกรรมนี้ไม่ได้แล้ว!<br></br>

@@ -23,48 +23,6 @@ const wcText = "Hi"
 
 
 export default function clubfes() {
-  const slides1 = [
-    {
-      url: '/img/2023/slide/slide1/ch1.jpeg'
-    },
-    {
-      url: '/img/2023/slide/slide1/ch2.jpeg'
-    },
-    {
-      url: '/img/2023/slide/slide1/ch3.jpeg'
-    },
-    {
-      url: '/img/2023/slide/slide1/sq1.jpeg'
-    },
-    {
-      url: '/img/2023/slide/slide1/sq2.jpeg'
-    },
-    {
-      url: '/img/2023/slide/slide1/sq3.jpeg'
-    }
-  ]
- const [currentIndex, setCurrentIndex] = useState(0);
-
-
-  function prevSlide() {
-    const isFirstSlide = currentIndex === 0
-    const newIndex = isFirstSlide ? slides1.length - 1 : currentIndex - 1
-    setCurrentIndex(newIndex)
-  }
-
-
-  function nextSlide() {
-    const isLastSlide = currentIndex === slides1.length - 1
-    const newIndex = isLastSlide ? 0 : currentIndex + 1
-    setCurrentIndex(newIndex)
-  }
-
-
-  function goToSlide(slideIndex) {
-    setCurrentIndex(slideIndex)
-  }
-
-
   const meta = {
     title: 'Virtual Lab & Activity | MWIT Open House 2022',
     url: 'lab',
@@ -147,37 +105,31 @@ return (
   <>
   <Head>
         {/* <!-- HTML Meta Tags --> */}
-        <title>MWIT Open House 2023</title>
-        <meta
-          name='description'
-          content='MWIT Open House 2023 เปิดบ้านโรงเรียนมหิดลวิทยานุสรณ์ พบกับกิจกรรมและนิทรรศการมากมายตลอดวันที่ 25 และ 26 สิงหาคม 2566 ในรูปแบบออนไซต์'
-        />
+        <title>{meta.title}</title>
+        <meta name='description' content={meta.description} />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property='og:url' content='https://openhouse.mwit.ac.th/' />
-        <meta property='og:type' content='website' />
-        <meta property='og:title' content='MWIT Open House 2023' />
         <meta
-          property='og:description'
-          content='MWIT Open House 2023 เปิดบ้านโรงเรียนมหิดลวิทยานุสรณ์ พบกับกิจกรรมและนิทรรศการมากมายตลอดวันที่ 25 และ 26 สิงหาคม 2566 ในรูปแบบออนไซต์'
+          property='og:url'
+          content={'https://openhouse.mwit.ac.th/' + meta.url}
         />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content={meta.title} />
+        <meta property='og:description' content={meta.description} />
         <meta
           property='og:image'
-          content='https://openhouse.mwit.ac.th/img/2023/thumb2023.png'
+          content='https://openhouse.mwit.ac.th/img/ogimage.png'
         />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta property='twitter:domain' content='openhouse.mwit.ac.th/' />
-        <meta property='twitter:url' content='https://openhouse.mwit.ac.th/' />
-        <meta name='twitter:title' content='MWIT Open House 2023' />
-        <meta
-          name='twitter:description'
-          content='MWIT Open House 2023 เปิดบ้านโรงเรียนมหิดลวิทยานุสรณ์ พบกับกิจกรรมและนิทรรศการมากมายตลอดวันที่ 25 และ 26 สิงหาคม 2566 ในรูปแบบออนไซต์'
-        />
+        <meta property='twitter:domain' content='openhouse.mwit.ac.th' />
+        <meta property='twitter:url' content={meta.url} />
+        <meta name='twitter:title' content={meta.title} />
+        <meta name='twitter:description' content={meta.description} />
         <meta
           name='twitter:image'
-          content='https://openhouse.mwit.ac.th/img/2023/thumb2023.png'
+          content='https://openhouse.mwit.ac.th/img/ogimage.png'
         />
       </Head>
   <div className="flex flex-col relative overflow-y-hidden max-w-6xl mx-auto px-6 justify-center gap-4 pt-6 pb-10
@@ -206,7 +158,7 @@ return (
         />
       </div>
      
-      <div class = "w-full max-w-7xl grid grid-rows-2 grid-flow-col gap-4 items-center justify-items-center mx-auto py-8 px-6">
+      <div className = "w-full max-w-7xl grid grid-rows-2 grid-flow-col gap-4 items-center justify-items-center mx-auto py-8 px-6">
             <div>
             <div className="font-IBMPlex font-semibold text-sm col-start-2 col-end-4 container mx-auto px-8 bg-white rounded-lg shadow-md p-4 text-l">
               <h2 className="text-2xl font-bold">สร้างสิ่งใหม่อย่างสร้างสรรค์</h2>
@@ -278,6 +230,7 @@ return (
           {course.map((l, li) => (
          
               <a
+                key={li}
                 className={
                   'w-full relative group shadow-lg flex flex-col md:flex-row rounded-xl overflow-hidden min-h-[15rem] '
                   +(li % 2 === 1 && 'justify-end')
