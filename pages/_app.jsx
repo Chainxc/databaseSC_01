@@ -99,14 +99,14 @@ function MyApp({ Component, pageProps }) {
         <VideoModal p="https://www.youtube.com/watch?v=0tE5gUE3bRA" isOpen={isModalOpen} onClose={closeModal} />
       </div>
       <div className='fixed -z-10 bg-[url(/img/2023/Artboard-1.webp)] bg-repeat w-full h-screen' />
-      {isHome && <LandingPage homeRef={homeRef} />}
-      <Navbar
-        userData={userData}
-        addClass={isHome && 'w-full absolute top-[100%]'}
-        homeRef={isHome ? homeRef : null}
-      >
-        <Component userData={userData} setData={setUserData} {...pageProps} />
-      </Navbar>
+        {isHome && <LandingPage homeRef={homeRef} />}
+        <Navbar
+          userData={userData}
+          addClass={isHome && 'w-full absolute top-[100%]'}
+          homeRef={isHome ? homeRef : null}
+        >
+          <Component userData={userData} setData={setUserData} {...pageProps} />
+        </Navbar>
     </div>
   )
 }
